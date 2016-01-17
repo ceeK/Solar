@@ -2,7 +2,7 @@
 
 A Swift library for generating Sunrise and Sunset times.
 
-# Solar 
+# License 
 
 The MIT License (MIT)
 
