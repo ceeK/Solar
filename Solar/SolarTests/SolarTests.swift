@@ -7,7 +7,6 @@
 //
 
 import XCTest
-@testable import Solar
 
 class SolarTests: XCTestCase {
     
