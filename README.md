@@ -4,7 +4,7 @@
 
 # Solar
 
-[![Version](https://img.shields.io/cocoapods/v/Scale.svg?style=flat)](http://cocoapods.org/pods/Scale)
+[![Version](https://img.shields.io/cocoapods/v/Solar.svg?style=flat)](http://cocoapods.org/pods/Solar)
 
 A Swift helper for generating Sunrise and Sunset times. 
 
