@@ -1,6 +1,67 @@
+<div align="center">
+<img src="./solar-logo.png" />
+</div>
+
 # Solar
 
-A Swift library for generating Sunrise and Sunset times.
+[![Version](https://img.shields.io/cocoapods/v/Scale.svg?style=flat)](http://cocoapods.org/pods/Scale)
+
+A Swift helper for generating Sunrise and Sunset times. 
+
+Solar uses an algorithm from the [United States Naval Observatory](http://williams.best.vwh.net/sunrise_sunset_algorithm.htm) for its calculations.
+
+
+
+## Usage
+
+Solar needs a date, a timezone and a location specified in latitude and longitude coordinates:
+
+```swift
+let solar = try! Solar(withTimeZone: NSTimeZone.localTimeZone(), latitude: 51.528308, longitude: -0.1340267)
+let sunrise = solar.sunrise
+let sunset = solar.sunset
+```
+
+If no date is specified, today is used by default. If no timezone is specified, the device's local timezone is used by default.
+
+### Timezones
+
+Timezone print issues. NSDate representations... 
+
+### Types of sunrise and sunset
+
+- Official
+- Civil
+- Nautical
+- Astromonical
+
+## Convenience methods
+
+Solar also comes packaged with some convenience methods:
+
+```swift
+let isDaytime = solar.isDaytime()
+let isNighttime = solar.isNighttime()
+```
+
+## Installation
+
+Solar is available through Cocoapods. To install, simply add the following line to your podfile:
+
+```ruby
+pod "Solar"
+```
+
+Then run `pod install`
+
+## Todo:
+
+- [ ] Documentation
+- [ ] Unit tests
+
+#### Future enhancements:
+
+- [ ] Calculate more variables relating to solar activity, i.e. Moonrise, Moonset, Moon luminosity. 
 
 # License 
 

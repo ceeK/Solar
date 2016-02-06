@@ -10,6 +10,7 @@
 		F74D4C431C4A8B36006E5481 /* Solar.h in Headers */ = {isa = PBXBuildFile; fileRef = F74D4C421C4A8B36006E5481 /* Solar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F74D4C4A1C4A8B36006E5481 /* Solar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F74D4C3F1C4A8B36006E5481 /* Solar.framework */; };
 		F74D4C4F1C4A8B36006E5481 /* SolarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74D4C4E1C4A8B36006E5481 /* SolarTests.swift */; };
+		F7D948FE1C5D3184000F0D71 /* Solar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D948FD1C5D3184000F0D71 /* Solar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		F74D4C491C4A8B36006E5481 /* SolarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SolarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F74D4C4E1C4A8B36006E5481 /* SolarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarTests.swift; sourceTree = "<group>"; };
 		F74D4C501C4A8B36006E5481 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7D948FD1C5D3184000F0D71 /* Solar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Solar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 		F74D4C411C4A8B36006E5481 /* Solar */ = {
 			isa = PBXGroup;
 			children = (
+				F7D948FD1C5D3184000F0D71 /* Solar.swift */,
 				F74D4C421C4A8B36006E5481 /* Solar.h */,
 				F74D4C441C4A8B36006E5481 /* Info.plist */,
 			);
@@ -194,6 +197,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7D948FE1C5D3184000F0D71 /* Solar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +312,7 @@
 		F74D4C541C4A8B36006E5481 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -318,12 +323,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = me.chrishowell.Solar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		F74D4C551C4A8B36006E5481 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -376,6 +383,7 @@
 				F74D4C551C4A8B36006E5481 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F74D4C561C4A8B36006E5481 /* Build configuration list for PBXNativeTarget "SolarTests" */ = {
 			isa = XCConfigurationList;
@@ -384,6 +392,7 @@
 				F74D4C581C4A8B36006E5481 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
