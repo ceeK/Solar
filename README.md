@@ -10,14 +10,12 @@ A Swift helper for generating Sunrise and Sunset times.
 
 Solar uses an algorithm from the [United States Naval Observatory](http://williams.best.vwh.net/sunrise_sunset_algorithm.htm) for its calculations.
 
-
-
 ## Usage
 
 Solar needs a date, a timezone and a location specified in latitude and longitude coordinates:
 
 ```swift
-let solar = try! Solar(withTimeZone: NSTimeZone.localTimeZone(), latitude: 51.528308, longitude: -0.1340267)
+let solar = Solar(withTimeZone: NSTimeZone.localTimeZone(), latitude: 51.528308, longitude: -0.1340267)
 let sunrise = solar.sunrise
 let sunset = solar.sunset
 ```
@@ -26,7 +24,7 @@ If no date is specified, today is used by default. If no timezone is specified, 
 
 ### Timezones
 
-Timezone print issues. NSDate representations... 
+When using Solar, all dates are returned in UTC. This means that for timezones other than GMT, the time will appear off. Don't forget to convert your date into the appropriate timezone.
 
 ### Types of sunrise and sunset
 
