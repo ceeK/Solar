@@ -106,8 +106,6 @@ Pod::Spec.new do |s|
   #  the lib prefix of their name.
   #
 
-  s.framework  = "XCTest"
-
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
 
