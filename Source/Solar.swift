@@ -29,25 +29,25 @@ import Foundation
 public final class Solar: NSObject {
     
     /// The timezone for the Solar object
-    private(set) var timeZone: NSTimeZone = NSTimeZone.localTimeZone()
+    public private(set) var timeZone: NSTimeZone = NSTimeZone.localTimeZone()
     
     /// The latitude that is used for the calculation
-    private(set) var latitude: Double = 0
+    public private(set) var latitude: Double = 0
     
     /// The longitude that is used for the calculation
-    private(set) var longitude: Double = 0
+    public private(set) var longitude: Double = 0
     
     /// The date to generate sunrise / sunset times for
-    private(set) var date: NSDate
+    public private(set) var date: NSDate
     
-    private(set) var sunrise: NSDate? = nil
-    private(set) var sunset: NSDate? = nil
-    private(set) var civilSunrise: NSDate? = nil
-    private(set) var civilSunset: NSDate? = nil
-    private(set) var nauticalSunrise: NSDate? = nil
-    private(set) var nauticalSunset: NSDate? = nil
-    private(set) var astronomicalSunrise: NSDate? = nil
-    private(set) var astronomicalSunset: NSDate? = nil
+    public private(set) var sunrise: NSDate? = nil
+    public private(set) var sunset: NSDate? = nil
+    public private(set) var civilSunrise: NSDate? = nil
+    public private(set) var civilSunset: NSDate? = nil
+    public private(set) var nauticalSunrise: NSDate? = nil
+    public private(set) var nauticalSunset: NSDate? = nil
+    public private(set) var astronomicalSunrise: NSDate? = nil
+    public private(set) var astronomicalSunset: NSDate? = nil
     
     /// Whether the location specified by the `latitude` and `longitude` is in daytime on `date`
     /// - Complexity: O(1)
