@@ -26,7 +26,7 @@
 
 import Foundation
 
-final class Solar: NSObject {
+public final class Solar: NSObject {
     
     /// The timezone for the Solar object
     private(set) var timeZone: NSTimeZone = NSTimeZone.localTimeZone()
@@ -51,7 +51,7 @@ final class Solar: NSObject {
     
     /// Whether the location specified by the `latitude` and `longitude` is in daytime on `date`
     /// - Complexity: O(1)
-    var isDaytime: Bool {
+    public var isDaytime: Bool {
         let beginningOfDay = sunrise?.timeIntervalSince1970
         let endOfDay = sunset?.timeIntervalSince1970
         let currentTime = NSDate().timeIntervalSince1970
@@ -64,13 +64,13 @@ final class Solar: NSObject {
     
     /// Whether the location specified by the `latitude` and `longitude` is in nighttime on `date`
     /// - Complexity: O(1)
-    var isNighttime: Bool {
+    public var isNighttime: Bool {
         return !isDaytime
     }
     
     // MARK: Init
     
-    init?(forDate date: NSDate = NSDate(), withTimeZone timeZone: NSTimeZone = NSTimeZone.localTimeZone(), latitude: Double, longitude: Double) {
+    public init?(forDate date: NSDate = NSDate(), withTimeZone timeZone: NSTimeZone = NSTimeZone.localTimeZone(), latitude: Double, longitude: Double) {
         self.date = date
         self.timeZone = timeZone
         self.latitude = latitude
@@ -93,7 +93,7 @@ final class Solar: NSObject {
     
     /// Sets all of the Solar object's sunrise / sunset variables, if possible.
     /// - Note: Can return `nil` objects if sunrise / sunset does not occur on that day.
-    func calculate() {
+    public func calculate() {
         sunrise = calculate(.Sunrise, forDate: date, andZenith: .Official)
         sunset = calculate(.Sunset, forDate: date, andZenith: .Official)
         civilSunrise = calculate(.Sunrise, forDate: date, andZenith: .Civil)
