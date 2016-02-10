@@ -44,7 +44,7 @@ let isNighttime = solar.isNighttime()
 
 ## Installation
 
-Solar is available through Cocoapods. To install, simply add the following line to your podfile:
+Solar is available through CocoaPods. To install, simply add the following line to your podfile:
 
 ```ruby
 pod "Solar"
