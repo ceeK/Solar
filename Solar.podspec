@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "Solar"
-  s.version      = "0.0.4"
+  s.version      = "0.0.5"
   s.summary      = "A Swift library for generating Sunrise and Sunset times."
 
   # This description is used to generate tags and improve search results.
@@ -62,7 +62,7 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios
   s.ios.deployment_target = '8.0'
-
+  s.tvos.deployment_target = '9.0'
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #

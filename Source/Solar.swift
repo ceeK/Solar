@@ -207,7 +207,9 @@ public final class Solar: NSObject {
     }
     
     /// Normalises a value between 0 and `maximum`, by adding or subtracting `maximum`
-    private func normalise(var value: Double, withMaximum maximum: Double) -> Double {
+    private func normalise(value: Double, withMaximum maximum: Double) -> Double {
+        var value = value
+        
         if value < 0 {
             value += maximum
         }

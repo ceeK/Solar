@@ -6,7 +6,7 @@
 
 [![Version](https://img.shields.io/cocoapods/v/Solar.svg?style=flat)](http://cocoapods.org/pods/Solar)
 
-A Swift helper for generating Sunrise and Sunset times. 
+A Swift helper for generating Sunrise and Sunset times. Swift 3 compatible.
 
 Solar uses an algorithm from the [United States Naval Observatory](http://williams.best.vwh.net/sunrise_sunset_algorithm.htm) for its calculations.
 
