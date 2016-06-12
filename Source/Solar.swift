@@ -159,7 +159,7 @@ public final class Solar: NSObject {
         let cosDec = cos(asin(sinDec))
         
         // Calculate the Sun's local hour angle
-        let cosH = (cos(Zenith.Official.rawValue.degreesToRadians) - (sinDec * sin(latitude.degreesToRadians))) / (cosDec * cos(latitude.degreesToRadians))
+        let cosH = (cos(zenith.rawValue.degreesToRadians) - (sinDec * sin(latitude.degreesToRadians))) / (cosDec * cos(latitude.degreesToRadians))
         
         // No sunrise
         guard cosH < 1 else {
