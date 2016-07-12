@@ -38,8 +38,8 @@ When using Solar, all dates are returned in UTC. This means that for timezones o
 Solar also comes packaged with some convenience methods:
 
 ```swift
-let isDaytime = solar.isDaytime()
-let isNighttime = solar.isNighttime()
+let isDaytime = solar.isDaytime
+let isNighttime = solar.isNighttime
 ```
 
 ## Installation
