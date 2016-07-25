@@ -4,7 +4,7 @@
 
 # Solar
 
-[![Version](https://img.shields.io/cocoapods/v/Solar.svg?style=flat)](http://cocoapods.org/pods/Solar)
+[![Version](https://img.shields.io/cocoapods/v/Solar.svg?style=flat)](http://cocoapods.org/pods/Solar) [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 A Swift helper for generating Sunrise and Sunset times. Swift 3 compatible.
 
@@ -44,13 +44,25 @@ let isNighttime = solar.isNighttime
 
 ## Installation
 
-Solar is available through CocoaPods. To install, simply add the following line to your podfile:
+Solar is available through CocoaPods and Carthage. 
+
+### Cocoapods
+
+To install, simply add the following line to your podfile:
 
 ```ruby
 pod "Solar"
 ```
 
 Then run `pod install`
+
+### Carthage
+
+Add the `ceek/Solar` project to your [Cartfile](https://github.com/Carthage/Carthage/blob/master/Documentation/Artifacts.md#cartfile)
+
+```ruby
+github "ceek/Solar"
+```
 
 ## Todo:
 
