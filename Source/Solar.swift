@@ -120,9 +120,11 @@ public final class Solar: NSObject {
     }
     
     private func calculate(sunriseSunset: SunriseSunset, forDate date: NSDate, andZenith zenith: Zenith) -> NSDate? {
+        guard let utcTimezone = NSTimeZone(name: "UTC") else { return nil }
+        
         // Get the day of the year
         let calendar = NSCalendar(calendarIdentifier: NSCalendarIdentifierGregorian)!
-        calendar.timeZone = timeZone
+        calendar.timeZone = utcTimezone
         let day = Double(calendar.ordinalityOfUnit(.Day, inUnit: .Year, forDate: date))
         
         // Convert longitude to hour value and calculate an approx. time
@@ -185,8 +187,12 @@ public final class Solar: NSObject {
         UT = normalise(UT, withMaximum: 24)
         
         // Convert UT value to local time zone of lat/long provided
-        let localT = UT + (Double(timeZone.secondsFromGMT) / 3600.0)
+        var localT = UT + (Double(timeZone.secondsFromGMTForDate(date)) / 3600.0)
         
+        // As applying the offset can push localT above 24 or below 0, we need to normalise
+        localT = normalise(localT, withMaximum: 24)
+        
+        // Calculate all of the sunrise's / sunset's date components
         let hour = floor(localT)
         let minute = floor((localT - hour) * 60.0)
         let second = (((localT - hour) * 60) - minute) * 60.0
@@ -196,14 +202,8 @@ public final class Solar: NSObject {
         components.minute = Int(minute)
         components.second = Int(second)
         
-        var date = calendar.dateFromComponents(components)
-        
-        // Add a day to account for potential timezone issues
-        if sunriseSunset == .Sunset && date?.timeIntervalSince1970 < sunrise?.timeIntervalSince1970 {
-            date = date?.dateByAddingTimeInterval(60 * 60 * 24)
-        }
-        
-        return date
+        calendar.timeZone = timeZone
+        return calendar.dateFromComponents(components)
     }
     
     /// Normalises a value between 0 and `maximum`, by adding or subtracting `maximum`
