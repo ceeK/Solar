@@ -7,7 +7,7 @@
 [![Version](https://img.shields.io/cocoapods/v/Solar.svg?style=flat)](http://cocoapods.org/pods/Solar) [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
  [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/hyperium/hyper/master/LICENSE)
 
-A Swift helper for generating Sunrise and Sunset times. Swift 3 compatible.
+A Swift helper for generating Sunrise and Sunset times.
 
 Solar uses an algorithm from the [United States Naval Observatory](http://williams.best.vwh.net/sunrise_sunset_algorithm.htm) for its calculations.
 
@@ -16,16 +16,16 @@ Solar uses an algorithm from the [United States Naval Observatory](http://willia
 Solar needs a date, a timezone and a location specified in latitude and longitude coordinates:
 
 ```swift
-let solar = Solar(withTimeZone: NSTimeZone.localTimeZone(), latitude: 51.528308, longitude: -0.1340267)
+let solar = Solar(forDate: NSDate(), withTimeZone: NSTimeZone(name: "Europe/London"), latitude: 51.528308, longitude: -0.1340267)
 let sunrise = solar.sunrise
 let sunset = solar.sunset
 ```
 
-If no date is specified, today is used by default. If no timezone is specified, the device's local timezone is used by default.
+When using Solar, you need to ensure that the timezone used is the timezone existing at the supplied latitude / longitude. 
 
 ### Timezones
 
-When using Solar, all dates are returned in UTC. This means that for timezones other than GMT, the time will appear off. Don't forget to convert your date into the appropriate timezone.
+Note that all dates are returned in UTC. This means that for timezones other than GMT, the time will appear off. Don't forget to convert your date into the appropriate timezone.
 
 ### Types of sunrise and sunset
 
