@@ -65,6 +65,8 @@ Add the `ceek/Solar` project to your [Cartfile](https://github.com/Carthage/Cart
 github "ceek/Solar"
 ```
 
+Then run `carthage update --platform iOS`
+
 ## Todo:
 
 - [ ] Documentation
