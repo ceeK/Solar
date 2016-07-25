@@ -62,7 +62,7 @@ Then run `pod install`
 Add the `ceek/Solar` project to your [Cartfile](https://github.com/Carthage/Carthage/blob/master/Documentation/Artifacts.md#cartfile)
 
 ```ruby
-github "ceek/Solar"
+github "ceeK/Solar"
 ```
 
 Then run `carthage update --platform iOS`
