@@ -16,7 +16,9 @@ Solar uses an algorithm from the [United States Naval Observatory](http://willia
 Solar needs a date, a timezone and a location specified in latitude and longitude coordinates:
 
 ```swift
-let solar = Solar(forDate: NSDate(), withTimeZone: NSTimeZone(name: "Europe/London"), latitude: 51.528308, longitude: -0.1340267)
+let solar = Solar(withTimeZone: NSTimeZone(name: "Europe/London"), 
+		latitude: 51.528308, 
+		longitude: -0.1340267)
 let sunrise = solar.sunrise
 let sunset = solar.sunset
 ```
