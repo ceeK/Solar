@@ -29,32 +29,32 @@ import Foundation
 public final class Solar: NSObject {
     
     /// The timezone for the Solar object
-    public private(set) var timeZone: NSTimeZone = NSTimeZone.localTimeZone()
+    public fileprivate(set) var timeZone: TimeZone = TimeZone.autoupdatingCurrent
     
     /// The latitude that is used for the calculation
-    public private(set) var latitude: Double = 0
+    public fileprivate(set) var latitude: Double = 0
     
     /// The longitude that is used for the calculation
-    public private(set) var longitude: Double = 0
+    public fileprivate(set) var longitude: Double = 0
     
     /// The date to generate sunrise / sunset times for
-    public private(set) var date: NSDate
+    public fileprivate(set) var date: Date
     
-    public private(set) var sunrise: NSDate? = nil
-    public private(set) var sunset: NSDate? = nil
-    public private(set) var civilSunrise: NSDate? = nil
-    public private(set) var civilSunset: NSDate? = nil
-    public private(set) var nauticalSunrise: NSDate? = nil
-    public private(set) var nauticalSunset: NSDate? = nil
-    public private(set) var astronomicalSunrise: NSDate? = nil
-    public private(set) var astronomicalSunset: NSDate? = nil
+    public fileprivate(set) var sunrise: Date? = nil
+    public fileprivate(set) var sunset: Date? = nil
+    public fileprivate(set) var civilSunrise: Date? = nil
+    public fileprivate(set) var civilSunset: Date? = nil
+    public fileprivate(set) var nauticalSunrise: Date? = nil
+    public fileprivate(set) var nauticalSunset: Date? = nil
+    public fileprivate(set) var astronomicalSunrise: Date? = nil
+    public fileprivate(set) var astronomicalSunset: Date? = nil
     
     /// Whether the location specified by the `latitude` and `longitude` is in daytime on `date`
     /// - Complexity: O(1)
     public var isDaytime: Bool {
         let beginningOfDay = sunrise?.timeIntervalSince1970
         let endOfDay = sunset?.timeIntervalSince1970
-        let currentTime = NSDate().timeIntervalSince1970
+        let currentTime = Date().timeIntervalSince1970
         
         if currentTime >= beginningOfDay && currentTime <= endOfDay {
             return true
@@ -70,7 +70,7 @@ public final class Solar: NSObject {
     
     // MARK: Init
     
-    public init?(forDate date: NSDate = NSDate(), withTimeZone timeZone: NSTimeZone = NSTimeZone.localTimeZone(), latitude: Double, longitude: Double) {
+    public init?(forDate date: Date = Date(), withTimeZone timeZone: TimeZone = TimeZone.autoupdatingCurrent, latitude: Double, longitude: Double) {
         self.date = date
         self.timeZone = timeZone
         self.latitude = latitude
@@ -94,50 +94,53 @@ public final class Solar: NSObject {
     /// Sets all of the Solar object's sunrise / sunset variables, if possible.
     /// - Note: Can return `nil` objects if sunrise / sunset does not occur on that day.
     public func calculate() {
-        sunrise = calculate(.Sunrise, forDate: date, andZenith: .Official)
-        sunset = calculate(.Sunset, forDate: date, andZenith: .Official)
-        civilSunrise = calculate(.Sunrise, forDate: date, andZenith: .Civil)
-        civilSunset = calculate(.Sunset, forDate: date, andZenith: .Civil)
-        nauticalSunrise = calculate(.Sunrise, forDate: date, andZenith: .Nautical)
-        nauticalSunset = calculate(.Sunset, forDate: date, andZenith: .Nautical)
-        astronomicalSunrise = calculate(.Sunrise, forDate: date, andZenith: .Astronimical)
-        astronomicalSunset = calculate(.Sunset, forDate: date, andZenith: .Astronimical)
+        sunrise = calculate(.sunrise, forDate: date, andZenith: .official)
+        sunset = calculate(.sunset, forDate: date, andZenith: .official)
+        civilSunrise = calculate(.sunrise, forDate: date, andZenith: .civil)
+        civilSunset = calculate(.sunset, forDate: date, andZenith: .civil)
+        nauticalSunrise = calculate(.sunrise, forDate: date, andZenith: .nautical)
+        nauticalSunset = calculate(.sunset, forDate: date, andZenith: .nautical)
+        astronomicalSunrise = calculate(.sunrise, forDate: date, andZenith: .astronimical)
+        astronomicalSunset = calculate(.sunset, forDate: date, andZenith: .astronimical)
     }
     
     // MARK: - Private functions
     
-    private enum SunriseSunset {
-        case Sunrise
-        case Sunset
+    fileprivate enum SunriseSunset {
+        case sunrise
+        case sunset
     }
     
     /// Used for generating several of the possible sunrise / sunset times
-    private enum Zenith: Double {
-        case Official = 90.83
-        case Civil = 96
-        case Nautical = 102
-        case Astronimical = 108
+    fileprivate enum Zenith: Double {
+        case official = 90.83
+        case civil = 96
+        case nautical = 102
+        case astronimical = 108
     }
     
-    private func calculate(sunriseSunset: SunriseSunset, forDate date: NSDate, andZenith zenith: Zenith) -> NSDate? {
-        guard let utcTimezone = NSTimeZone(name: "UTC") else { return nil }
+    fileprivate func calculate(_ sunriseSunset: SunriseSunset, forDate date: Date, andZenith zenith: Zenith) -> Date? {
+        guard let utcTimezone = TimeZone(identifier: "UTC") else { return nil }
         
         // Get the day of the year
-        let calendar = NSCalendar(calendarIdentifier: NSCalendarIdentifierGregorian)!
+        var calendar = Calendar(identifier: Calendar.Identifier.gregorian)
         calendar.timeZone = utcTimezone
-        let day = Double(calendar.ordinalityOfUnit(.Day, inUnit: .Year, forDate: date))
+        guard let dayInt = calendar.ordinality(of: .day, in: .year, for: date) else { return nil }
+        let day = Double(dayInt)
         
         // Convert longitude to hour value and calculate an approx. time
         let lngHour = longitude / 15
         
-        let hourTime: Double = sunriseSunset == .Sunrise ? 6 : 18
+        let hourTime: Double = sunriseSunset == .sunrise ? 6 : 18
         let t = day + ((hourTime - lngHour) / 24)
         
         // Calculate the suns mean anomaly
         let M = (0.9856 * t) - 3.289
         
         // Calculate the sun's true longitude
-        var L = M + (1.916 * sin(M.degreesToRadians)) + (0.020 * sin(2 * M.degreesToRadians)) + 282.634
+        let subexpression1 = 1.916 * sin(M.degreesToRadians)
+        let subexpression2 = 0.020 * sin(2 * M.degreesToRadians)
+        var L = M + subexpression1 + subexpression2 + 282.634
         
         // Normalise L into [0, 360] range
         L = normalise(L, withMaximum: 360)
@@ -174,7 +177,7 @@ public final class Solar: NSObject {
         }
         
         // Finish calculating H and convert into hours
-        let tempH = sunriseSunset == .Sunrise ? 360 - acos(cosH).radiansToDegrees : acos(cosH).radiansToDegrees
+        let tempH = sunriseSunset == .sunrise ? 360 - acos(cosH).radiansToDegrees : acos(cosH).radiansToDegrees
         let H = tempH / 15.0
         
         // Calculate local mean time of rising
@@ -187,7 +190,7 @@ public final class Solar: NSObject {
         UT = normalise(UT, withMaximum: 24)
         
         // Convert UT value to local time zone of lat/long provided
-        var localT = UT + (Double(timeZone.secondsFromGMTForDate(date)) / 3600.0)
+        var localT = UT + (Double(timeZone.secondsFromGMT(for: date)) / 3600.0)
         
         // As applying the offset can push localT above 24 or below 0, we need to normalise
         localT = normalise(localT, withMaximum: 24)
@@ -197,17 +200,17 @@ public final class Solar: NSObject {
         let minute = floor((localT - hour) * 60.0)
         let second = (((localT - hour) * 60) - minute) * 60.0
         
-        let components = calendar.components([.Day, .Month, .Year], fromDate: date)
+        var components = calendar.dateComponents([.day, .month, .year], from: date)
         components.hour = Int(hour)
         components.minute = Int(minute)
         components.second = Int(second)
         
         calendar.timeZone = timeZone
-        return calendar.dateFromComponents(components)
+        return calendar.date(from: components)
     }
     
     /// Normalises a value between 0 and `maximum`, by adding or subtracting `maximum`
-    private func normalise(value: Double, withMaximum maximum: Double) -> Double {
+    fileprivate func normalise(_ value: Double, withMaximum maximum: Double) -> Double {
         var value = value
         
         if value < 0 {
@@ -234,3 +237,34 @@ private extension Double {
         return (Double(self) * 180.0) / M_PI
     }
 }
+
+/// Added these functions to support comparison between optional types
+fileprivate func < <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
+    switch (lhs, rhs) {
+    case let (l?, r?):
+        return l < r
+    case (nil, _?):
+        return true
+    default:
+        return false
+    }
+}
+
+fileprivate func >= <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
+    switch (lhs, rhs) {
+    case let (l?, r?):
+        return l >= r
+    default:
+        return !(lhs < rhs)
+    }
+}
+
+fileprivate func <= <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
+    switch (lhs, rhs) {
+    case let (l?, r?):
+        return l <= r
+    default:
+        return !(rhs < lhs)
+    }
+}
+
