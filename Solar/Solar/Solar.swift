@@ -26,7 +26,7 @@
 
 import Foundation
 
-public final class Solar: NSObject {
+public struct Solar {
     
     /// The timezone for the Solar object
     public fileprivate(set) var timeZone: TimeZone = TimeZone.autoupdatingCurrent
@@ -75,7 +75,6 @@ public final class Solar: NSObject {
         self.timeZone = timeZone
         self.latitude = latitude
         self.longitude = longitude
-        super.init()
         
         guard latitude >= -90.0 && latitude <= 90.0 else {
             return nil
@@ -93,7 +92,7 @@ public final class Solar: NSObject {
     
     /// Sets all of the Solar object's sunrise / sunset variables, if possible.
     /// - Note: Can return `nil` objects if sunrise / sunset does not occur on that day.
-    public func calculate() {
+    public mutating func calculate() {
         sunrise = calculate(.sunrise, forDate: date, andZenith: .official)
         sunset = calculate(.sunset, forDate: date, andZenith: .official)
         civilSunrise = calculate(.sunrise, forDate: date, andZenith: .civil)
