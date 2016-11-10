@@ -93,14 +93,14 @@ public struct Solar {
     /// Sets all of the Solar object's sunrise / sunset variables, if possible.
     /// - Note: Can return `nil` objects if sunrise / sunset does not occur on that day.
     public mutating func calculate() {
-        sunrise = calculate(.sunrise, forDate: date, andZenith: .official)
-        sunset = calculate(.sunset, forDate: date, andZenith: .official)
-        civilSunrise = calculate(.sunrise, forDate: date, andZenith: .civil)
-        civilSunset = calculate(.sunset, forDate: date, andZenith: .civil)
-        nauticalSunrise = calculate(.sunrise, forDate: date, andZenith: .nautical)
-        nauticalSunset = calculate(.sunset, forDate: date, andZenith: .nautical)
-        astronomicalSunrise = calculate(.sunrise, forDate: date, andZenith: .astronimical)
-        astronomicalSunset = calculate(.sunset, forDate: date, andZenith: .astronimical)
+        sunrise = calculate(.sunrise, for : date, and : .official)
+        sunset = calculate(.sunset, for : date, and : .official)
+        civilSunrise = calculate(.sunrise, for : date, and : .civil)
+        civilSunset = calculate(.sunset, for : date, and : .civil)
+        nauticalSunrise = calculate(.sunrise, for: date, and: .nautical)
+        nauticalSunset = calculate(.sunset, for: date, and: .nautical)
+        astronomicalSunrise = calculate(.sunrise, for: date, and: .astronimical)
+        astronomicalSunset = calculate(.sunset, for: date, and: .astronimical)
     }
     
     // MARK: - Private functions
@@ -118,11 +118,11 @@ public struct Solar {
         case astronimical = 108
     }
     
-    fileprivate func calculate(_ sunriseSunset: SunriseSunset, forDate date: Date, andZenith zenith: Zenith) -> Date? {
+    fileprivate func calculate(_ sunriseSunset: SunriseSunset, for date: Date, and zenith: Zenith) -> Date? {
         guard let utcTimezone = TimeZone(identifier: "UTC") else { return nil }
         
         // Get the day of the year
-        var calendar = Calendar(identifier: Calendar.Identifier.gregorian)
+        var calendar = Calendar(identifier: .gregorian)
         calendar.timeZone = utcTimezone
         guard let dayInt = calendar.ordinality(of: .day, in: .year, for: date) else { return nil }
         let day = Double(dayInt)
