@@ -29,7 +29,7 @@ import Foundation
 public final class Solar: NSObject {
     
     /// The timezone for the Solar object
-    public fileprivate(set) var timeZone: TimeZone = TimeZone.autoupdatingCurrent
+    public fileprivate(set) var timeZone: TimeZone = .autoupdatingCurrent
     
     /// The latitude that is used for the calculation
     public fileprivate(set) var latitude: Double = 0
@@ -40,14 +40,14 @@ public final class Solar: NSObject {
     /// The date to generate sunrise / sunset times for
     public fileprivate(set) var date: Date
     
-    public fileprivate(set) var sunrise: Date? = nil
-    public fileprivate(set) var sunset: Date? = nil
-    public fileprivate(set) var civilSunrise: Date? = nil
-    public fileprivate(set) var civilSunset: Date? = nil
-    public fileprivate(set) var nauticalSunrise: Date? = nil
-    public fileprivate(set) var nauticalSunset: Date? = nil
-    public fileprivate(set) var astronomicalSunrise: Date? = nil
-    public fileprivate(set) var astronomicalSunset: Date? = nil
+    public fileprivate(set) var sunrise: Date?
+    public fileprivate(set) var sunset: Date?
+    public fileprivate(set) var civilSunrise: Date?
+    public fileprivate(set) var civilSunset: Date?
+    public fileprivate(set) var nauticalSunrise: Date?
+    public fileprivate(set) var nauticalSunset: Date?
+    public fileprivate(set) var astronomicalSunrise: Date?
+    public fileprivate(set) var astronomicalSunset: Date?
     
     /// Whether the location specified by the `latitude` and `longitude` is in daytime on `date`
     /// - Complexity: O(1)
@@ -70,7 +70,7 @@ public final class Solar: NSObject {
     
     // MARK: Init
     
-    public init?(forDate date: Date = Date(), withTimeZone timeZone: TimeZone = TimeZone.autoupdatingCurrent, latitude: Double, longitude: Double) {
+    public init?(forDate date: Date = Date(), withTimeZone timeZone: TimeZone = .autoupdatingCurrent, latitude: Double, longitude: Double) {
         self.date = date
         self.timeZone = timeZone
         self.latitude = latitude
