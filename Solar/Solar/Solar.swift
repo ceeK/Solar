@@ -54,7 +54,7 @@ public final class Solar: NSObject {
     public var isDaytime: Bool {
         let beginningOfDay = sunrise?.timeIntervalSince1970
         let endOfDay = sunset?.timeIntervalSince1970
-        let currentTime = Date().timeIntervalSince1970
+        let currentTime = self.date.timeIntervalSince1970
         
         if currentTime >= beginningOfDay && currentTime <= endOfDay {
             return true
@@ -67,7 +67,7 @@ public final class Solar: NSObject {
     public var isNighttime: Bool {
         return !isDaytime
     }
-    
+
     // MARK: Init
     
     public init?(forDate date: Date = Date(), withTimeZone timeZone: TimeZone = TimeZone.autoupdatingCurrent, latitude: Double, longitude: Double) {
@@ -102,6 +102,22 @@ public final class Solar: NSObject {
         nauticalSunset = calculate(.sunset, forDate: date, andZenith: .nautical)
         astronomicalSunrise = calculate(.sunrise, forDate: date, andZenith: .astronimical)
         astronomicalSunset = calculate(.sunset, forDate: date, andZenith: .astronimical)
+    }
+
+
+    public func isAfterSunset(by seconds: Int) -> Bool {
+        guard (self.isNighttime) else {
+            return false
+        }
+
+        let priorSunset = calculate(.sunset, forDate: self.date.addingTimeInterval(TimeInterval(-seconds)), andZenith: .official)
+
+        guard let ps = priorSunset, let sr = self.sunrise else {
+            print("Solar not initialized")
+            return false
+        }
+        // we want to make sure that the "prior sunset" happens after tomorrow's sunrise.
+        return ps > sr
     }
     
     // MARK: - Private functions
