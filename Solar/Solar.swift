@@ -28,14 +28,11 @@ import Foundation
 
 public final class Solar: NSObject {
     
-    /// The timezone for the Solar object
-    public fileprivate(set) var timeZone: TimeZone = .autoupdatingCurrent
-    
     /// The latitude that is used for the calculation
-    public fileprivate(set) var latitude: Double = 0
+    public let latitude: Double
     
     /// The longitude that is used for the calculation
-    public fileprivate(set) var longitude: Double = 0
+    public let longitude: Double
     
     /// The date to generate sunrise / sunset times for
     public fileprivate(set) var date: Date
@@ -70,9 +67,8 @@ public final class Solar: NSObject {
     
     // MARK: Init
     
-    public init?(forDate date: Date = Date(), withTimeZone timeZone: TimeZone = .autoupdatingCurrent, latitude: Double, longitude: Double) {
+    public init?(for date: Date = Date(), latitude: Double, longitude: Double) {
         self.date = date
-        self.timeZone = timeZone
         self.latitude = latitude
         self.longitude = longitude
         super.init()
@@ -123,7 +119,7 @@ public final class Solar: NSObject {
         guard let utcTimezone = TimeZone(identifier: "UTC") else { return nil }
         
         // Get the day of the year
-        var calendar = Calendar(identifier: Calendar.Identifier.gregorian)
+        var calendar = Calendar(identifier: .gregorian)
         calendar.timeZone = utcTimezone
         guard let dayInt = calendar.ordinality(of: .day, in: .year, for: date) else { return nil }
         let day = Double(dayInt)
@@ -189,23 +185,29 @@ public final class Solar: NSObject {
         // Normalise UT into [0, 24] range
         UT = normalise(UT, withMaximum: 24)
         
-        // Convert UT value to local time zone of lat/long provided
-        var localT = UT + (Double(timeZone.secondsFromGMT(for: date)) / 3600.0)
-        
-        // As applying the offset can push localT above 24 or below 0, we need to normalise
-        localT = normalise(localT, withMaximum: 24)
-        
         // Calculate all of the sunrise's / sunset's date components
-        let hour = floor(localT)
-        let minute = floor((localT - hour) * 60.0)
-        let second = (((localT - hour) * 60) - minute) * 60.0
+        let hour = floor(UT)
+        let minute = floor((UT - hour) * 60.0)
+        let second = (((UT - hour) * 60) - minute) * 60.0
         
-        var components = calendar.dateComponents([.day, .month, .year], from: date)
+        let shouldBeYesterday = lngHour > 0 && UT > 12 && sunriseSunset == .sunrise
+        let shouldBeTomorrow = lngHour < 0 && UT < 12 && sunriseSunset == .sunset
+        
+        let setDate: Date
+        if shouldBeYesterday {
+            setDate = Date(timeInterval: -(60 * 60 * 24), since: date)
+        } else if shouldBeTomorrow {
+            setDate = Date(timeInterval: (60 * 60 * 24), since: date)
+        } else {
+            setDate = date
+        }
+    
+        var components = calendar.dateComponents([.day, .month, .year], from: setDate)
         components.hour = Int(hour)
         components.minute = Int(minute)
         components.second = Int(second)
         
-        calendar.timeZone = timeZone
+        calendar.timeZone = utcTimezone
         return calendar.date(from: components)
     }
     
@@ -239,7 +241,7 @@ private extension Double {
 }
 
 /// Added these functions to support comparison between optional types
-fileprivate func < <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
+private func < <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
     switch (lhs, rhs) {
     case let (l?, r?):
         return l < r
@@ -250,7 +252,7 @@ fileprivate func < <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
     }
 }
 
-fileprivate func >= <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
+private func >= <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
     switch (lhs, rhs) {
     case let (l?, r?):
         return l >= r
@@ -259,7 +261,7 @@ fileprivate func >= <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
     }
 }
 
-fileprivate func <= <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
+private func <= <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
     switch (lhs, rhs) {
     case let (l?, r?):
         return l <= r
