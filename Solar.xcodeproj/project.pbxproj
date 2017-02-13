@@ -10,6 +10,7 @@
 		97837EAE1E4BB1DE000FEF64 /* SolarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97837EAD1E4BB1DE000FEF64 /* SolarTests.swift */; };
 		97837EB01E4BB1DE000FEF64 /* Solar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7FC5B5A1D469B2700C4D3EB /* Solar.framework */; };
 		97837EB71E4D0045000FEF64 /* CorrectResults.json in Resources */ = {isa = PBXBuildFile; fileRef = 97837EB61E4D0045000FEF64 /* CorrectResults.json */; };
+		97DB6DEE1E522BB40009E69B /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97DB6DED1E522BB40009E69B /* City.swift */; };
 		F7FC5B661D469B4E00C4D3EB /* Solar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FC5B651D469B4E00C4D3EB /* Solar.swift */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +29,7 @@
 		97837EAD1E4BB1DE000FEF64 /* SolarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarTests.swift; sourceTree = "<group>"; };
 		97837EAF1E4BB1DE000FEF64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		97837EB61E4D0045000FEF64 /* CorrectResults.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CorrectResults.json; sourceTree = "<group>"; };
+		97DB6DED1E522BB40009E69B /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		F7FC5B5A1D469B2700C4D3EB /* Solar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Solar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7FC5B5F1D469B2700C4D3EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7FC5B651D469B4E00C4D3EB /* Solar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Solar.swift; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 		97837EAC1E4BB1DE000FEF64 /* SolarTests */ = {
 			isa = PBXGroup;
 			children = (
+				97DB6DEC1E522BA10009E69B /* Helpers */,
 				97837EAD1E4BB1DE000FEF64 /* SolarTests.swift */,
 				97837EB81E4D004B000FEF64 /* Resources */,
 			);
@@ -68,6 +71,14 @@
 				97837EB61E4D0045000FEF64 /* CorrectResults.json */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		97DB6DEC1E522BA10009E69B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				97DB6DED1E522BB40009E69B /* City.swift */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 		F7FC5B501D469B2700C4D3EB = {
@@ -208,6 +219,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97DB6DEE1E522BB40009E69B /* City.swift in Sources */,
 				97837EAE1E4BB1DE000FEF64 /* SolarTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -405,6 +417,7 @@
 				97837EB41E4BB1DE000FEF64 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F7FC5B541D469B2700C4D3EB /* Build configuration list for PBXProject "Solar" */ = {
 			isa = XCConfigurationList;

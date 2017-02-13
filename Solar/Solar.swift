@@ -46,25 +46,6 @@ public struct Solar {
     public fileprivate(set) var astronomicalSunrise: Date?
     public fileprivate(set) var astronomicalSunset: Date?
     
-    /// Whether the location specified by the `latitude` and `longitude` is in daytime on `date`
-    /// - Complexity: O(1)
-    public var isDaytime: Bool {
-        let beginningOfDay = sunrise?.timeIntervalSince1970
-        let endOfDay = sunset?.timeIntervalSince1970
-        let currentTime = Date().timeIntervalSince1970
-        
-        if currentTime >= beginningOfDay && currentTime <= endOfDay {
-            return true
-        }
-        return false
-    }
-    
-    /// Whether the location specified by the `latitude` and `longitude` is in nighttime on `date`
-    /// - Complexity: O(1)
-    public var isNighttime: Bool {
-        return !isDaytime
-    }
-    
     // MARK: Init
     
     public init?(for date: Date = Date(), latitude: Double, longitude: Double) {
@@ -89,10 +70,10 @@ public struct Solar {
     /// Sets all of the Solar object's sunrise / sunset variables, if possible.
     /// - Note: Can return `nil` objects if sunrise / sunset does not occur on that day.
     public mutating func calculate() {
-        sunrise = calculate(.sunrise, for : date, and : .official)
-        sunset = calculate(.sunset, for : date, and : .official)
-        civilSunrise = calculate(.sunrise, for : date, and : .civil)
-        civilSunset = calculate(.sunset, for : date, and : .civil)
+        sunrise = calculate(.sunrise, for: date, and: .official)
+        sunset = calculate(.sunset, for: date, and: .official)
+        civilSunrise = calculate(.sunrise, for: date, and: .civil)
+        civilSunset = calculate(.sunset, for: date, and: .civil)
         nauticalSunrise = calculate(.sunrise, for: date, and: .nautical)
         nauticalSunset = calculate(.sunset, for: date, and: .nautical)
         astronomicalSunrise = calculate(.sunrise, for: date, and: .astronimical)
@@ -227,6 +208,36 @@ public struct Solar {
     
 }
 
+extension Solar {
+    
+    /// Whether the location specified by the `latitude` and `longitude` is in daytime on `date`
+    /// - Complexity: O(1)
+    public var isDaytime: Bool {
+        guard
+            let sunrise = sunrise,
+            let sunset = sunset
+        else {
+            return false
+        }
+        
+        let beginningOfDay = sunrise.timeIntervalSince1970
+        let endOfDay = sunset.timeIntervalSince1970
+        let currentTime = self.date.timeIntervalSince1970
+        
+        let isSunriseOrLater = currentTime >= beginningOfDay
+        let isBeforeSunset = currentTime < endOfDay
+    
+        return isSunriseOrLater && isBeforeSunset
+    }
+    
+    /// Whether the location specified by the `latitude` and `longitude` is in nighttime on `date`
+    /// - Complexity: O(1)
+    public var isNighttime: Bool {
+        return !isDaytime
+    }
+    
+}
+
 // MARK: - Helper extensions
 
 private extension Double {
@@ -238,34 +249,3 @@ private extension Double {
         return (Double(self) * 180.0) / M_PI
     }
 }
-
-/// Added these functions to support comparison between optional types
-private func < <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
-    switch (lhs, rhs) {
-    case let (l?, r?):
-        return l < r
-    case (nil, _?):
-        return true
-    default:
-        return false
-    }
-}
-
-private func >= <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
-    switch (lhs, rhs) {
-    case let (l?, r?):
-        return l >= r
-    default:
-        return !(lhs < rhs)
-    }
-}
-
-private func <= <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
-    switch (lhs, rhs) {
-    case let (l?, r?):
-        return l <= r
-    default:
-        return !(rhs < lhs)
-    }
-}
-

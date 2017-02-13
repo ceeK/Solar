@@ -15,6 +15,10 @@ final class SolarTests: XCTestCase {
     
     private let testDate = Date(timeIntervalSince1970: 1486598400)
     
+    /// How accurate, in minutes either side of the actual sunrise sunset, we want to be
+    /// This is necessary as the algorithm uses assumptions during calculation
+    private let testAccuracy: TimeInterval = 60 * 5
+    
     private lazy var cities: [City] = {
         guard
             let resultsURLString = Bundle(for: type(of: self)).path(forResource: "CorrectResults", ofType: "json"),
@@ -28,25 +32,6 @@ final class SolarTests: XCTestCase {
         return cityDictionaries.map(City.init(json:))
     }()
     
-    func testIsDayTime() {
-        let city = cities.first!
-        let solar = Solar(for: testDate, latitude: city.latitude, longitude: city.longitude)
-        
-        guard
-            let sunset = solar?.sunset,
-            let sunrise = solar?.sunrise
-        else {
-            XCTFail("Cannot get sunset and sunrise")
-            return
-        }
-        
-        
-    }
-    
-    func testIsNightTime() {
-        
-    }
-    
     func testSunrise() {
         for city in cities {
             let solar = Solar(for: testDate, latitude: city.latitude, longitude: city.longitude)
@@ -58,9 +43,14 @@ final class SolarTests: XCTestCase {
                 return
             }
             
-            XCTAssertEqualWithAccuracy(sunrise.timeIntervalSince1970, city.sunrise.timeIntervalSince1970, accuracy: (60 * 5), "\(city.name): \(sunrise) not close to \(city.sunrise)")
+            XCTAssertEqualWithAccuracy(sunrise.timeIntervalSince1970, city.sunrise.timeIntervalSince1970, accuracy: testAccuracy, "\(city.name): \(sunrise) not close to \(city.sunrise)")
         }
-        
+    }
+    
+    func testSunrise_isNil_whenNoSunriseOccurs() {
+        let solar = Solar(for: testDate, latitude: 78.2186, longitude: 15.64007) // Location: Longyearbyen
+        XCTAssertNotNil(solar)
+        XCTAssertNil(solar?.sunrise)
     }
     
     func testSunset() {
@@ -70,53 +60,93 @@ final class SolarTests: XCTestCase {
             guard
                 let sunset = solar?.sunset
             else {
-                XCTFail("Sunrise cannot be generated for city \(city.name)")
+                XCTFail("Sunset cannot be generated for city \(city.name)")
                 return
             }
             
-            XCTAssertEqualWithAccuracy(sunset.timeIntervalSince1970, city.sunset.timeIntervalSince1970, accuracy: (60 * 5), "\(city.name): \(sunset) not close to \(city.sunset)")
+            XCTAssertEqualWithAccuracy(sunset.timeIntervalSince1970, city.sunset.timeIntervalSince1970, accuracy: testAccuracy, "\(city.name): \(sunset) not close to \(city.sunset)")
         }
-
     }
     
-}
-
-// MARK: - Helpers
-
-private extension DateFormatter {
+    func testSunset_isNil_whenNoSunsetOccurs() {
+        let solar = Solar(for: testDate, latitude: 78.2186, longitude: 15.64007) // Location: Longyearbyen
+        XCTAssertNotNil(solar)
+        XCTAssertNil(solar?.sunset)
+    }
     
-    @nonobjc static var isoDateFormatter: DateFormatter = {
-        var dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
-        return dateFormatter
-    }()
-    
-}
-
-private struct City {
-    let name: String
-    let latitude: Double
-    let longitude: Double
-    let sunrise: Date
-    let sunset: Date
-    
-    init(json: [String: Any]) {
+    func testIsDayTime_isTrue_betweenSunriseAndSunset() {
+        let daytime = Date(timeIntervalSince1970: 1486641600) // noon
+        let city = cities.first(where: { $0.name == "London" })!
+        
         guard
-            let name = json["city"] as? String,
-            let latitude = json["latitude"] as? Double,
-            let longitude = json["longitude"] as? Double,
-            let sunriseString = json["sunrise"] as? String,
-            let sunsetString = json["sunset"] as? String,
-            let sunrise = DateFormatter.isoDateFormatter.date(from: sunriseString),
-            let sunset = DateFormatter.isoDateFormatter.date(from: sunsetString)
+            let solar = Solar(for: daytime, latitude: city.latitude, longitude: city.longitude)
         else {
-            fatalError("Could not instantiate a city from JSON: \(json)")
+            XCTFail("Cannot get solar")
+            return
         }
         
-        self.name = name
-        self.latitude = latitude
-        self.longitude = longitude
-        self.sunrise = sunrise
-        self.sunset = sunset
+        XCTAssertTrue(solar.isDaytime, "isDaytime is false for date: \(daytime) with sunrise: \(solar.sunrise!), sunset: \(solar.sunset!)")
+        XCTAssertFalse(solar.isNighttime, "isNighttime is true for date: \(daytime) with sunrise: \(solar.sunrise!), sunset: \(solar.sunset!)")
     }
+    
+    func testIsDayTime_isTrue_exactlyAtSunrise() {
+        let sunrise = Date(timeIntervalSince1970: 1486625181)
+        let city = cities.first(where: { $0.name == "London" })!
+        
+        guard
+            let solar = Solar(for: sunrise, latitude: city.latitude, longitude: city.longitude)
+        else {
+            XCTFail("Cannot get solar")
+            return
+        }
+        
+        XCTAssertTrue(solar.isDaytime, "isDaytime is false for date: \(sunrise) with sunrise: \(solar.sunrise!), sunset: \(solar.sunset!)")
+        XCTAssertFalse(solar.isNighttime, "isNighttime is true for date: \(sunrise) with sunrise: \(solar.sunrise!), sunset: \(solar.sunset!)")
+    }
+    
+    func testIsDayTime_isFalse_exactlyAtSunset() {
+        let sunset = Date(timeIntervalSince1970: 1486659846)
+        let city = cities.first(where: { $0.name == "London" })!
+        
+        guard
+            let solar = Solar(for: sunset, latitude: city.latitude, longitude: city.longitude)
+        else {
+            XCTFail("Cannot get solar")
+            return
+        }
+                
+        XCTAssertFalse(solar.isDaytime, "isDaytime is false for date: \(sunset) with sunrise: \(solar.sunrise!), sunset: \(solar.sunset!)")
+        XCTAssertTrue(solar.isNighttime, "isNighttime is true for date: \(sunset) with sunrise: \(solar.sunrise!), sunset: \(solar.sunset!)")
+    }
+    
+    func testIsDayTime_isFalse_beforeSunrise() {
+        let beforeSunrise = Date(timeIntervalSince1970: 1486624980)
+        let city = cities.first(where: { $0.name == "London" })!
+        
+        guard
+            let solar = Solar(for: beforeSunrise, latitude: city.latitude, longitude: city.longitude)
+        else {
+            XCTFail("Cannot get solar")
+            return
+        }
+        
+        XCTAssertFalse(solar.isDaytime, "isDaytime is true for date: \(beforeSunrise) with sunrise: \(solar.sunrise!), sunset: \(solar.sunset!)")
+        XCTAssertTrue(solar.isNighttime, "isNighttime is false for date: \(beforeSunrise) with sunrise: \(solar.sunrise!), sunset: \(solar.sunset!)")
+    }
+    
+    func testIsDayTime_isFalse_afterSunset() {
+        let afterSunset = Date(timeIntervalSince1970: 1486659960)
+        let city = cities.first(where: { $0.name == "London" })!
+        
+        guard
+            let solar = Solar(for: afterSunset, latitude: city.latitude, longitude: city.longitude)
+        else {
+            XCTFail("Cannot get solar")
+            return
+        }
+        
+        XCTAssertFalse(solar.isDaytime, "isDaytime is true for date: \(afterSunset) with sunrise: \(solar.sunrise!), sunset: \(solar.sunset!)")
+        XCTAssertTrue(solar.isNighttime, "isNighttime is false for date: \(afterSunset) with sunrise: \(solar.sunrise!), sunset: \(solar.sunset!)")
+    }
+    
 }
