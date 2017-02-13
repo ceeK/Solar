@@ -1,0 +1,8 @@
+language: objective-c
+
+xcode_project: Solar.xcodeproj
+xcode_scheme: SolarTests
+xcode_sdk: iphonesimulator10.2
+
+script:
+- xcodebuild clean build test -project Solar.xcodeproj -scheme SolarTests
