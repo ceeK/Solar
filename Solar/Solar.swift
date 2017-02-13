@@ -26,7 +26,7 @@
 
 import Foundation
 
-public final class Solar: NSObject {
+public struct Solar {
     
     /// The latitude that is used for the calculation
     public let latitude: Double
@@ -71,7 +71,6 @@ public final class Solar: NSObject {
         self.date = date
         self.latitude = latitude
         self.longitude = longitude
-        super.init()
         
         guard latitude >= -90.0 && latitude <= 90.0 else {
             return nil
@@ -89,15 +88,15 @@ public final class Solar: NSObject {
     
     /// Sets all of the Solar object's sunrise / sunset variables, if possible.
     /// - Note: Can return `nil` objects if sunrise / sunset does not occur on that day.
-    public func calculate() {
-        sunrise = calculate(.sunrise, forDate: date, andZenith: .official)
-        sunset = calculate(.sunset, forDate: date, andZenith: .official)
-        civilSunrise = calculate(.sunrise, forDate: date, andZenith: .civil)
-        civilSunset = calculate(.sunset, forDate: date, andZenith: .civil)
-        nauticalSunrise = calculate(.sunrise, forDate: date, andZenith: .nautical)
-        nauticalSunset = calculate(.sunset, forDate: date, andZenith: .nautical)
-        astronomicalSunrise = calculate(.sunrise, forDate: date, andZenith: .astronimical)
-        astronomicalSunset = calculate(.sunset, forDate: date, andZenith: .astronimical)
+    public mutating func calculate() {
+        sunrise = calculate(.sunrise, for : date, and : .official)
+        sunset = calculate(.sunset, for : date, and : .official)
+        civilSunrise = calculate(.sunrise, for : date, and : .civil)
+        civilSunset = calculate(.sunset, for : date, and : .civil)
+        nauticalSunrise = calculate(.sunrise, for: date, and: .nautical)
+        nauticalSunset = calculate(.sunset, for: date, and: .nautical)
+        astronomicalSunrise = calculate(.sunrise, for: date, and: .astronimical)
+        astronomicalSunset = calculate(.sunset, for: date, and: .astronimical)
     }
     
     // MARK: - Private functions
@@ -115,7 +114,7 @@ public final class Solar: NSObject {
         case astronimical = 108
     }
     
-    fileprivate func calculate(_ sunriseSunset: SunriseSunset, forDate date: Date, andZenith zenith: Zenith) -> Date? {
+    fileprivate func calculate(_ sunriseSunset: SunriseSunset, for date: Date, and zenith: Zenith) -> Date? {
         guard let utcTimezone = TimeZone(identifier: "UTC") else { return nil }
         
         // Get the day of the year
