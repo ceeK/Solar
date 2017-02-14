@@ -5,4 +5,4 @@ xcode_scheme: SolarTests
 xcode_sdk: iphonesimulator10.2
 
 script:
-- xcodebuild clean build test -project Solar.xcodeproj -scheme Solar -destination 'platform=iOS Simulator,name=iPhone 7,OS=10.2'
+- xcodebuild clean build test -project Solar.xcodeproj -scheme Solar -destination 'platform=iOS Simulator,name=iPhone 6s,OS=9.3'
