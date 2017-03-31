@@ -242,10 +242,10 @@ extension Solar {
 
 private extension Double {
     var degreesToRadians: Double {
-        return Double(self) * (M_PI / 180.0)
+        return Double(self) * (Double.pi / 180.0)
     }
     
     var radiansToDegrees: Double {
-        return (Double(self) * 180.0) / M_PI
+        return (Double(self) * 180.0) / Double.pi
     }
 }
