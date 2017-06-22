@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		1410E9C81EF12C1E001829A5 /* Solar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FC5B651D469B4E00C4D3EB /* Solar.swift */; };
-		97837EAE1E4BB1DE000FEF64 /* Solar_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97837EAD1E4BB1DE000FEF64 /* Solar_iOSTests.swift */; };
-		97837EB01E4BB1DE000FEF64 /* Solar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7FC5B5A1D469B2700C4D3EB /* Solar.framework */; };
-		97837EB71E4D0045000FEF64 /* CorrectResults.json in Resources */ = {isa = PBXBuildFile; fileRef = 97837EB61E4D0045000FEF64 /* CorrectResults.json */; };
-		97DB6DEE1E522BB40009E69B /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97DB6DED1E522BB40009E69B /* City.swift */; };
+		14381E7A1EF96100008E9826 /* Solar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7FC5B5A1D469B2700C4D3EB /* Solar.framework */; };
+		14456B851EF96AC000D76A4D /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14456B831EF96ABA00D76A4D /* City.swift */; };
+		14456B881EF96ACD00D76A4D /* Solar_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14456B861EF96ACA00D76A4D /* Solar_iOSTests.swift */; };
+		14456B8D1EF96AE200D76A4D /* CorrectResults.json in Resources */ = {isa = PBXBuildFile; fileRef = 14456B891EF96AD900D76A4D /* CorrectResults.json */; };
 		F7FC5B661D469B4E00C4D3EB /* Solar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FC5B651D469B4E00C4D3EB /* Solar.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,11 +29,11 @@
 		1410E9B71EF12AD4001829A5 /* Info-iOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
 		1410E9B81EF12AD4001829A5 /* Info-watchOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-watchOS.plist"; sourceTree = "<group>"; };
 		1410E9C01EF12B5A001829A5 /* Solar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Solar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		14456B831EF96ABA00D76A4D /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = City.swift; path = "Solar iOSTests/City.swift"; sourceTree = "<group>"; };
+		14456B861EF96ACA00D76A4D /* Solar_iOSTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Solar_iOSTests.swift; path = "Solar iOSTests/Solar_iOSTests.swift"; sourceTree = "<group>"; };
+		14456B891EF96AD900D76A4D /* CorrectResults.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = CorrectResults.json; path = "Solar iOSTests/CorrectResults.json"; sourceTree = "<group>"; };
+		14456B8A1EF96AD900D76A4D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Solar iOSTests/Info.plist"; sourceTree = "<group>"; };
 		97837EAB1E4BB1DE000FEF64 /* Solar iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Solar iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		97837EAD1E4BB1DE000FEF64 /* Solar_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solar_iOSTests.swift; sourceTree = "<group>"; };
-		97837EAF1E4BB1DE000FEF64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		97837EB61E4D0045000FEF64 /* CorrectResults.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CorrectResults.json; sourceTree = "<group>"; };
-		97DB6DED1E522BB40009E69B /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		F7FC5B5A1D469B2700C4D3EB /* Solar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Solar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7FC5B651D469B4E00C4D3EB /* Solar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Solar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -50,7 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97837EB01E4BB1DE000FEF64 /* Solar.framework in Frameworks */,
+				14381E7A1EF96100008E9826 /* Solar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,39 +64,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		97837EAC1E4BB1DE000FEF64 /* Solar iOSTests */ = {
+		14456B801EF96A8F00D76A4D /* Solar iOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				97DB6DEC1E522BA10009E69B /* Helpers */,
-				97837EAD1E4BB1DE000FEF64 /* Solar_iOSTests.swift */,
-				97837EB81E4D004B000FEF64 /* Resources */,
+				14456B861EF96ACA00D76A4D /* Solar_iOSTests.swift */,
+				14456B811EF96A9E00D76A4D /* Helpers */,
+				14456B821EF96AA500D76A4D /* Resources */,
 			);
 			name = "Solar iOSTests";
-			path = SolarTests;
 			sourceTree = "<group>";
 		};
-		97837EB81E4D004B000FEF64 /* Resources */ = {
+		14456B811EF96A9E00D76A4D /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				97837EAF1E4BB1DE000FEF64 /* Info.plist */,
-				97837EB61E4D0045000FEF64 /* CorrectResults.json */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		97DB6DEC1E522BA10009E69B /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				97DB6DED1E522BB40009E69B /* City.swift */,
+				14456B831EF96ABA00D76A4D /* City.swift */,
 			);
 			name = Helpers;
+			sourceTree = "<group>";
+		};
+		14456B821EF96AA500D76A4D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				14456B8A1EF96AD900D76A4D /* Info.plist */,
+				14456B891EF96AD900D76A4D /* CorrectResults.json */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		F7FC5B501D469B2700C4D3EB = {
 			isa = PBXGroup;
 			children = (
 				F7FC5B5C1D469B2700C4D3EB /* Solar */,
-				97837EAC1E4BB1DE000FEF64 /* Solar iOSTests */,
+				14456B801EF96A8F00D76A4D /* Solar iOSTests */,
 				F7FC5B5B1D469B2700C4D3EB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -202,7 +201,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Chris Howell";
 				TargetAttributes = {
 					1410E9BF1EF12B5A001829A5 = {
@@ -251,7 +250,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97837EB71E4D0045000FEF64 /* CorrectResults.json in Resources */,
+				14456B8D1EF96AE200D76A4D /* CorrectResults.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,8 +276,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97DB6DEE1E522BB40009E69B /* City.swift in Sources */,
-				97837EAE1E4BB1DE000FEF64 /* Solar_iOSTests.swift in Sources */,
+				14456B851EF96AC000D76A4D /* City.swift in Sources */,
+				14456B881EF96ACD00D76A4D /* Solar_iOSTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,7 +358,7 @@
 			buildSettings = {
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				DEVELOPMENT_TEAM = 6N8U6BB8MB;
-				INFOPLIST_FILE = SolarTests/Info.plist;
+				INFOPLIST_FILE = "Solar iOSTests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.chrishowell.SolarTests;
@@ -374,7 +373,7 @@
 			buildSettings = {
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				DEVELOPMENT_TEAM = 6N8U6BB8MB;
-				INFOPLIST_FILE = SolarTests/Info.plist;
+				INFOPLIST_FILE = "Solar iOSTests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.chrishowell.SolarTests;
@@ -426,6 +425,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0.1;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -470,6 +470,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0.1;
 				TARGETED_DEVICE_FAMILY = "1,2";

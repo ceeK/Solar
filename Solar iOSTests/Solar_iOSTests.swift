@@ -22,8 +22,7 @@ final class Solar_iOSTests: XCTestCase {
     private lazy var cities: [City] = {
         guard
             let resultsURLString = Bundle(for: type(of: self)).path(forResource: "CorrectResults", ofType: "json"),
-            let resultsURL = URL(string: "file:///" + resultsURLString),
-            let data = try? Data(contentsOf: resultsURL),
+            let data = try? Data(contentsOf: URL(fileURLWithPath: resultsURLString)),
             let dictionary = try? JSONSerialization.jsonObject(with: data, options: []),
             let cityDictionaries = dictionary as? [[String : Any]]
         else {
