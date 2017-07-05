@@ -6,4 +6,5 @@ xcode_sdk: iphonesimulator9.3
 osx_image: xcode8
 
 script:
-- xcodebuild clean build test -project Solar.xcodeproj -scheme 'Solar iOS' -destination 'platform=iOS Simulator,name=iPhone 6s,OS=9.3'
+- xcodebuild clean build -project Solar.xcodeproj -scheme 'Solar iOS' -destination 'platform=iOS Simulator,name=iPhone 6s,OS=10.3'
+- travis_retry xcodebuild test -project Solar.xcodeproj -scheme 'Solar iOS' -destination 'platform=iOS Simulator,name=iPhone 6s,OS=10.3'
