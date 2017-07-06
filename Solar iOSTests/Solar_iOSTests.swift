@@ -1,6 +1,6 @@
 //
-//  SolarTests.swift
-//  SolarTests
+//  Solar_iOSTests.swift
+//  Solar_iOSTests
 //
 //  Created by Chris Howell on 08/02/2017.
 //  Copyright © 2017 Chris Howell. All rights reserved.
@@ -11,7 +11,7 @@ import XCTest
 @testable
 import Solar
 
-final class SolarTests: XCTestCase {
+final class Solar_iOSTests: XCTestCase {
     
     private let testDate = Date(timeIntervalSince1970: 1486598400)
     
@@ -22,8 +22,7 @@ final class SolarTests: XCTestCase {
     private lazy var cities: [City] = {
         guard
             let resultsURLString = Bundle(for: type(of: self)).path(forResource: "CorrectResults", ofType: "json"),
-            let resultsURL = URL(string: "file:///" + resultsURLString),
-            let data = try? Data(contentsOf: resultsURL),
+            let data = try? Data(contentsOf: URL(fileURLWithPath: resultsURLString)),
             let dictionary = try? JSONSerialization.jsonObject(with: data, options: []),
             let cityDictionaries = dictionary as? [[String : Any]]
         else {

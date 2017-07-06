@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		97837EAE1E4BB1DE000FEF64 /* SolarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97837EAD1E4BB1DE000FEF64 /* SolarTests.swift */; };
-		97837EB01E4BB1DE000FEF64 /* Solar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7FC5B5A1D469B2700C4D3EB /* Solar.framework */; };
-		97837EB71E4D0045000FEF64 /* CorrectResults.json in Resources */ = {isa = PBXBuildFile; fileRef = 97837EB61E4D0045000FEF64 /* CorrectResults.json */; };
-		97DB6DEE1E522BB40009E69B /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97DB6DED1E522BB40009E69B /* City.swift */; };
+		1410E9C81EF12C1E001829A5 /* Solar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FC5B651D469B4E00C4D3EB /* Solar.swift */; };
+		14381E7A1EF96100008E9826 /* Solar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7FC5B5A1D469B2700C4D3EB /* Solar.framework */; };
+		14456B851EF96AC000D76A4D /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14456B831EF96ABA00D76A4D /* City.swift */; };
+		14456B881EF96ACD00D76A4D /* Solar_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14456B861EF96ACA00D76A4D /* Solar_iOSTests.swift */; };
+		14456B8D1EF96AE200D76A4D /* CorrectResults.json in Resources */ = {isa = PBXBuildFile; fileRef = 14456B891EF96AD900D76A4D /* CorrectResults.json */; };
 		F7FC5B661D469B4E00C4D3EB /* Solar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FC5B651D469B4E00C4D3EB /* Solar.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,22 +26,31 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		97837EAB1E4BB1DE000FEF64 /* SolarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SolarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		97837EAD1E4BB1DE000FEF64 /* SolarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarTests.swift; sourceTree = "<group>"; };
-		97837EAF1E4BB1DE000FEF64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		97837EB61E4D0045000FEF64 /* CorrectResults.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CorrectResults.json; sourceTree = "<group>"; };
-		97DB6DED1E522BB40009E69B /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		1410E9B71EF12AD4001829A5 /* Info-iOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
+		1410E9B81EF12AD4001829A5 /* Info-watchOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-watchOS.plist"; sourceTree = "<group>"; };
+		1410E9C01EF12B5A001829A5 /* Solar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Solar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		14456B831EF96ABA00D76A4D /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = City.swift; path = "Solar iOSTests/City.swift"; sourceTree = "<group>"; };
+		14456B861EF96ACA00D76A4D /* Solar_iOSTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Solar_iOSTests.swift; path = "Solar iOSTests/Solar_iOSTests.swift"; sourceTree = "<group>"; };
+		14456B891EF96AD900D76A4D /* CorrectResults.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = CorrectResults.json; path = "Solar iOSTests/CorrectResults.json"; sourceTree = "<group>"; };
+		14456B8A1EF96AD900D76A4D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Solar iOSTests/Info.plist"; sourceTree = "<group>"; };
+		97837EAB1E4BB1DE000FEF64 /* Solar iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Solar iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7FC5B5A1D469B2700C4D3EB /* Solar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Solar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F7FC5B5F1D469B2700C4D3EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7FC5B651D469B4E00C4D3EB /* Solar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Solar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1410E9BC1EF12B5A001829A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		97837EA81E4BB1DE000FEF64 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97837EB01E4BB1DE000FEF64 /* Solar.framework in Frameworks */,
+				14381E7A1EF96100008E9826 /* Solar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,38 +64,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		97837EAC1E4BB1DE000FEF64 /* SolarTests */ = {
+		14456B801EF96A8F00D76A4D /* Solar iOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				97DB6DEC1E522BA10009E69B /* Helpers */,
-				97837EAD1E4BB1DE000FEF64 /* SolarTests.swift */,
-				97837EB81E4D004B000FEF64 /* Resources */,
+				14456B861EF96ACA00D76A4D /* Solar_iOSTests.swift */,
+				14456B811EF96A9E00D76A4D /* Helpers */,
+				14456B821EF96AA500D76A4D /* Resources */,
 			);
-			path = SolarTests;
+			name = "Solar iOSTests";
 			sourceTree = "<group>";
 		};
-		97837EB81E4D004B000FEF64 /* Resources */ = {
+		14456B811EF96A9E00D76A4D /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				97837EAF1E4BB1DE000FEF64 /* Info.plist */,
-				97837EB61E4D0045000FEF64 /* CorrectResults.json */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		97DB6DEC1E522BA10009E69B /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				97DB6DED1E522BB40009E69B /* City.swift */,
+				14456B831EF96ABA00D76A4D /* City.swift */,
 			);
 			name = Helpers;
+			sourceTree = "<group>";
+		};
+		14456B821EF96AA500D76A4D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				14456B8A1EF96AD900D76A4D /* Info.plist */,
+				14456B891EF96AD900D76A4D /* CorrectResults.json */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		F7FC5B501D469B2700C4D3EB = {
 			isa = PBXGroup;
 			children = (
 				F7FC5B5C1D469B2700C4D3EB /* Solar */,
-				97837EAC1E4BB1DE000FEF64 /* SolarTests */,
+				14456B801EF96A8F00D76A4D /* Solar iOSTests */,
 				F7FC5B5B1D469B2700C4D3EB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,7 +104,8 @@
 			isa = PBXGroup;
 			children = (
 				F7FC5B5A1D469B2700C4D3EB /* Solar.framework */,
-				97837EAB1E4BB1DE000FEF64 /* SolarTests.xctest */,
+				97837EAB1E4BB1DE000FEF64 /* Solar iOSTests.xctest */,
+				1410E9C01EF12B5A001829A5 /* Solar.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -103,7 +114,8 @@
 			isa = PBXGroup;
 			children = (
 				F7FC5B651D469B4E00C4D3EB /* Solar.swift */,
-				F7FC5B5F1D469B2700C4D3EB /* Info.plist */,
+				1410E9B71EF12AD4001829A5 /* Info-iOS.plist */,
+				1410E9B81EF12AD4001829A5 /* Info-watchOS.plist */,
 			);
 			path = Solar;
 			sourceTree = "<group>";
@@ -111,6 +123,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		1410E9BD1EF12B5A001829A5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F7FC5B571D469B2700C4D3EB /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -121,9 +140,27 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		97837EAA1E4BB1DE000FEF64 /* SolarTests */ = {
+		1410E9BF1EF12B5A001829A5 /* Solar watchOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 97837EB51E4BB1DE000FEF64 /* Build configuration list for PBXNativeTarget "SolarTests" */;
+			buildConfigurationList = 1410E9C51EF12B5A001829A5 /* Build configuration list for PBXNativeTarget "Solar watchOS" */;
+			buildPhases = (
+				1410E9BB1EF12B5A001829A5 /* Sources */,
+				1410E9BC1EF12B5A001829A5 /* Frameworks */,
+				1410E9BD1EF12B5A001829A5 /* Headers */,
+				1410E9BE1EF12B5A001829A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Solar watchOS";
+			productName = Solar;
+			productReference = 1410E9C01EF12B5A001829A5 /* Solar.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		97837EAA1E4BB1DE000FEF64 /* Solar iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97837EB51E4BB1DE000FEF64 /* Build configuration list for PBXNativeTarget "Solar iOSTests" */;
 			buildPhases = (
 				97837EA71E4BB1DE000FEF64 /* Sources */,
 				97837EA81E4BB1DE000FEF64 /* Frameworks */,
@@ -134,14 +171,14 @@
 			dependencies = (
 				97837EB21E4BB1DE000FEF64 /* PBXTargetDependency */,
 			);
-			name = SolarTests;
+			name = "Solar iOSTests";
 			productName = SolarTests;
-			productReference = 97837EAB1E4BB1DE000FEF64 /* SolarTests.xctest */;
+			productReference = 97837EAB1E4BB1DE000FEF64 /* Solar iOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		F7FC5B591D469B2700C4D3EB /* Solar */ = {
+		F7FC5B591D469B2700C4D3EB /* Solar iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F7FC5B621D469B2700C4D3EB /* Build configuration list for PBXNativeTarget "Solar" */;
+			buildConfigurationList = F7FC5B621D469B2700C4D3EB /* Build configuration list for PBXNativeTarget "Solar iOS" */;
 			buildPhases = (
 				F7FC5B551D469B2700C4D3EB /* Sources */,
 				F7FC5B561D469B2700C4D3EB /* Frameworks */,
@@ -152,7 +189,7 @@
 			);
 			dependencies = (
 			);
-			name = Solar;
+			name = "Solar iOS";
 			productName = Solar;
 			productReference = F7FC5B5A1D469B2700C4D3EB /* Solar.framework */;
 			productType = "com.apple.product-type.framework";
@@ -164,12 +201,16 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Chris Howell";
 				TargetAttributes = {
+					1410E9BF1EF12B5A001829A5 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Manual;
+					};
 					97837EAA1E4BB1DE000FEF64 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 34J4G6G665;
+						DevelopmentTeam = 6N8U6BB8MB;
 						ProvisioningStyle = Automatic;
 					};
 					F7FC5B591D469B2700C4D3EB = {
@@ -190,18 +231,26 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F7FC5B591D469B2700C4D3EB /* Solar */,
-				97837EAA1E4BB1DE000FEF64 /* SolarTests */,
+				F7FC5B591D469B2700C4D3EB /* Solar iOS */,
+				1410E9BF1EF12B5A001829A5 /* Solar watchOS */,
+				97837EAA1E4BB1DE000FEF64 /* Solar iOSTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1410E9BE1EF12B5A001829A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		97837EA91E4BB1DE000FEF64 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97837EB71E4D0045000FEF64 /* CorrectResults.json in Resources */,
+				14456B8D1EF96AE200D76A4D /* CorrectResults.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,12 +264,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1410E9BB1EF12B5A001829A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1410E9C81EF12C1E001829A5 /* Solar.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		97837EA71E4BB1DE000FEF64 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97DB6DEE1E522BB40009E69B /* City.swift in Sources */,
-				97837EAE1E4BB1DE000FEF64 /* SolarTests.swift in Sources */,
+				14456B851EF96AC000D76A4D /* City.swift in Sources */,
+				14456B881EF96ACD00D76A4D /* Solar_iOSTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,18 +294,71 @@
 /* Begin PBXTargetDependency section */
 		97837EB21E4BB1DE000FEF64 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F7FC5B591D469B2700C4D3EB /* Solar */;
+			target = F7FC5B591D469B2700C4D3EB /* Solar iOS */;
 			targetProxy = 97837EB11E4BB1DE000FEF64 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		1410E9C61EF12B5A001829A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Solar/Info-watchOS.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.chrishowell.Solar-watchOS";
+				PRODUCT_NAME = Solar;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Debug;
+		};
+		1410E9C71EF12B5A001829A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Solar/Info-watchOS.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.chrishowell.Solar-watchOS";
+				PRODUCT_NAME = Solar;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Release;
+		};
 		97837EB31E4BB1DE000FEF64 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				DEVELOPMENT_TEAM = 34J4G6G665;
-				INFOPLIST_FILE = SolarTests/Info.plist;
+				DEVELOPMENT_TEAM = 6N8U6BB8MB;
+				INFOPLIST_FILE = "Solar iOSTests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.chrishowell.SolarTests;
@@ -262,8 +372,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				DEVELOPMENT_TEAM = 34J4G6G665;
-				INFOPLIST_FILE = SolarTests/Info.plist;
+				DEVELOPMENT_TEAM = 6N8U6BB8MB;
+				INFOPLIST_FILE = "Solar iOSTests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.chrishowell.SolarTests;
@@ -373,46 +483,59 @@
 		F7FC5B631D469B2700C4D3EB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Solar/Info.plist;
+				INFOPLIST_FILE = "Solar/Info-iOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = me.chrishowell.Solar;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.chrishowell.Solar-iOS";
+				PRODUCT_NAME = Solar;
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0.1;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		F7FC5B641D469B2700C4D3EB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Solar/Info.plist;
+				INFOPLIST_FILE = "Solar/Info-iOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = me.chrishowell.Solar;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.chrishowell.Solar-iOS";
+				PRODUCT_NAME = Solar;
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0.1;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		97837EB51E4BB1DE000FEF64 /* Build configuration list for PBXNativeTarget "SolarTests" */ = {
+		1410E9C51EF12B5A001829A5 /* Build configuration list for PBXNativeTarget "Solar watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1410E9C61EF12B5A001829A5 /* Debug */,
+				1410E9C71EF12B5A001829A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97837EB51E4BB1DE000FEF64 /* Build configuration list for PBXNativeTarget "Solar iOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				97837EB31E4BB1DE000FEF64 /* Debug */,
@@ -430,7 +553,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F7FC5B621D469B2700C4D3EB /* Build configuration list for PBXNativeTarget "Solar" */ = {
+		F7FC5B621D469B2700C4D3EB /* Build configuration list for PBXNativeTarget "Solar iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F7FC5B631D469B2700C4D3EB /* Debug */,

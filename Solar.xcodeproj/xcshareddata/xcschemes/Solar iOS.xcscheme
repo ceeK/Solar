@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0800"
+   LastUpgradeVersion = "0830"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -16,7 +16,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F7FC5B591D469B2700C4D3EB"
                BuildableName = "Solar.framework"
-               BlueprintName = "Solar"
+               BlueprintName = "Solar iOS"
                ReferencedContainer = "container:Solar.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -29,8 +29,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "97837EAA1E4BB1DE000FEF64"
-               BuildableName = "SolarTests.xctest"
-               BlueprintName = "SolarTests"
+               BuildableName = "Solar iOSTests.xctest"
+               BlueprintName = "Solar iOSTests"
                ReferencedContainer = "container:Solar.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -48,8 +48,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "97837EAA1E4BB1DE000FEF64"
-               BuildableName = "SolarTests.xctest"
-               BlueprintName = "SolarTests"
+               BuildableName = "Solar iOSTests.xctest"
+               BlueprintName = "Solar iOSTests"
                ReferencedContainer = "container:Solar.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -59,7 +59,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F7FC5B591D469B2700C4D3EB"
             BuildableName = "Solar.framework"
-            BlueprintName = "Solar"
+            BlueprintName = "Solar iOS"
             ReferencedContainer = "container:Solar.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -81,7 +81,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F7FC5B591D469B2700C4D3EB"
             BuildableName = "Solar.framework"
-            BlueprintName = "Solar"
+            BlueprintName = "Solar iOS"
             ReferencedContainer = "container:Solar.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -99,7 +99,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F7FC5B591D469B2700C4D3EB"
             BuildableName = "Solar.framework"
-            BlueprintName = "Solar"
+            BlueprintName = "Solar iOS"
             ReferencedContainer = "container:Solar.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

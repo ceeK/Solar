@@ -7,6 +7,7 @@ Pod::Spec.new do |s|
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author             = { "Chris Howell" => "chris.kevin.howell@gmail.com" }
   s.ios.deployment_target = '8.0'
+  s.watchos.deployment_target = '3.0'
   s.tvos.deployment_target = '9.0'
   s.osx.deployment_target = '10.9'
   s.source       = { :git => "https://github.com/ceek/Solar.git", :tag => "#{s.version}" }
