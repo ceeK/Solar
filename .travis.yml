@@ -3,7 +3,7 @@ language: objective-c
 xcode_project: Solar.xcodeproj
 xcode_scheme: SolarTests
 xcode_sdk: iphonesimulator9.3
-osx_image: xcode8
+osx_image: xcode9
 
 script:
 - xcodebuild clean build -project Solar.xcodeproj -scheme 'Solar iOS' -destination 'platform=iOS Simulator,name=iPhone 6s,OS=10.0'

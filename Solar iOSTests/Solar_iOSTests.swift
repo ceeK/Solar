@@ -42,7 +42,7 @@ final class Solar_iOSTests: XCTestCase {
                 return
             }
             
-            XCTAssertEqualWithAccuracy(sunrise.timeIntervalSince1970, city.sunrise.timeIntervalSince1970, accuracy: testAccuracy, "\(city.name): \(sunrise) not close to \(city.sunrise)")
+            XCTAssertEqual(sunrise.timeIntervalSince1970, city.sunrise.timeIntervalSince1970, accuracy: testAccuracy, "\(city.name): \(sunrise) not close to \(city.sunrise)")
         }
     }
     
@@ -64,7 +64,7 @@ final class Solar_iOSTests: XCTestCase {
                 return
             }
             
-            XCTAssertEqualWithAccuracy(sunset.timeIntervalSince1970, city.sunset.timeIntervalSince1970, accuracy: testAccuracy, "\(city.name): \(sunset) not close to \(city.sunset)")
+            XCTAssertEqual(sunset.timeIntervalSince1970, city.sunset.timeIntervalSince1970, accuracy: testAccuracy, "\(city.name): \(sunset) not close to \(city.sunset)")
         }
     }
     
