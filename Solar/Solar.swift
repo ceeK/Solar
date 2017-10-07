@@ -25,14 +25,12 @@
 //
 
 import Foundation
+import CoreLocation
 
 public struct Solar {
     
-    /// The latitude that is used for the calculation
-    public let latitude: Double
-    
-    /// The longitude that is used for the calculation
-    public let longitude: Double
+    /// The coordinate that is used for the calculation
+    public let coordinate: CLLocationCoordinate2D
     
     /// The date to generate sunrise / sunset times for
     public fileprivate(set) var date: Date
@@ -48,18 +46,14 @@ public struct Solar {
     
     // MARK: Init
     
-    public init?(for date: Date = Date(), latitude: Double, longitude: Double) {
+    public init?(for date: Date = Date(), coordinate: CLLocationCoordinate2D) {
         self.date = date
-        self.latitude = latitude
-        self.longitude = longitude
         
-        guard latitude >= -90.0 && latitude <= 90.0 else {
+        guard CLLocationCoordinate2DIsValid(coordinate) else {
             return nil
         }
         
-        guard longitude >= -180.0 && longitude <= 180.0 else {
-            return nil
-        }
+        self.coordinate = coordinate
         
         // Fill this Solar object with relevant data
         calculate()
@@ -105,7 +99,7 @@ public struct Solar {
         let day = Double(dayInt)
         
         // Convert longitude to hour value and calculate an approx. time
-        let lngHour = longitude / 15
+        let lngHour = coordinate.longitude / 15
         
         let hourTime: Double = sunriseSunset == .sunrise ? 6 : 18
         let t = day + ((hourTime - lngHour) / 24)
@@ -140,7 +134,7 @@ public struct Solar {
         let cosDec = cos(asin(sinDec))
         
         // Calculate the Sun's local hour angle
-        let cosH = (cos(zenith.rawValue.degreesToRadians) - (sinDec * sin(latitude.degreesToRadians))) / (cosDec * cos(latitude.degreesToRadians))
+        let cosH = (cos(zenith.rawValue.degreesToRadians) - (sinDec * sin(coordinate.latitude.degreesToRadians))) / (cosDec * cos(coordinate.latitude.degreesToRadians))
         
         // No sunrise
         guard cosH < 1 else {
@@ -181,7 +175,7 @@ public struct Solar {
         } else {
             setDate = date
         }
-    
+        
         var components = calendar.dateComponents([.day, .month, .year], from: setDate)
         components.hour = Int(hour)
         components.minute = Int(minute)
@@ -216,8 +210,8 @@ extension Solar {
         guard
             let sunrise = sunrise,
             let sunset = sunset
-        else {
-            return false
+            else {
+                return false
         }
         
         let beginningOfDay = sunrise.timeIntervalSince1970
@@ -226,7 +220,7 @@ extension Solar {
         
         let isSunriseOrLater = currentTime >= beginningOfDay
         let isBeforeSunset = currentTime < endOfDay
-    
+        
         return isSunriseOrLater && isBeforeSunset
     }
     
