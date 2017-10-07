@@ -11,6 +11,14 @@ import XCTest
 @testable
 import Solar
 
+private extension Date {
+	func simpleTime(calendar: Calendar) -> String {
+		let df = DateFormatter()
+		df.dateFormat = "MM-dd HH:mmZ"
+		return df.string(from: self)
+	}
+}
+
 final class SolarTests: XCTestCase {
     
     private let testDate = Date(timeIntervalSince1970: 1486598400)
@@ -148,5 +156,24 @@ final class SolarTests: XCTestCase {
         XCTAssertFalse(solar.isDaytime, "isDaytime is true for date: \(afterSunset) with sunrise: \(solar.sunrise!), sunset: \(solar.sunset!)")
         XCTAssertTrue(solar.isNighttime, "isNighttime is false for date: \(afterSunset) with sunrise: \(solar.sunrise!), sunset: \(solar.sunset!)")
     }
-    
+	
+    func testLateTimeCorrectReturnDate() {
+        let lateTime = Date(timeIntervalSince1970: 1499130000)
+        let city = cities.first(where: { $0.name == "Washington, D. C." })!
+		
+        let calendar: Calendar = {
+            var calendar = Calendar.current
+            calendar.timeZone = TimeZone(identifier: "EST")!
+            return calendar
+        }()
+		
+        guard let solar = Solar(for: lateTime, latitude: city.latitude, longitude: city.longitude, withCalendar: calendar) else {
+            XCTFail("Cannot get solar")
+            return
+        }
+		
+        let sameDate = calendar.compare(lateTime, to: solar.sunset!, toGranularity: .day)
+		
+        XCTAssertTrue(sameDate == .orderedSame, "The sunset given \(solar.sunset!.simpleTime(calendar: calendar)) is not same day as given date \(lateTime.simpleTime(calendar: calendar))")
+    }
 }

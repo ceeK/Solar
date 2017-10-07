@@ -26,6 +26,12 @@
 
 import Foundation
 
+private let calendar: Calendar = {
+    var calendar = Calendar(identifier: .gregorian)
+    calendar.timeZone = TimeZone(identifier: "UTC")!
+    return calendar
+}()
+
 public struct Solar {
     
     /// The latitude that is used for the calculation
@@ -48,8 +54,7 @@ public struct Solar {
     
     // MARK: Init
     
-    public init?(for date: Date = Date(), latitude: Double, longitude: Double) {
-        self.date = date
+    public init?(for date: Date = Date(), latitude: Double, longitude: Double, withCalendar: Calendar? = nil) {
         self.latitude = latitude
         self.longitude = longitude
         
@@ -60,7 +65,14 @@ public struct Solar {
         guard longitude >= -180.0 && longitude <= 180.0 else {
             return nil
         }
-        
+			
+        if let offsetCal = withCalendar {
+            let offset = offsetCal.timeZone.secondsFromGMT(for: date)
+            self.date = date.addingTimeInterval(Double(offset))
+        } else {
+            self.date = date
+        }
+
         // Fill this Solar object with relevant data
         calculate()
     }
@@ -96,11 +108,7 @@ public struct Solar {
     }
     
     fileprivate func calculate(_ sunriseSunset: SunriseSunset, for date: Date, and zenith: Zenith) -> Date? {
-        guard let utcTimezone = TimeZone(identifier: "UTC") else { return nil }
-        
         // Get the day of the year
-        var calendar = Calendar(identifier: .gregorian)
-        calendar.timeZone = utcTimezone
         guard let dayInt = calendar.ordinality(of: .day, in: .year, for: date) else { return nil }
         let day = Double(dayInt)
         
@@ -186,8 +194,7 @@ public struct Solar {
         components.hour = Int(hour)
         components.minute = Int(minute)
         components.second = Int(second)
-        
-        calendar.timeZone = utcTimezone
+			
         return calendar.date(from: components)
     }
     
