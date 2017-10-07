@@ -21,7 +21,7 @@ extension DateFormatter {
 
 struct City {
     let name: String
-    let coordinates: CLLocationCoordinate2D
+    let coordinate: CLLocationCoordinate2D
     let sunrise: Date
     let sunset: Date
     
@@ -37,13 +37,13 @@ struct City {
             else {
                 fatalError("Could not instantiate a city from JSON: \(json)")
         }
-        let coordinates = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
-        if !CLLocationCoordinate2DIsValid(coordinates) {
-            fatalError("City has invalid coordinates: \(coordinates)")
+        let coordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+        guard CLLocationCoordinate2DIsValid(coordinate) else {
+            fatalError("City has invalid coordinates: \(coordinate)")
         }
         
         self.name = name
-        self.coordinates = coordinates
+        self.coordinate = coordinate
         self.sunrise = sunrise
         self.sunset = sunset
     }

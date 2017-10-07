@@ -29,8 +29,8 @@ import CoreLocation
 
 public struct Solar {
     
-    /// The coordinates (latitude and longitude) that is used for the calculation
-    public let coordinates: CLLocationCoordinate2D
+    /// The coordinate that is used for the calculation
+    public let coordinate: CLLocationCoordinate2D
     
     /// The date to generate sunrise / sunset times for
     public fileprivate(set) var date: Date
@@ -46,14 +46,14 @@ public struct Solar {
     
     // MARK: Init
     
-    public init?(for date: Date = Date(), coordinates: CLLocationCoordinate2D) {
+    public init?(for date: Date = Date(), coordinate: CLLocationCoordinate2D) {
         self.date = date
         
-        if !CLLocationCoordinate2DIsValid(coordinates) {
+        guard CLLocationCoordinate2DIsValid(coordinate) else {
             return nil
         }
         
-        self.coordinates = coordinates
+        self.coordinate = coordinate
         
         // Fill this Solar object with relevant data
         calculate()
@@ -99,7 +99,7 @@ public struct Solar {
         let day = Double(dayInt)
         
         // Convert longitude to hour value and calculate an approx. time
-        let lngHour = coordinates.longitude / 15
+        let lngHour = coordinate.longitude / 15
         
         let hourTime: Double = sunriseSunset == .sunrise ? 6 : 18
         let t = day + ((hourTime - lngHour) / 24)
@@ -134,7 +134,7 @@ public struct Solar {
         let cosDec = cos(asin(sinDec))
         
         // Calculate the Sun's local hour angle
-        let cosH = (cos(zenith.rawValue.degreesToRadians) - (sinDec * sin(coordinates.latitude.degreesToRadians))) / (cosDec * cos(coordinates.latitude.degreesToRadians))
+        let cosH = (cos(zenith.rawValue.degreesToRadians) - (sinDec * sin(coordinate.latitude.degreesToRadians))) / (cosDec * cos(coordinate.latitude.degreesToRadians))
         
         // No sunrise
         guard cosH < 1 else {
