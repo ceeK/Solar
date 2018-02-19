@@ -9,7 +9,7 @@
 
 A Swift helper for generating Sunrise and Sunset times. 
 
-Solar performs its calculations locally using an algorithm from the [United States Naval Observatory](http://williams.best.vwh.net/sunrise_sunset_algorithm.htm), and thus does not require the use of a network.
+Solar performs its calculations locally using an algorithm from the [United States Naval Observatory](http://edwilliams.org/sunrise_sunset_algorithm.htm), and thus does not require the use of a network.
 
 ## Usage
 
