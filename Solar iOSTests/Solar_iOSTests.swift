@@ -86,8 +86,8 @@ final class Solar_iOSTests: XCTestCase {
             return
         }
         
-        XCTAssertTrue(solar.isDaytime, "isDaytime is false for date: \(daytime) with sunrise: \(solar.sunrise!), sunset: \(solar.sunset!)")
-        XCTAssertFalse(solar.isNighttime, "isNighttime is true for date: \(daytime) with sunrise: \(solar.sunrise!), sunset: \(solar.sunset!)")
+        XCTAssertTrue(solar.isDayTime, "isDaytime is false for date: \(daytime) with sunrise: \(solar.sunrise!), sunset: \(solar.sunset!)")
+        XCTAssertFalse(solar.isNightTime, "isNighttime is true for date: \(daytime) with sunrise: \(solar.sunrise!), sunset: \(solar.sunset!)")
     }
     
     func testIsDayTime_isTrue_exactlyAtSunrise() {
@@ -101,8 +101,8 @@ final class Solar_iOSTests: XCTestCase {
             return
         }
         
-        XCTAssertTrue(solar.isDaytime, "isDaytime is false for date: \(sunrise) with sunrise: \(solar.sunrise!), sunset: \(solar.sunset!)")
-        XCTAssertFalse(solar.isNighttime, "isNighttime is true for date: \(sunrise) with sunrise: \(solar.sunrise!), sunset: \(solar.sunset!)")
+        XCTAssertTrue(solar.isDayTime, "isDaytime is false for date: \(sunrise) with sunrise: \(solar.sunrise!), sunset: \(solar.sunset!)")
+        XCTAssertFalse(solar.isNightTime, "isNighttime is true for date: \(sunrise) with sunrise: \(solar.sunrise!), sunset: \(solar.sunset!)")
     }
     
     func testIsDayTime_isFalse_exactlyAtSunset() {
@@ -116,8 +116,8 @@ final class Solar_iOSTests: XCTestCase {
             return
         }
                 
-        XCTAssertFalse(solar.isDaytime, "isDaytime is false for date: \(sunset) with sunrise: \(solar.sunrise!), sunset: \(solar.sunset!)")
-        XCTAssertTrue(solar.isNighttime, "isNighttime is true for date: \(sunset) with sunrise: \(solar.sunrise!), sunset: \(solar.sunset!)")
+        XCTAssertFalse(solar.isDayTime, "isDaytime is false for date: \(sunset) with sunrise: \(solar.sunrise!), sunset: \(solar.sunset!)")
+        XCTAssertTrue(solar.isNightTime, "isNighttime is true for date: \(sunset) with sunrise: \(solar.sunrise!), sunset: \(solar.sunset!)")
     }
     
     func testIsDayTime_isFalse_beforeSunrise() {
@@ -131,8 +131,8 @@ final class Solar_iOSTests: XCTestCase {
             return
         }
         
-        XCTAssertFalse(solar.isDaytime, "isDaytime is true for date: \(beforeSunrise) with sunrise: \(solar.sunrise!), sunset: \(solar.sunset!)")
-        XCTAssertTrue(solar.isNighttime, "isNighttime is false for date: \(beforeSunrise) with sunrise: \(solar.sunrise!), sunset: \(solar.sunset!)")
+        XCTAssertFalse(solar.isDayTime, "isDaytime is true for date: \(beforeSunrise) with sunrise: \(solar.sunrise!), sunset: \(solar.sunset!)")
+        XCTAssertTrue(solar.isNightTime, "isNighttime is false for date: \(beforeSunrise) with sunrise: \(solar.sunrise!), sunset: \(solar.sunset!)")
     }
     
     func testIsDayTime_isFalse_afterSunset() {
@@ -146,8 +146,8 @@ final class Solar_iOSTests: XCTestCase {
             return
         }
         
-        XCTAssertFalse(solar.isDaytime, "isDaytime is true for date: \(afterSunset) with sunrise: \(solar.sunrise!), sunset: \(solar.sunset!)")
-        XCTAssertTrue(solar.isNighttime, "isNighttime is false for date: \(afterSunset) with sunrise: \(solar.sunrise!), sunset: \(solar.sunset!)")
+        XCTAssertFalse(solar.isDayTime, "isDaytime is true for date: \(afterSunset) with sunrise: \(solar.sunrise!), sunset: \(solar.sunset!)")
+        XCTAssertTrue(solar.isNightTime, "isNighttime is false for date: \(afterSunset) with sunrise: \(solar.sunrise!), sunset: \(solar.sunset!)")
     }
 
     func testSolar_ShouldReturnNilOnInit_GivenInvalidcoordinate() {
@@ -161,5 +161,12 @@ final class Solar_iOSTests: XCTestCase {
         XCTAssertFalse(CLLocationCoordinate2DIsValid(invalidCoordinate2))
         let solar2 = Solar(for: testDate, coordinate: invalidCoordinate2)
         XCTAssertNil(solar2)
+    }
+
+    func testSolar_implicit_creation_for_currentTime() {
+        let city = cities.first(where: { $0.name == "London" })!
+        let solar = Solar(coordinate: city.coordinate)
+
+        XCTAssertNotNil(solar, "Solar creation work without time")
     }
 }

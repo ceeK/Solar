@@ -33,6 +33,7 @@
 		14456B861EF96ACA00D76A4D /* Solar_iOSTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Solar_iOSTests.swift; path = "Solar iOSTests/Solar_iOSTests.swift"; sourceTree = "<group>"; };
 		14456B891EF96AD900D76A4D /* CorrectResults.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = CorrectResults.json; path = "Solar iOSTests/CorrectResults.json"; sourceTree = "<group>"; };
 		14456B8A1EF96AD900D76A4D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Solar iOSTests/Info.plist"; sourceTree = "<group>"; };
+		55C04150209A25A100A642BC /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		97837EAB1E4BB1DE000FEF64 /* Solar_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Solar_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7FC5B5A1D469B2700C4D3EB /* Solar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Solar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7FC5B651D469B4E00C4D3EB /* Solar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Solar.swift; sourceTree = "<group>"; };
@@ -97,6 +98,7 @@
 				F7FC5B5C1D469B2700C4D3EB /* Solar */,
 				14456B801EF96A8F00D76A4D /* Solar iOSTests */,
 				F7FC5B5B1D469B2700C4D3EB /* Products */,
+				55C04150209A25A100A642BC /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
