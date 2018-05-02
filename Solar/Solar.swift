@@ -232,13 +232,13 @@ public class Solar {
         return isSunriseOrLater && isBeforeSunset ? .day : .night
     }
 
-    public var isDayTime: Bool {
+    public var isDaytime: Bool {
         return self.currentCycle == .day
     }
     
     /// Whether the location specified by the `latitude` and `longitude` is in nighttime on `date`
     /// - Complexity: O(1)
-    public var isNightTime: Bool {
+    public var isNighttime: Bool {
         return self.currentCycle == .night
     }
     
