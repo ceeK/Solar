@@ -3,7 +3,7 @@
 //  SolarExample
 //
 //  Created by Chris Howell on 16/01/2016.
-//  Copyright © 2016 Chris Howell. All rights reserved.
+//  Changed by Brandon Roehl on 02/05/2018.
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the “Software”), to deal
