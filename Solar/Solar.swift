@@ -30,19 +30,9 @@ import CoreLocation
 public class Solar {
     
     /// The coordinate that is used for the calculation
-    public let coordinate: CLLocationCoordinate2D
-    
-    /// The date to generate sunrise / sunset times for
-    public var date: Date? {
-        didSet {
-            self.calculate()
-        }
-    }
-    public var zenith: Zenith {
-        didSet {
-            self.calculate()
-        }
-    }
+    private let coordinate: CLLocationCoordinate2D
+    private var date: Date?
+    private var zenith: Zenith
 
     private var _sunrise: Date?
     public var sunrise: Date? {
@@ -219,39 +209,44 @@ public class Solar {
         
         return value
     }
-    
-}
 
-extension Solar {
-    
+    public enum Cycle {
+        case day
+        case night
+    }
+
     /// Whether the location specified by the `latitude` and `longitude` is in daytime on `date`
     /// - Complexity: O(1)
-    public var isDayTime: Bool {
+    public var currentCycle: Cycle {
         guard let sunrise = sunrise, let sunset = sunset else {
-                return false
+            return .day
         }
-        
+
         let beginningOfDay = sunrise.timeIntervalSince1970
         let endOfDay = sunset.timeIntervalSince1970
         let currentTime = (self.date == nil ? Date() : self.date!).timeIntervalSince1970
-        
+
         let isSunriseOrLater = currentTime >= beginningOfDay
         let isBeforeSunset = currentTime < endOfDay
-        
-        return isSunriseOrLater && isBeforeSunset
+
+        return isSunriseOrLater && isBeforeSunset ? .day : .night
+    }
+
+    public var isDayTime: Bool {
+        return self.currentCycle == .day
     }
     
     /// Whether the location specified by the `latitude` and `longitude` is in nighttime on `date`
     /// - Complexity: O(1)
     public var isNightTime: Bool {
-        return !self.isDayTime
+        return self.currentCycle == .night
     }
     
 }
 
 // MARK: - Helper extensions
 
-private extension Double {
+fileprivate extension Double {
     var degreesToRadians: Double {
         return Double(self) * (Double.pi / 180.0)
     }
