@@ -68,7 +68,7 @@ public class Solar {
         self.coordinate = coordinate
         
         // Fill this Solar object with relevant data
-        calculate()
+        self.calculate()
     }
     
     // MARK: - Public functions
@@ -218,18 +218,19 @@ public class Solar {
     /// Whether the location specified by the `latitude` and `longitude` is in daytime on `date`
     /// - Complexity: O(1)
     public var currentCycle: Cycle {
+
         guard let sunrise = sunrise, let sunset = sunset else {
             return .day
         }
 
-        let beginningOfDay = sunrise.timeIntervalSince1970
-        let endOfDay = sunset.timeIntervalSince1970
-        let currentTime = (self.date == nil ? Date() : self.date!).timeIntervalSince1970
+        // Get the seconds of the begining of the day
+        let beginningOfDay = sunrise.timeIntervalSince1970.truncatingRemainder(dividingBy: 86400)
 
-        let isSunriseOrLater = currentTime >= beginningOfDay
-        let isBeforeSunset = currentTime < endOfDay
+        // Set the beginging of the day to zero
+        let endOfDay = sunset.timeIntervalSince1970.advanced(by: -(beginningOfDay)).truncatingRemainder(dividingBy: 86400)
+        let currentTime = (self.date == nil ? Date() : self.date!).timeIntervalSince1970.advanced(by: -(beginningOfDay)).truncatingRemainder(dividingBy: 86400)
 
-        return isSunriseOrLater && isBeforeSunset ? .day : .night
+        return currentTime < endOfDay ? .day : .night
     }
 
     public var isDaytime: Bool {

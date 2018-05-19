@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:/Users/rjourde/Documents/rjourde/Projects/iOS/Solar/Solar.xcodeproj">
+      location = "group:../Test.playground">
+   </FileRef>
+   <FileRef
+      location = "self:">
    </FileRef>
 </Workspace>
