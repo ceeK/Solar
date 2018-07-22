@@ -201,9 +201,7 @@ public class Solar {
         
         if value < 0 {
             value += maximum
-        }
-        
-        if value > maximum {
+        } else if value > maximum {
             value -= maximum
         }
         
