@@ -162,4 +162,11 @@ final class Solar_iOSTests: XCTestCase {
         let solar2 = Solar(for: testDate, coordinate: invalidCoordinate2)
         XCTAssertNil(solar2)
     }
+
+    func testSolar_implicit_creation_for_currentTime() {
+        let city = cities.first(where: { $0.name == "London" })!
+        let solar = Solar(coordinate: city.coordinate)
+
+        XCTAssertNotNil(solar, "Solar creation work without time")
+    }
 }
