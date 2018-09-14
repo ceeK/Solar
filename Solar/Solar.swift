@@ -28,6 +28,7 @@ import Foundation
 import CoreLocation
 
 public class Solar {
+    public static let lengthOfDay: TimeInterval = 86400
     
     /// The coordinate that is used for the calculation
     private let coordinate: CLLocationCoordinate2D
@@ -222,11 +223,11 @@ public class Solar {
         }
 
         // Get the seconds of the begining of the day
-        let beginningOfDay = sunrise.timeIntervalSince1970.truncatingRemainder(dividingBy: 86400)
+        let beginningOfDay = sunrise.timeIntervalSince1970.truncatingRemainder(dividingBy: Solar.lengthOfDay)
 
         // Set the beginging of the day to zero
-        let endOfDay = sunset.timeIntervalSince1970.advanced(by: -(beginningOfDay)).truncatingRemainder(dividingBy: 86400)
-        let currentTime = (self.date == nil ? Date() : self.date!).timeIntervalSince1970.advanced(by: -(beginningOfDay)).truncatingRemainder(dividingBy: 86400)
+        let endOfDay = sunset.timeIntervalSince1970.advanced(by: -(beginningOfDay)).truncatingRemainder(dividingBy: Solar.lengthOfDay)
+        let currentTime = (self.date == nil ? Date() : self.date!).timeIntervalSince1970.advanced(by: -(beginningOfDay)).truncatingRemainder(dividingBy: Solar.lengthOfDay)
 
         return currentTime < endOfDay ? .day : .night
     }
