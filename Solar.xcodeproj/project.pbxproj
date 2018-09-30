@@ -13,6 +13,7 @@
 		14456B881EF96ACD00D76A4D /* Solar_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14456B861EF96ACA00D76A4D /* Solar_iOSTests.swift */; };
 		14456B8D1EF96AE200D76A4D /* CorrectResults.json in Resources */ = {isa = PBXBuildFile; fileRef = 14456B891EF96AD900D76A4D /* CorrectResults.json */; };
 		4CABE4EA2161610E009BAAB8 /* Solar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FC5B651D469B4E00C4D3EB /* Solar.swift */; };
+		4CABE50A21616FFB009BAAB8 /* Solar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FC5B651D469B4E00C4D3EB /* Solar.swift */; };
 		F7FC5B661D469B4E00C4D3EB /* Solar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FC5B651D469B4E00C4D3EB /* Solar.swift */; };
 /* End PBXBuildFile section */
 
@@ -382,6 +383,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CABE50A21616FFB009BAAB8 /* Solar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
