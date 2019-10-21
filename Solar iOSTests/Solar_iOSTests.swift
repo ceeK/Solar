@@ -8,8 +8,7 @@
 
 import XCTest
 import CoreLocation
-@testable
-import Solar
+@testable import Solar
 
 final class Solar_iOSTests: XCTestCase {
     
