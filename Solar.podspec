@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "Solar"
-  s.version      = "2.1.0"
+  s.version      = "2.2.0"
   s.summary      = "A Swift library for generating Sunrise and Sunset times."
   s.description  = "A Swift library for generating Sunrise and Sunset times. All calculations take place locally without the need for a network request."
   s.homepage     = "http://github.com/ceek/solar"
