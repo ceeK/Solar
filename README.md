@@ -41,7 +41,7 @@ There are several types of sunrise and sunset that Solar generates. They differ 
 
 - **Nautical** (12° below horizon)
 
-- **Astromonical** (18° below horizon)
+- **Astronomical** (18° below horizon)
 
 For more information, see https://www.timeanddate.com/astronomy/different-types-twilight.html
 
