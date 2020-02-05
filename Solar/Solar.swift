@@ -43,6 +43,10 @@ public struct Solar {
     public fileprivate(set) var nauticalSunset: Date?
     public fileprivate(set) var astronomicalSunrise: Date?
     public fileprivate(set) var astronomicalSunset: Date?
+    public fileprivate(set) var sunAllDayType: SunAllDayType?
+    public fileprivate(set) var civilSunAllDayType: SunAllDayType?
+    public fileprivate(set) var nauticalSunAllDayType: SunAllDayType?
+    public fileprivate(set) var astronomicalSunAllDayType: SunAllDayType?
     
     // MARK: Init
     
@@ -61,18 +65,25 @@ public struct Solar {
     
     // MARK: - Public functions
     
+    public enum SunAllDayType {
+        case SunAboveHorizon
+        case SunBelowHorizon
+        case SunRiseAndSet
+    }
+    
     /// Sets all of the Solar object's sunrise / sunset variables, if possible.
     /// - Note: Can return `nil` objects if sunrise / sunset does not occur on that day.
     public mutating func calculate() {
-        sunrise = calculate(.sunrise, for: date, and: .official)
-        sunset = calculate(.sunset, for: date, and: .official)
-        civilSunrise = calculate(.sunrise, for: date, and: .civil)
-        civilSunset = calculate(.sunset, for: date, and: .civil)
-        nauticalSunrise = calculate(.sunrise, for: date, and: .nautical)
-        nauticalSunset = calculate(.sunset, for: date, and: .nautical)
-        astronomicalSunrise = calculate(.sunrise, for: date, and: .astronimical)
-        astronomicalSunset = calculate(.sunset, for: date, and: .astronimical)
+        (sunrise, sunAllDayType) = calculate(.sunrise, for: date, and: .official)
+        (sunset, sunAllDayType) = calculate(.sunset, for: date, and: .official)
+        (civilSunrise, civilSunAllDayType) = calculate(.sunrise, for: date, and: .civil)
+        (civilSunset, civilSunAllDayType) = calculate(.sunset, for: date, and: .civil)
+        (nauticalSunrise, nauticalSunAllDayType) = calculate(.sunrise, for: date, and: .nautical)
+        (nauticalSunset, nauticalSunAllDayType) = calculate(.sunset, for: date, and: .nautical)
+        (astronomicalSunrise, astronomicalSunAllDayType) = calculate(.sunrise, for: date, and: .astronimical)
+        (astronomicalSunset, astronomicalSunAllDayType) = calculate(.sunset, for: date, and: .astronimical)
     }
+    
     
     // MARK: - Private functions
     
@@ -89,13 +100,13 @@ public struct Solar {
         case astronimical = 108
     }
     
-    fileprivate func calculate(_ sunriseSunset: SunriseSunset, for date: Date, and zenith: Zenith) -> Date? {
-        guard let utcTimezone = TimeZone(identifier: "UTC") else { return nil }
+    fileprivate func calculate(_ sunriseSunset: SunriseSunset, for date: Date, and zenith: Zenith) -> (Date?, SunAllDayType?) {
+        guard let utcTimezone = TimeZone(identifier: "UTC") else { return (nil,nil) }
         
         // Get the day of the year
         var calendar = Calendar(identifier: .gregorian)
         calendar.timeZone = utcTimezone
-        guard let dayInt = calendar.ordinality(of: .day, in: .year, for: date) else { return nil }
+        guard let dayInt = calendar.ordinality(of: .day, in: .year, for: date) else { return (nil,nil) }
         let day = Double(dayInt)
         
         // Convert longitude to hour value and calculate an approx. time
@@ -135,15 +146,15 @@ public struct Solar {
         
         // Calculate the Sun's local hour angle
         let cosH = (cos(zenith.rawValue.degreesToRadians) - (sinDec * sin(coordinate.latitude.degreesToRadians))) / (cosDec * cos(coordinate.latitude.degreesToRadians))
-        
+                
         // No sunrise
         guard cosH < 1 else {
-            return nil
+            return (nil, .SunBelowHorizon)
         }
         
         // No sunset
         guard cosH > -1 else {
-            return nil
+            return (nil, .SunAboveHorizon)
         }
         
         // Finish calculating H and convert into hours
@@ -182,7 +193,7 @@ public struct Solar {
         components.second = Int(second)
         
         calendar.timeZone = utcTimezone
-        return calendar.date(from: components)
+        return (calendar.date(from: components), .SunRiseAndSet)
     }
     
     /// Normalises a value between 0 and `maximum`, by adding or subtracting `maximum`
@@ -199,7 +210,6 @@ public struct Solar {
         
         return value
     }
-    
 }
 
 extension Solar {
@@ -207,6 +217,17 @@ extension Solar {
     /// Whether the location specified by the `latitude` and `longitude` is in daytime on `date`
     /// - Complexity: O(1)
     public var isDaytime: Bool {
+        
+        guard let sunAllDayType = sunAllDayType else { return false }
+        
+        guard
+            sunAllDayType == .SunRiseAndSet
+            else {
+                if sunAllDayType == .SunAboveHorizon { return true }
+                
+                return false // Sun always below horizon
+        }
+        
         guard
             let sunrise = sunrise,
             let sunset = sunset
@@ -228,6 +249,105 @@ extension Solar {
     /// - Complexity: O(1)
     public var isNighttime: Bool {
         return !isDaytime
+    }
+    
+    public var isDaytimeCivil: Bool {
+        
+        guard let sunAllDayType = civilSunAllDayType else { return false }
+        
+        guard
+            sunAllDayType == .SunRiseAndSet
+            else {
+                if sunAllDayType == .SunAboveHorizon { return true }
+                
+                return false // Sun always below horizon
+        }
+        
+        guard
+            let sunrise = civilSunrise,
+            let sunset = civilSunset
+            else {
+                return false
+        }
+        
+        let beginningOfDay = sunrise.timeIntervalSince1970
+        let endOfDay = sunset.timeIntervalSince1970
+        let currentTime = self.date.timeIntervalSince1970
+        
+        let isSunriseOrLater = currentTime >= beginningOfDay
+        let isBeforeSunset = currentTime < endOfDay
+        
+        return isSunriseOrLater && isBeforeSunset
+    }
+    
+    public var isNighttimeCivil: Bool {
+        return !isDaytimeCivil
+    }
+    
+    public var isDaytimeNautical: Bool {
+        
+        guard let sunAllDayType = nauticalSunAllDayType else { return false }
+        
+        guard
+            sunAllDayType == .SunRiseAndSet
+            else {
+                if sunAllDayType == .SunAboveHorizon { return true }
+                
+                return false // Sun always below horizon
+        }
+        
+        guard
+            let sunrise = nauticalSunrise,
+            let sunset = nauticalSunset
+            else {
+                return false
+        }
+        
+        let beginningOfDay = sunrise.timeIntervalSince1970
+        let endOfDay = sunset.timeIntervalSince1970
+        let currentTime = self.date.timeIntervalSince1970
+        
+        let isSunriseOrLater = currentTime >= beginningOfDay
+        let isBeforeSunset = currentTime < endOfDay
+        
+        return isSunriseOrLater && isBeforeSunset
+    }
+    
+    public var isNighttimeNautical: Bool {
+        return !isDaytimeNautical
+    }
+    
+    public var isDaytimeAstronomical: Bool {
+        
+        guard let sunAllDayType = astronomicalSunAllDayType else { return false }
+        
+        guard
+            sunAllDayType == .SunRiseAndSet
+            else {
+                if sunAllDayType == .SunAboveHorizon { return true }
+                
+                return false // Sun always below horizon
+        }
+        
+        guard
+            let sunrise = astronomicalSunrise,
+            let sunset = astronomicalSunset
+            else {
+                return false
+        }
+        
+        let beginningOfDay = sunrise.timeIntervalSince1970
+        let endOfDay = sunset.timeIntervalSince1970
+        let currentTime = self.date.timeIntervalSince1970
+        
+        let isSunriseOrLater = currentTime >= beginningOfDay
+        let isBeforeSunset = currentTime < endOfDay
+        
+        return isSunriseOrLater && isBeforeSunset
+    }
+    
+    public var isNighttimeAstronomical: Bool {
+        return !isDaytimeAstronomical
     }
     
 }
