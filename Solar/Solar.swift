@@ -218,23 +218,11 @@ extension Solar {
         let todaySunset = sunset.timeIntervalSince1970
         let currentTime = self.date.timeIntervalSince1970
         
-        var yesterday = Date()
-        if #available(iOSApplicationExtension 13.0, *) {
-            yesterday = date.advanced(by: TimeInterval(exactly: -86400.0)!)
-        } else {
-            
-            yesterday = date.addingTimeInterval(TimeInterval(exactly: -86400.0)!)
-        }
+        let yesterday  = date.addingTimeInterval(TimeInterval(exactly: -86400.0)!)
         let yesterdaySunrise = calculate(.sunrise, for: yesterday, and: .official)?.timeIntervalSince1970
         let yesterdaySunset = calculate(.sunset, for: yesterday, and: .official)?.timeIntervalSince1970
         
-        var tomorrow = Date()
-        if #available(iOSApplicationExtension 13.0, *) {
-            tomorrow = date.advanced(by: TimeInterval(exactly: 86400.0)!)
-        } else {
-            tomorrow = date.addingTimeInterval(TimeInterval(exactly: 86400.0)!)
-        }
-        
+        let tomorrow = date.addingTimeInterval(TimeInterval(exactly: 86400.0)!)
         let tomorrowSunrise = calculate(.sunrise, for: tomorrow, and: .official)?.timeIntervalSince1970
         let tomorrowSunSet = calculate(.sunset, for: tomorrow, and: .official)?.timeIntervalSince1970
         
