@@ -214,14 +214,35 @@ extension Solar {
                 return false
         }
         
-        let beginningOfDay = sunrise.timeIntervalSince1970
-        let endOfDay = sunset.timeIntervalSince1970
+        let todaySunrise = sunrise.timeIntervalSince1970
+        let todaySunset = sunset.timeIntervalSince1970
         let currentTime = self.date.timeIntervalSince1970
         
-        let isSunriseOrLater = currentTime >= beginningOfDay
-        let isBeforeSunset = currentTime < endOfDay
+        var yesterday = Date()
+        if #available(iOSApplicationExtension 13.0, *) {
+            yesterday = date.advanced(by: TimeInterval(exactly: -86400.0)!)
+        } else {
+            
+            yesterday = date.addingTimeInterval(TimeInterval(exactly: -86400.0)!)
+        }
+        let yesterdaySunrise = calculate(.sunrise, for: yesterday, and: .official)?.timeIntervalSince1970
+        let yesterdaySunset = calculate(.sunset, for: yesterday, and: .official)?.timeIntervalSince1970
         
-        return isSunriseOrLater && isBeforeSunset
+        var tomorrow = Date()
+        if #available(iOSApplicationExtension 13.0, *) {
+            tomorrow = date.advanced(by: TimeInterval(exactly: 86400.0)!)
+        } else {
+            tomorrow = date.addingTimeInterval(TimeInterval(exactly: 86400.0)!)
+        }
+        
+        let tomorrowSunrise = calculate(.sunrise, for: tomorrow, and: .official)?.timeIntervalSince1970
+        let tomorrowSunSet = calculate(.sunset, for: tomorrow, and: .official)?.timeIntervalSince1970
+        
+        let isDayYesterday = yesterdaySunrise! < currentTime && currentTime < yesterdaySunset!
+        let isDayToday = todaySunrise < currentTime && currentTime < todaySunset
+        let isDayTomorrow = tomorrowSunrise! < currentTime && currentTime < tomorrowSunSet!
+        
+        return isDayYesterday || isDayToday || isDayTomorrow
     }
     
     /// Whether the location specified by the `latitude` and `longitude` is in nighttime on `date`
