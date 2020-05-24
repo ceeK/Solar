@@ -26,8 +26,8 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages which this package depends on.
         .target(
             name: "Solar",
-            path: "Solar",
-            dependencies: []),
+            dependencies: [],
+            path: "Solar"),
         .testTarget(
             name: "Solar iOSTests",
             dependencies: ["Solar"]),
