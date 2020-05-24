@@ -6,7 +6,7 @@ import PackageDescription
 let package = Package(
     name: "Solar",
     platforms: [
-        .iO(.v8),
+        .iOS(.v8),
         .watchOS(.v3),
         .tvOS(.v9),
         .macOS(.v10_9),
