@@ -59,7 +59,11 @@ let isNighttime = solar.isNighttime
 
 ## Installation
 
-Solar is available through CocoaPods and Carthage. 
+Solar is available through Swift Package Manager, CocoaPods, and Carthage.
+
+### Swift Package Manager
+
+From within Xcode, click on **File > Swift Packages > ...Add Package Depdency**. Then paste the URL of this github repository and follow the steps.
 
 ### Cocoapods
 
