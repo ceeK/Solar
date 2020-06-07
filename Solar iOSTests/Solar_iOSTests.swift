@@ -19,10 +19,8 @@ final class Solar_iOSTests: XCTestCase {
     private let testAccuracy: TimeInterval = 60 * 5
     
     private lazy var cities: [City] = {
-        guard
-            let resultsURLString = Bundle(for: type(of: self)).path(forResource: "CorrectResults", ofType: "json"),
-            let data = try? Data(contentsOf: URL(fileURLWithPath: resultsURLString)),
-            let dictionary = try? JSONSerialization.jsonObject(with: data, options: []),
+        let data = Data(correctResults.utf8)
+        guard let dictionary = try? JSONSerialization.jsonObject(with: data, options: []),
             let cityDictionaries = dictionary as? [[String : Any]]
         else {
             fatalError("Correct results JSON doesn't appear to be included in the test bundle.")
