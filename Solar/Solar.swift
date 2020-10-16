@@ -34,7 +34,8 @@ public struct Solar {
     
     /// The date to generate sunrise / sunset times for
     public fileprivate(set) var date: Date
-    
+    public fileprivate(set) var timezone: TimeZone
+
     public fileprivate(set) var sunrise: Date?
     public fileprivate(set) var sunset: Date?
     public fileprivate(set) var civilSunrise: Date?
@@ -46,9 +47,10 @@ public struct Solar {
     
     // MARK: Init
     
-    public init?(for date: Date = Date(), coordinate: CLLocationCoordinate2D) {
+    public init?(for date: Date = Date(), coordinate: CLLocationCoordinate2D, timezone: TimeZone = TimeZone(identifier: "UTC")!) {
         self.date = date
-        
+        self.timezone = timezone
+
         guard CLLocationCoordinate2DIsValid(coordinate) else {
             return nil
         }
@@ -91,11 +93,16 @@ public struct Solar {
     
     fileprivate func calculate(_ sunriseSunset: SunriseSunset, for date: Date, and zenith: Zenith) -> Date? {
         guard let utcTimezone = TimeZone(identifier: "UTC") else { return nil }
-        
+
         // Get the day of the year
         var calendar = Calendar(identifier: .gregorian)
         calendar.timeZone = utcTimezone
-        guard let dayInt = calendar.ordinality(of: .day, in: .year, for: date) else { return nil }
+        
+        // Workaround a bug: if it is late enough in MY timezone to be tomorrow in UTC, Solar was returning tomorrow's sun times.
+        let secondsFromGMT = TimeInterval(self.timezone.secondsFromGMT())
+        let dateOffset = date.addingTimeInterval(secondsFromGMT)
+
+        guard let dayInt = calendar.ordinality(of: .day, in: .year, for: dateOffset) else { return nil }
         let day = Double(dayInt)
         
         // Convert longitude to hour value and calculate an approx. time
@@ -169,11 +176,11 @@ public struct Solar {
         
         let setDate: Date
         if shouldBeYesterday {
-            setDate = Date(timeInterval: -(60 * 60 * 24), since: date)
+            setDate = Date(timeInterval: -(60 * 60 * 24), since: dateOffset)
         } else if shouldBeTomorrow {
-            setDate = Date(timeInterval: (60 * 60 * 24), since: date)
+            setDate = Date(timeInterval: (60 * 60 * 24), since: dateOffset)
         } else {
-            setDate = date
+            setDate = dateOffset
         }
         
         var components = calendar.dateComponents([.day, .month, .year], from: setDate)

@@ -159,4 +159,46 @@ final class Solar_iOSTests: XCTestCase {
         let solar2 = Solar(for: testDate, coordinate: invalidCoordinate2)
         XCTAssertNil(solar2)
     }
+    
+    
+    ///    Sun and Moon Data for One Day
+    ///
+    ///    U.S. Naval Observatory
+    ///    Astronomical Applications Department
+    ///
+    ///    (Longitude W 94° 0', Latitude N 39° 0')
+    ///
+    ///    Friday, May 3, 2019    Universal Time - 5h
+    ///    Sun
+    ///    Begin civil twilight    05:47
+    ///    Sunrise    06:16
+    ///    Sun transit    13:13
+    ///    Sunset    20:11
+    ///    End civil twilight    20:40
+    ///    Moon
+    ///    Moonrise    05:56
+    ///    Moon transit    12:24
+    ///    Moonset    19:00
+    ///
+    /// [https://aa.usno.navy.mil/data/docs/RS_OneDay.php](https://aa.usno.navy.mil/data/docs/RS_OneDay.php)
+    func testPlainLatLon() {
+        let tdf: DateFormatter = {
+            let df = DateFormatter()
+            df.dateFormat = "MM/dd/yyyy HH:mm zzz"
+            return df
+        }()
+        let testCriticalEvening = tdf.date(from: "05/03/2019 19:20 CDT")!
+        let testLocation: CLLocation = CLLocation(latitude: 39.00, longitude: -94.0)
+        let expectedSunrise = "05/03/2019 06:16 CDT"
+        let expectedSunset = "05/03/2019 20:11 CDT"
+        let timezone = TimeZone(identifier: "America/Chicago")!
+        let solar = Solar(for: testCriticalEvening, coordinate: testLocation.coordinate, timezone: timezone)
+
+        XCTAssertEqual(solar!.sunrise!.timeIntervalSince1970, tdf.date(from: expectedSunrise)!.timeIntervalSince1970, accuracy: testAccuracy,
+                  "Expected: \(expectedSunrise), Received: \(tdf.string(from: solar!.sunrise!))")
+        XCTAssertEqual(solar!.sunset!.timeIntervalSince1970, tdf.date(from: expectedSunset)!.timeIntervalSince1970, accuracy: testAccuracy,
+                  "Expected: \(expectedSunset), Received: \(tdf.string(from: solar!.sunset!))")
+    }
+
+    
 }
