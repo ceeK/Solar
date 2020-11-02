@@ -19,8 +19,14 @@ final class Solar_iOSTests: XCTestCase {
     private let testAccuracy: TimeInterval = 60 * 5
     
     private lazy var cities: [City] = {
+        #if SWIFT_PACKAGE
+        let bundle = Bundle.module
+        #else
+        let bundle = Bundle(for: type(of: self))
+        #endif
+
         guard
-            let resultsURLString = Bundle(for: type(of: self)).path(forResource: "CorrectResults", ofType: "json"),
+            let resultsURLString = bundle.path(forResource: "CorrectResults", ofType: "json"),
             let data = try? Data(contentsOf: URL(fileURLWithPath: resultsURLString)),
             let dictionary = try? JSONSerialization.jsonObject(with: data, options: []),
             let cityDictionaries = dictionary as? [[String : Any]]
