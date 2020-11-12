@@ -142,7 +142,7 @@
 		14456B821EF96AA500D76A4D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				4F334845248D905B00BAAD4E /* CorrectResults.swift */,
+				4F1E608F25631120003F4E68 /* CorrectResults.json */,
 				14456B8A1EF96AD900D76A4D /* Info.plist */,
 			);
 			name = Resources;
@@ -430,6 +430,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F1E609025631120003F4E68 /* CorrectResults.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -515,7 +516,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7FC5B661D469B4E00C4D3EB /* Solar.swift in Sources */,
-				4F334846248D905C00BAAD4E /* CorrectResults.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

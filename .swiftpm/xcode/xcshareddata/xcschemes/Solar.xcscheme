@@ -20,20 +20,6 @@
                ReferencedContainer = "container:">
             </BuildableReference>
          </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "Solar Tests"
-               BuildableName = "Solar Tests"
-               BlueprintName = "Solar Tests"
-               ReferencedContainer = "container:">
-            </BuildableReference>
-         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -46,9 +32,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "Solar Tests"
-               BuildableName = "Solar Tests"
-               BlueprintName = "Solar Tests"
+               BlueprintIdentifier = "SolarTests"
+               BuildableName = "SolarTests"
+               BlueprintName = "SolarTests"
                ReferencedContainer = "container:">
             </BuildableReference>
          </TestableReference>

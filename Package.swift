@@ -1,4 +1,4 @@
-// swift-tools-version:5.2
+// swift-tools-version:5.3
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -11,7 +11,7 @@ let package = Package(
     ],
     dependencies: [],
     targets: [
-        .target(name: "Solar", path: "Solar"),
-        .testTarget(name: "Solar Tests", dependencies: ["Solar"], path: "Solar iOSTests"),
+        .target(name: "Solar", path: "Solar", exclude: ["Info-iOS.plist", "Info-watchOS.plist"]),
+        .testTarget(name: "SolarTests", dependencies: ["Solar"], path: "Solar iOSTests", exclude: ["Info.plist"], resources: [.copy("CorrectResults.json")]),
     ]
 )
