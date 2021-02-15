@@ -16,17 +16,17 @@ Solar performs its calculations locally using an algorithm from the [United Stat
 Solar simply needs a date and a location specified as a latitude and longitude:
 
 ```swift
-let solar = Solar(for: someDate, latitude: 51.528308, longitude: -0.1340267)
-let sunrise = solar.sunrise
-let sunset = solar.sunset
+let solar = Solar(for: someDate, coordinate: CLLocationCoordinate2D(latitude: 51.528308, longitude: -0.1340267))
+let sunrise = solar?.sunrise
+let sunset = solar?.sunset
 ```
 
-We can also omit providing a date if we just need the sunrise and sunset for today:
+We can also omit providing a date if we just need the sunrise and sunset for the current date and time:
 
 ```swift
-let solar = Solar(latitude: 51.528308, longitude: -0.1340267)
-let sunrise = solar.sunrise
-let sunset = solar.sunset
+let solar = Solar(coordinate: CLLocationCoordinate2D(latitude: 51.528308, longitude: -0.1340267))
+let sunrise = solar?.sunrise
+let sunset = solar?.sunset
 ```
 
 Note that all dates are UTC. Don't forget to format your date into the appropriate timezone if required.
