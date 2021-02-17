@@ -29,7 +29,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "97837EAA1E4BB1DE000FEF64"
-               BuildableName = "SolarTests iOS.xctest"
+               BuildableName = "SolarTests.xctest"
                BlueprintName = "SolarTests iOS"
                ReferencedContainer = "container:Solar.xcodeproj">
             </BuildableReference>
@@ -57,7 +57,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "97837EAA1E4BB1DE000FEF64"
-               BuildableName = "SolarTests iOS.xctest"
+               BuildableName = "SolarTests.xctest"
                BlueprintName = "SolarTests iOS"
                ReferencedContainer = "container:Solar.xcodeproj">
             </BuildableReference>

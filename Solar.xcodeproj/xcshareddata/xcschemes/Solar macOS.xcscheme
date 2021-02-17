@@ -20,6 +20,20 @@
                ReferencedContainer = "container:Solar.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "DA85D67C25DCADA8008A2AD4"
+               BuildableName = "SolarTests.xctest"
+               BlueprintName = "SolarTests macOS"
+               ReferencedContainer = "container:Solar.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -41,9 +55,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4CABE4C121615F0C009BAAB8"
-               BuildableName = "Solar_macOSTests.xctest"
-               BlueprintName = "Solar_macOSTests"
+               BlueprintIdentifier = "DA85D67C25DCADA8008A2AD4"
+               BuildableName = "SolarTests.xctest"
+               BlueprintName = "SolarTests macOS"
                ReferencedContainer = "container:Solar.xcodeproj">
             </BuildableReference>
          </TestableReference>

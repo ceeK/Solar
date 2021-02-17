@@ -10,7 +10,7 @@ import XCTest
 import CoreLocation
 @testable import Solar
 
-final class Solar_iOSTests: XCTestCase {
+final class SolarTests: XCTestCase {
     
     private let testDate = Date(timeIntervalSince1970: 1486598400)
     
