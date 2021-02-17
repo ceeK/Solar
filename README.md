@@ -59,27 +59,43 @@ let isNighttime = solar.isNighttime
 
 ## Installation
 
-Solar is available through CocoaPods and Carthage. 
+Solar is available through CocoaPods, Carthage, and Swift Package Manager. 
 
-### Cocoapods
+### CocoaPods
 
-To install, simply add the following line to your podfile:
+To include Solar in an application, add the following [pod](https://guides.cocoapods.org/syntax/podfile.html#pod) to your Podfile, then run `pod install`:
 
 ```ruby
-pod "Solar"
+pod "Solar", "~> 1.2"
 ```
 
-Then run `pod install`
+To include Solar in another pod, add the following [dependency](https://guides.cocoapods.org/syntax/podspec.html#dependency) to your podspec:
+
+```ruby
+s.dependency "Solar", "~> 1.2"
+```
 
 ### Carthage
 
-Add the `ceek/Solar` project to your [Cartfile](https://github.com/Carthage/Carthage/blob/master/Documentation/Artifacts.md#cartfile)
+Add the `ceek/Solar` project to your [Cartfile](https://github.com/Carthage/Carthage/blob/master/Documentation/Artifacts.md#cartfile), then follow the rest of [Carthage’s XCFramework installation instructions](https://github.com/Carthage/Carthage#building-platform-independent-xcframeworks-xcode-12-and-above):
 
 ```ruby
-github "ceeK/Solar"
+github "ceeK/Solar" ~> 1.2
 ```
 
-Then run `carthage update`
+### Swift Package Manager
+
+To include Solar in an application in Xcode:
+
+1. Go to File ‣ Swift Packages ‣ Add Package Dependency.
+1. Enter `https://github.com/ceeK/Solar.git` as the package repository and click Next.
+1. Set Rules to Version, Up to Next Major, and enter `1.2.0` as the minimum version requirement. Click Next.
+
+To include Solar in another Swift package, add the following [dependency](https://developer.apple.com/documentation/swift_packages/package/dependency) to your Package.swift:
+
+```swift
+.package(name: "Solar", url: "https://github.com/ceeK/Solar.git", from: "1.2.0")
+```
 
 # License 
 
