@@ -36,7 +36,7 @@
 		14456B8A1EF96AD900D76A4D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4CABE4E2216160CF009BAAB8 /* Solar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Solar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CABE500216169DE009BAAB8 /* Solar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Solar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		97837EAB1E4BB1DE000FEF64 /* Solar_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Solar_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		97837EAB1E4BB1DE000FEF64 /* SolarTests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SolarTests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7FC5B5A1D469B2700C4D3EB /* Solar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Solar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7FC5B651D469B4E00C4D3EB /* Solar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Solar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -121,7 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				F7FC5B5A1D469B2700C4D3EB /* Solar.framework */,
-				97837EAB1E4BB1DE000FEF64 /* Solar_iOSTests.xctest */,
+				97837EAB1E4BB1DE000FEF64 /* SolarTests iOS.xctest */,
 				1410E9C01EF12B5A001829A5 /* Solar.framework */,
 				4CABE4E2216160CF009BAAB8 /* Solar.framework */,
 				4CABE500216169DE009BAAB8 /* Solar.framework */,
@@ -172,9 +172,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		1410E9BF1EF12B5A001829A5 /* Solar_watchOS */ = {
+		1410E9BF1EF12B5A001829A5 /* Solar watchOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1410E9C51EF12B5A001829A5 /* Build configuration list for PBXNativeTarget "Solar_watchOS" */;
+			buildConfigurationList = 1410E9C51EF12B5A001829A5 /* Build configuration list for PBXNativeTarget "Solar watchOS" */;
 			buildPhases = (
 				1410E9BB1EF12B5A001829A5 /* Sources */,
 				1410E9BC1EF12B5A001829A5 /* Frameworks */,
@@ -185,14 +185,14 @@
 			);
 			dependencies = (
 			);
-			name = Solar_watchOS;
+			name = "Solar watchOS";
 			productName = Solar;
 			productReference = 1410E9C01EF12B5A001829A5 /* Solar.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		4CABE4E1216160CF009BAAB8 /* Solar_macOS */ = {
+		4CABE4E1216160CF009BAAB8 /* Solar macOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4CABE4E7216160CF009BAAB8 /* Build configuration list for PBXNativeTarget "Solar_macOS" */;
+			buildConfigurationList = 4CABE4E7216160CF009BAAB8 /* Build configuration list for PBXNativeTarget "Solar macOS" */;
 			buildPhases = (
 				4CABE4DD216160CF009BAAB8 /* Headers */,
 				4CABE4DE216160CF009BAAB8 /* Sources */,
@@ -203,14 +203,14 @@
 			);
 			dependencies = (
 			);
-			name = Solar_macOS;
+			name = "Solar macOS";
 			productName = Solar_macOS;
 			productReference = 4CABE4E2216160CF009BAAB8 /* Solar.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		4CABE4FF216169DE009BAAB8 /* Solar_tvOS */ = {
+		4CABE4FF216169DE009BAAB8 /* Solar tvOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4CABE505216169DF009BAAB8 /* Build configuration list for PBXNativeTarget "Solar_tvOS" */;
+			buildConfigurationList = 4CABE505216169DF009BAAB8 /* Build configuration list for PBXNativeTarget "Solar tvOS" */;
 			buildPhases = (
 				4CABE4FB216169DE009BAAB8 /* Headers */,
 				4CABE4FC216169DE009BAAB8 /* Sources */,
@@ -221,14 +221,14 @@
 			);
 			dependencies = (
 			);
-			name = Solar_tvOS;
+			name = "Solar tvOS";
 			productName = Solar_tvOS;
 			productReference = 4CABE500216169DE009BAAB8 /* Solar.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		97837EAA1E4BB1DE000FEF64 /* Solar_iOSTests */ = {
+		97837EAA1E4BB1DE000FEF64 /* SolarTests iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 97837EB51E4BB1DE000FEF64 /* Build configuration list for PBXNativeTarget "Solar_iOSTests" */;
+			buildConfigurationList = 97837EB51E4BB1DE000FEF64 /* Build configuration list for PBXNativeTarget "SolarTests iOS" */;
 			buildPhases = (
 				97837EA71E4BB1DE000FEF64 /* Sources */,
 				97837EA81E4BB1DE000FEF64 /* Frameworks */,
@@ -239,14 +239,14 @@
 			dependencies = (
 				97837EB21E4BB1DE000FEF64 /* PBXTargetDependency */,
 			);
-			name = Solar_iOSTests;
+			name = "SolarTests iOS";
 			productName = SolarTests;
-			productReference = 97837EAB1E4BB1DE000FEF64 /* Solar_iOSTests.xctest */;
+			productReference = 97837EAB1E4BB1DE000FEF64 /* SolarTests iOS.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		F7FC5B591D469B2700C4D3EB /* Solar_iOS */ = {
+		F7FC5B591D469B2700C4D3EB /* Solar iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F7FC5B621D469B2700C4D3EB /* Build configuration list for PBXNativeTarget "Solar_iOS" */;
+			buildConfigurationList = F7FC5B621D469B2700C4D3EB /* Build configuration list for PBXNativeTarget "Solar iOS" */;
 			buildPhases = (
 				F7FC5B551D469B2700C4D3EB /* Sources */,
 				F7FC5B561D469B2700C4D3EB /* Frameworks */,
@@ -257,7 +257,7 @@
 			);
 			dependencies = (
 			);
-			name = Solar_iOS;
+			name = "Solar iOS";
 			productName = Solar;
 			productReference = F7FC5B5A1D469B2700C4D3EB /* Solar.framework */;
 			productType = "com.apple.product-type.framework";
@@ -307,11 +307,11 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F7FC5B591D469B2700C4D3EB /* Solar_iOS */,
-				97837EAA1E4BB1DE000FEF64 /* Solar_iOSTests */,
-				1410E9BF1EF12B5A001829A5 /* Solar_watchOS */,
-				4CABE4E1216160CF009BAAB8 /* Solar_macOS */,
-				4CABE4FF216169DE009BAAB8 /* Solar_tvOS */,
+				F7FC5B591D469B2700C4D3EB /* Solar iOS */,
+				97837EAA1E4BB1DE000FEF64 /* SolarTests iOS */,
+				4CABE4E1216160CF009BAAB8 /* Solar macOS */,
+				4CABE4FF216169DE009BAAB8 /* Solar tvOS */,
+				1410E9BF1EF12B5A001829A5 /* Solar watchOS */,
 			);
 		};
 /* End PBXProject section */
@@ -402,7 +402,7 @@
 /* Begin PBXTargetDependency section */
 		97837EB21E4BB1DE000FEF64 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F7FC5B591D469B2700C4D3EB /* Solar_iOS */;
+			target = F7FC5B591D469B2700C4D3EB /* Solar iOS */;
 			targetProxy = 97837EB11E4BB1DE000FEF64 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -798,7 +798,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1410E9C51EF12B5A001829A5 /* Build configuration list for PBXNativeTarget "Solar_watchOS" */ = {
+		1410E9C51EF12B5A001829A5 /* Build configuration list for PBXNativeTarget "Solar watchOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1410E9C61EF12B5A001829A5 /* Debug */,
@@ -807,7 +807,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4CABE4E7216160CF009BAAB8 /* Build configuration list for PBXNativeTarget "Solar_macOS" */ = {
+		4CABE4E7216160CF009BAAB8 /* Build configuration list for PBXNativeTarget "Solar macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4CABE4E8216160CF009BAAB8 /* Debug */,
@@ -816,7 +816,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4CABE505216169DF009BAAB8 /* Build configuration list for PBXNativeTarget "Solar_tvOS" */ = {
+		4CABE505216169DF009BAAB8 /* Build configuration list for PBXNativeTarget "Solar tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4CABE506216169DF009BAAB8 /* Debug */,
@@ -825,7 +825,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		97837EB51E4BB1DE000FEF64 /* Build configuration list for PBXNativeTarget "Solar_iOSTests" */ = {
+		97837EB51E4BB1DE000FEF64 /* Build configuration list for PBXNativeTarget "SolarTests iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				97837EB31E4BB1DE000FEF64 /* Debug */,
@@ -843,7 +843,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F7FC5B621D469B2700C4D3EB /* Build configuration list for PBXNativeTarget "Solar_iOS" */ = {
+		F7FC5B621D469B2700C4D3EB /* Build configuration list for PBXNativeTarget "Solar iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F7FC5B631D469B2700C4D3EB /* Debug */,

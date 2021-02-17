@@ -16,7 +16,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4CABE4FF216169DE009BAAB8"
                BuildableName = "Solar.framework"
-               BlueprintName = "Solar_tvOS"
+               BlueprintName = "Solar tvOS"
                ReferencedContainer = "container:Solar.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,7 +45,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4CABE4FF216169DE009BAAB8"
             BuildableName = "Solar.framework"
-            BlueprintName = "Solar_tvOS"
+            BlueprintName = "Solar tvOS"
             ReferencedContainer = "container:Solar.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -61,7 +61,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4CABE4FF216169DE009BAAB8"
             BuildableName = "Solar.framework"
-            BlueprintName = "Solar_tvOS"
+            BlueprintName = "Solar tvOS"
             ReferencedContainer = "container:Solar.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

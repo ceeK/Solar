@@ -16,7 +16,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "1410E9BF1EF12B5A001829A5"
                BuildableName = "Solar.framework"
-               BlueprintName = "Solar_watchOS"
+               BlueprintName = "Solar watchOS"
                ReferencedContainer = "container:Solar.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,7 +45,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1410E9BF1EF12B5A001829A5"
             BuildableName = "Solar.framework"
-            BlueprintName = "Solar_watchOS"
+            BlueprintName = "Solar watchOS"
             ReferencedContainer = "container:Solar.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -61,7 +61,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1410E9BF1EF12B5A001829A5"
             BuildableName = "Solar.framework"
-            BlueprintName = "Solar_watchOS"
+            BlueprintName = "Solar watchOS"
             ReferencedContainer = "container:Solar.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
