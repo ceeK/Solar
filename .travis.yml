@@ -6,5 +6,10 @@ xcode_sdk: iphonesimulator14.2
 osx_image: xcode12.2
 
 script:
-  - xcodebuild clean build -project Solar.xcodeproj -scheme 'Solar iOS' -destination 'platform=iOS Simulator,name=iPhone X,OS=11.4'
-  - travis_retry xcodebuild test -project Solar.xcodeproj -scheme 'Solar iOS' -destination 'platform=iOS Simulator,name=iPhone X,OS=11.4'
+  - xcodebuild $ACTION -project Solar.xcodeproj -scheme "$SCHEME" -destination "$DESTINATION"
+
+env:
+  - SCHEME='Solar iOS' ACTION=test DESTINATION='platform=iOS Simulator,name=iPhone X,OS=11.4'
+  - SCHEME='Solar macOS' ACTION=test DESTINATION='platform=OS X'
+  - SCHEME='Solar tvOS' ACTION=test DESTINATION='platform=tvOS Simulator,name=Apple TV,OS=14.2'
+  - SCHEME='Solar watchOS' ACTION=build DESTINATION='platform=watchOS Simulator,name=Apple Watch Series 6 - 44mm,OS=7.1'

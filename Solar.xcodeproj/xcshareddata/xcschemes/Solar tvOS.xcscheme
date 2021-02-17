@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1410E9BF1EF12B5A001829A5"
+               BlueprintIdentifier = "4CABE4FF216169DE009BAAB8"
                BuildableName = "Solar.framework"
-               BlueprintName = "Solar watchOS"
+               BlueprintName = "Solar tvOS"
                ReferencedContainer = "container:Solar.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,6 +28,16 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "DA85D6CF25DCB095008A2AD4"
+               BuildableName = "SolarTests.xctest"
+               BlueprintName = "SolarTests tvOS"
+               ReferencedContainer = "container:Solar.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
@@ -43,9 +53,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1410E9BF1EF12B5A001829A5"
+            BlueprintIdentifier = "4CABE4FF216169DE009BAAB8"
             BuildableName = "Solar.framework"
-            BlueprintName = "Solar watchOS"
+            BlueprintName = "Solar tvOS"
             ReferencedContainer = "container:Solar.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -59,9 +69,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1410E9BF1EF12B5A001829A5"
+            BlueprintIdentifier = "4CABE4FF216169DE009BAAB8"
             BuildableName = "Solar.framework"
-            BlueprintName = "Solar watchOS"
+            BlueprintName = "Solar tvOS"
             ReferencedContainer = "container:Solar.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
