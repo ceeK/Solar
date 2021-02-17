@@ -10,7 +10,7 @@
 		1410E9C81EF12C1E001829A5 /* Solar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FC5B651D469B4E00C4D3EB /* Solar.swift */; };
 		14381E7A1EF96100008E9826 /* Solar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7FC5B5A1D469B2700C4D3EB /* Solar.framework */; };
 		14456B851EF96AC000D76A4D /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14456B831EF96ABA00D76A4D /* City.swift */; };
-		14456B881EF96ACD00D76A4D /* Solar_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14456B861EF96ACA00D76A4D /* Solar_iOSTests.swift */; };
+		14456B881EF96ACD00D76A4D /* SolarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14456B861EF96ACA00D76A4D /* SolarTests.swift */; };
 		14456B8D1EF96AE200D76A4D /* CorrectResults.json in Resources */ = {isa = PBXBuildFile; fileRef = 14456B891EF96AD900D76A4D /* CorrectResults.json */; };
 		4CABE4EA2161610E009BAAB8 /* Solar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FC5B651D469B4E00C4D3EB /* Solar.swift */; };
 		4CABE50A21616FFB009BAAB8 /* Solar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FC5B651D469B4E00C4D3EB /* Solar.swift */; };
@@ -30,10 +30,10 @@
 /* Begin PBXFileReference section */
 		1410E9B71EF12AD4001829A5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1410E9C01EF12B5A001829A5 /* Solar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Solar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		14456B831EF96ABA00D76A4D /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = City.swift; path = "Solar iOSTests/City.swift"; sourceTree = "<group>"; };
-		14456B861EF96ACA00D76A4D /* Solar_iOSTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Solar_iOSTests.swift; path = "Solar iOSTests/Solar_iOSTests.swift"; sourceTree = "<group>"; };
-		14456B891EF96AD900D76A4D /* CorrectResults.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = CorrectResults.json; path = "Solar iOSTests/CorrectResults.json"; sourceTree = "<group>"; };
-		14456B8A1EF96AD900D76A4D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Solar iOSTests/Info.plist"; sourceTree = "<group>"; };
+		14456B831EF96ABA00D76A4D /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		14456B861EF96ACA00D76A4D /* SolarTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SolarTests.swift; sourceTree = "<group>"; };
+		14456B891EF96AD900D76A4D /* CorrectResults.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CorrectResults.json; sourceTree = "<group>"; };
+		14456B8A1EF96AD900D76A4D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4CABE4E2216160CF009BAAB8 /* Solar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Solar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CABE500216169DE009BAAB8 /* Solar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Solar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		97837EAB1E4BB1DE000FEF64 /* Solar_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Solar_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,14 +81,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		14456B801EF96A8F00D76A4D /* Solar iOSTests */ = {
+		14456B801EF96A8F00D76A4D /* SolarTests */ = {
 			isa = PBXGroup;
 			children = (
-				14456B861EF96ACA00D76A4D /* Solar_iOSTests.swift */,
+				14456B861EF96ACA00D76A4D /* SolarTests.swift */,
 				14456B811EF96A9E00D76A4D /* Helpers */,
 				14456B821EF96AA500D76A4D /* Resources */,
 			);
-			name = "Solar iOSTests";
+			path = SolarTests;
 			sourceTree = "<group>";
 		};
 		14456B811EF96A9E00D76A4D /* Helpers */ = {
@@ -112,7 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				F7FC5B5C1D469B2700C4D3EB /* Solar */,
-				14456B801EF96A8F00D76A4D /* Solar iOSTests */,
+				14456B801EF96A8F00D76A4D /* SolarTests */,
 				F7FC5B5B1D469B2700C4D3EB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -385,7 +385,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				14456B851EF96AC000D76A4D /* City.swift in Sources */,
-				14456B881EF96ACD00D76A4D /* Solar_iOSTests.swift in Sources */,
+				14456B881EF96ACD00D76A4D /* SolarTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -595,7 +595,7 @@
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = "Solar iOSTests/Info.plist";
+				INFOPLIST_FILE = SolarTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.chrishowell.SolarTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -615,7 +615,7 @@
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = "Solar iOSTests/Info.plist";
+				INFOPLIST_FILE = SolarTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.chrishowell.SolarTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";

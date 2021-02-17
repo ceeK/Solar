@@ -1,6 +1,6 @@
 //
-//  Solar_iOSTests.swift
-//  Solar_iOSTests
+//  SolarTests.swift
+//  SolarTests
 //
 //  Created by Chris Howell on 08/02/2017.
 //  Copyright © 2017 Chris Howell. All rights reserved.
