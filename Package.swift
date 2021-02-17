@@ -7,7 +7,7 @@ let package = Package(
     name: "Solar",
     platforms: [.iOS(.v8), .macOS(.v10_15), .watchOS(.v4), .tvOS(.v11)],
     products: [
-        .library(name: "Solar", type: .dynamic, targets: ["Solar"]),
+        .library(name: "Solar", targets: ["Solar"]),
     ],
     dependencies: [],
     targets: [
