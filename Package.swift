@@ -5,13 +5,13 @@ import PackageDescription
 
 let package = Package(
     name: "Solar",
-    platforms: [.iOS(.v8), .macOS(.v10_15), .watchOS(.v4), .tvOS(.v11)],
+    platforms: [.iOS(.v8), .macOS(.v10_10), .watchOS(.v3), .tvOS(.v9)],
     products: [
         .library(name: "Solar", targets: ["Solar"]),
     ],
     dependencies: [],
     targets: [
-        .target(name: "Solar", path: "Solar", exclude: ["Info-iOS.plist", "Info-watchOS.plist"]),
-        .testTarget(name: "SolarTests", dependencies: ["Solar"], path: "Solar iOSTests", exclude: ["Info.plist"], resources: [.copy("CorrectResults.json")]),
+        .target(name: "Solar", path: "Solar", exclude: ["Info.plist"]),
+        .testTarget(name: "SolarTests", dependencies: ["Solar"], path: "SolarTests", exclude: ["Info.plist"], resources: [.copy("CorrectResults.json")]),
     ]
 )
