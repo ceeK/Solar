@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
-	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<string>en</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -17,8 +17,10 @@
 	<key>CFBundleShortVersionString</key>
 	<string>2.1.0</string>
 	<key>CFBundleVersion</key>
-	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<string>1</string>
+	<key>NSPrincipalClass</key>
+	<string></string>
 	<key>NSHumanReadableCopyright</key>
-	<string>Copyright © 2018 Chris Howell. All rights reserved.</string>
+	<string>Copyright © 2016 Chris Howell. All rights reserved.</string>
 </dict>
 </plist>
