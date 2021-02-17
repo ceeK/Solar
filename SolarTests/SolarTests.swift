@@ -17,18 +17,23 @@ final class SolarTests: XCTestCase {
     /// How accurate, in minutes either side of the actual sunrise sunset, we want to be
     /// This is necessary as the algorithm uses assumptions during calculation
     private let testAccuracy: TimeInterval = 60 * 5
-    
-    private lazy var cities: [City] = {
-        guard
-            let resultsURLString = Bundle(for: type(of: self)).path(forResource: "CorrectResults", ofType: "json"),
-            let data = try? Data(contentsOf: URL(fileURLWithPath: resultsURLString)),
-            let dictionary = try? JSONSerialization.jsonObject(with: data, options: []),
-            let cityDictionaries = dictionary as? [[String : Any]]
-        else {
-            fatalError("Correct results JSON doesn't appear to be included in the test bundle.")
-        }
-        return cityDictionaries.map(City.init(json:))
+    private var cities: [City]!
+
+    let bundle: Bundle = {
+        #if SWIFT_PACKAGE
+        return Bundle.module
+        #else
+        return Bundle(for: SolarTests.self)
+        #endif
     }()
+
+    override func setUpWithError() throws {
+        try super.setUpWithError()
+        let resultsURL = try XCTUnwrap(bundle.url(forResource: "CorrectResults", withExtension: "json"))
+        let data = try Data(contentsOf: resultsURL)
+        let cityDictionaries = try XCTUnwrap(try JSONSerialization.jsonObject(with: data, options: []) as? [[String : Any]])
+        cities = cityDictionaries.map(City.init(json:))
+    }
     
     func testSunrise() {
         for city in cities {
