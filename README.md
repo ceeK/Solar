@@ -61,21 +61,15 @@ let isNighttime = solar.isNighttime
 
 ## Installation
 
-Solar is available through Swift Package Manager.
-
-### Swift Package Manager
-
-To include Solar in an application in Xcode:
-
-1. Go to File ‣ Swift Packages ‣ Add Package Dependency.
-1. Enter `https://github.com/ceeK/Solar.git` as the package repository and click Next.
-1. Set Rules to Version, Up to Next Major, and enter `4.0.0` as the minimum version requirement. Click Next.
-
-To include Solar in another Swift package, add the following [dependency](https://developer.apple.com/documentation/swift_packages/package/dependency) to your Package.swift:
+Solar is available through the Swift Package Manager. Add it to the `dependencies` value of your `Package.swift`:
 
 ```swift
-.package(name: "Solar", url: "https://github.com/ceeK/Solar.git", from: "4.0.0")
+dependencies: [
+    .package(url: "https://github.com/ceeK/Solar.git", .upToNextMajor(from: "4.0.0"))
+]
 ```
+
+Or in Xcode: **File ▸ Add Package Dependencies…** and enter `https://github.com/ceeK/Solar.git` as the package URL.
 
 # License
 
