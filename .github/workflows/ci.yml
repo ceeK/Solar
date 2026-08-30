@@ -1,0 +1,77 @@
+name: CI
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  spm:
+    name: SwiftPM
+    runs-on: macos-26
+    steps:
+      - uses: actions/checkout@v4
+      - name: Show toolchain
+        run: xcodebuild -version && swift --version
+      - name: Build
+        run: swift build
+      - name: Test
+        run: swift test
+
+  xcode:
+    name: ${{ matrix.scheme }}
+    runs-on: macos-26
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - scheme: Solar macOS
+            action: test
+            destination: platform=macOS
+          - scheme: Solar iOS
+            action: test
+            runtime: SimRuntime.iOS
+          - scheme: Solar tvOS
+            action: test
+            runtime: SimRuntime.tvOS
+          # The watchOS scheme has no test target, so it is build-only.
+          - scheme: Solar watchOS
+            action: build
+            destination: generic/platform=watchOS Simulator
+    steps:
+      - uses: actions/checkout@v4
+      - name: Show toolchain
+        run: xcodebuild -version && swift --version
+
+      # Simulator device names drift between runner images -- pinning one by
+      # name is what rotted the previous Travis config. Resolve whatever the
+      # image actually ships for this runtime instead, and fail loudly if the
+      # runtime is missing rather than falling through to a confusing
+      # "destination not found" from xcodebuild.
+      - name: Resolve simulator destination
+        if: matrix.runtime != ''
+        id: sim
+        run: |
+          set -euo pipefail
+          xcrun simctl list devices available
+          udid=$(xcrun simctl list devices available -j \
+            | jq -r --arg rt "${{ matrix.runtime }}" \
+              '.devices | to_entries | map(select(.key | test($rt))) | .[].value[] | .udid' \
+            | head -1)
+          if [ -z "$udid" ]; then
+            echo "::error::No available simulator found for runtime ${{ matrix.runtime }}"
+            exit 1
+          fi
+          echo "destination=id=$udid" >> "$GITHUB_OUTPUT"
+
+      - name: ${{ matrix.action }}
+        run: |
+          xcodebuild ${{ matrix.action }} \
+            -project Solar.xcodeproj \
+            -scheme "${{ matrix.scheme }}" \
+            -destination "${{ matrix.destination || steps.sim.outputs.destination }}"
