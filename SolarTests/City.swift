@@ -11,8 +11,8 @@ import CoreLocation
 
 extension DateFormatter {
     
-    @nonobjc static var isoDateFormatter: DateFormatter = {
-        var dateFormatter = DateFormatter()
+    @nonobjc static let isoDateFormatter: DateFormatter = {
+        let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
         return dateFormatter
     }()
