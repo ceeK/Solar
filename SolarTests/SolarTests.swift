@@ -35,7 +35,7 @@ struct SolarTests {
         return cityDictionaries.map(City.init(json:))
     }()
 
-    @Test(arguments: cities)
+    @Test("Sunrise is close to expected time", arguments: cities)
     func sunrise(for city: City) throws {
         let solar = Solar(for: Self.testDate, coordinate: city.coordinate)
 
@@ -44,14 +44,14 @@ struct SolarTests {
         #expect(abs(sunrise.timeIntervalSince1970 - city.sunrise.timeIntervalSince1970) <= Self.testAccuracy, "\(city.name): \(sunrise) not close to \(city.sunrise)")
     }
 
-    @Test
+    @Test("Sunrise is nil when no sunrise occurs")
     func sunriseIsNilWhenNoSunriseOccurs() {
         let solar = Solar(for: Self.testDate, coordinate: CLLocationCoordinate2D(latitude: 78.2186, longitude: 15.64007)) // Location: Longyearbyen
         #expect(solar != nil)
         #expect(solar?.sunrise == nil)
     }
 
-    @Test(arguments: cities)
+    @Test("Sunset is close to expected time", arguments: cities)
     func sunset(for city: City) throws {
         let solar = Solar(for: Self.testDate, coordinate: city.coordinate)
 
@@ -60,14 +60,14 @@ struct SolarTests {
         #expect(abs(sunset.timeIntervalSince1970 - city.sunset.timeIntervalSince1970) <= Self.testAccuracy, "\(city.name): \(sunset) not close to \(city.sunset)")
     }
 
-    @Test
+    @Test("Sunset is nil when no sunset occurs")
     func sunsetIsNilWhenNoSunsetOccurs() {
         let solar = Solar(for: Self.testDate, coordinate: CLLocationCoordinate2D(latitude: 78.2186, longitude: 15.64007)) // Location: Longyearbyen
         #expect(solar != nil)
         #expect(solar?.sunset == nil)
     }
 
-    @Test
+    @Test("isDaytime is true between sunrise and sunset")
     func isDaytimeIsTrueBetweenSunriseAndSunset() throws {
         let daytime = Date(timeIntervalSince1970: 1486641600) // noon
         let city = try #require(Self.cities.first(where: { $0.name == "London" }))
@@ -78,7 +78,7 @@ struct SolarTests {
         #expect(!solar.isNighttime, "isNighttime is true for date: \(daytime) with sunrise: \(solar.sunrise!), sunset: \(solar.sunset!)")
     }
 
-    @Test
+    @Test("isDaytime is true exactly at sunrise")
     func isDaytimeIsTrueExactlyAtSunrise() throws {
         let sunrise = Date(timeIntervalSince1970: 1486625181)
         let city = try #require(Self.cities.first(where: { $0.name == "London" }))
@@ -89,7 +89,7 @@ struct SolarTests {
         #expect(!solar.isNighttime, "isNighttime is true for date: \(sunrise) with sunrise: \(solar.sunrise!), sunset: \(solar.sunset!)")
     }
 
-    @Test
+    @Test("isDaytime is false exactly at sunset")
     func isDaytimeIsFalseExactlyAtSunset() throws {
         let sunset = Date(timeIntervalSince1970: 1486659846)
         let city = try #require(Self.cities.first(where: { $0.name == "London" }))
@@ -100,7 +100,7 @@ struct SolarTests {
         #expect(solar.isNighttime, "isNighttime is true for date: \(sunset) with sunrise: \(solar.sunrise!), sunset: \(solar.sunset!)")
     }
 
-    @Test
+    @Test("isDaytime is false before sunrise")
     func isDaytimeIsFalseBeforeSunrise() throws {
         let beforeSunrise = Date(timeIntervalSince1970: 1486624980)
         let city = try #require(Self.cities.first(where: { $0.name == "London" }))
@@ -111,7 +111,7 @@ struct SolarTests {
         #expect(solar.isNighttime, "isNighttime is false for date: \(beforeSunrise) with sunrise: \(solar.sunrise!), sunset: \(solar.sunset!)")
     }
 
-    @Test
+    @Test("isDaytime is false after sunset")
     func isDaytimeIsFalseAfterSunset() throws {
         let afterSunset = Date(timeIntervalSince1970: 1486659960)
         let city = try #require(Self.cities.first(where: { $0.name == "London" }))
@@ -122,7 +122,7 @@ struct SolarTests {
         #expect(solar.isNighttime, "isNighttime is false for date: \(afterSunset) with sunrise: \(solar.sunrise!), sunset: \(solar.sunset!)")
     }
 
-    @Test
+    @Test("Solar init returns nil given an invalid coordinate")
     func solarInitReturnsNilGivenInvalidCoordinate() {
         let invalidCoordinate1 = CLLocationCoordinate2D(latitude: -100, longitude: 0)
         #expect(!CLLocationCoordinate2DIsValid(invalidCoordinate1))
