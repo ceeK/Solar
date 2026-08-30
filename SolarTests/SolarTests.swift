@@ -122,6 +122,62 @@ struct SolarTests {
         #expect(solar.isNighttime, "isNighttime is false for date: \(afterSunset) with sunrise: \(solar.sunrise!), sunset: \(solar.sunset!)")
     }
 
+    // MARK: - UTC day boundary
+    //
+    // For locations west of Greenwich in the evening (and east of Greenwich in the
+    // morning), the local solar day straddles UTC midnight. isDaytime must reflect
+    // whether the sun is actually up at `date`, not whether `date` falls within the
+    // sunrise/sunset window of its UTC calendar day.
+
+    private static let minneapolis = CLLocationCoordinate2D(latitude: 44.9778, longitude: -93.2650)
+    private static let tokyo = CLLocationCoordinate2D(latitude: 35.6762, longitude: 139.6503)
+
+    @Test("isDaytime is true before sunset when the UTC day is already tomorrow")
+    func isDaytimeIsTrueBeforeSunsetWhenUTCDayIsAlreadyTomorrow() throws {
+        // Minneapolis, 2026-06-15 20:30 CDT (2026-06-16 01:30 UTC).
+        // The sun is up until ~21:02 CDT (~02:02 UTC), but in UTC the date is already June 16.
+        let eveningSunUp = Date(timeIntervalSince1970: 1781573400)
+
+        let solar = try #require(Solar(for: eveningSunUp, coordinate: Self.minneapolis))
+
+        #expect(solar.isDaytime, "isDaytime is false for date: \(eveningSunUp) with sunrise: \(solar.sunrise!), sunset: \(solar.sunset!)")
+        #expect(!solar.isNighttime, "isNighttime is true for date: \(eveningSunUp) with sunrise: \(solar.sunrise!), sunset: \(solar.sunset!)")
+    }
+
+    @Test("isDaytime is false after sunset when the UTC day is already tomorrow")
+    func isDaytimeIsFalseAfterSunsetWhenUTCDayIsAlreadyTomorrow() throws {
+        // Minneapolis, 2026-06-15 21:30 CDT (2026-06-16 02:30 UTC), shortly after the ~21:02 CDT sunset.
+        let eveningSunDown = Date(timeIntervalSince1970: 1781577000)
+
+        let solar = try #require(Solar(for: eveningSunDown, coordinate: Self.minneapolis))
+
+        #expect(!solar.isDaytime, "isDaytime is true for date: \(eveningSunDown) with sunrise: \(solar.sunrise!), sunset: \(solar.sunset!)")
+        #expect(solar.isNighttime, "isNighttime is false for date: \(eveningSunDown) with sunrise: \(solar.sunrise!), sunset: \(solar.sunset!)")
+    }
+
+    @Test("isDaytime is true after sunrise when the UTC day is still yesterday")
+    func isDaytimeIsTrueAfterSunriseWhenUTCDayIsStillYesterday() throws {
+        // Tokyo, 2026-06-16 08:30 JST (2026-06-15 23:30 UTC).
+        // The sun rose at ~04:25 JST, but in UTC the date is still June 15.
+        let morningSunUp = Date(timeIntervalSince1970: 1781566200)
+
+        let solar = try #require(Solar(for: morningSunUp, coordinate: Self.tokyo))
+
+        #expect(solar.isDaytime, "isDaytime is false for date: \(morningSunUp) with sunrise: \(solar.sunrise!), sunset: \(solar.sunset!)")
+        #expect(!solar.isNighttime, "isNighttime is true for date: \(morningSunUp) with sunrise: \(solar.sunrise!), sunset: \(solar.sunset!)")
+    }
+
+    @Test("isDaytime is false before sunrise when the UTC day is still yesterday")
+    func isDaytimeIsFalseBeforeSunriseWhenUTCDayIsStillYesterday() throws {
+        // Tokyo, 2026-06-16 02:30 JST (2026-06-15 17:30 UTC), well before the ~04:25 JST sunrise.
+        let nightBeforeSunrise = Date(timeIntervalSince1970: 1781544600)
+
+        let solar = try #require(Solar(for: nightBeforeSunrise, coordinate: Self.tokyo))
+
+        #expect(!solar.isDaytime, "isDaytime is true for date: \(nightBeforeSunrise) with sunrise: \(solar.sunrise!), sunset: \(solar.sunset!)")
+        #expect(solar.isNighttime, "isNighttime is false for date: \(nightBeforeSunrise) with sunrise: \(solar.sunrise!), sunset: \(solar.sunset!)")
+    }
+
     @Test("Solar init returns nil given an invalid coordinate")
     func solarInitReturnsNilGivenInvalidCoordinate() {
         let invalidCoordinate1 = CLLocationCoordinate2D(latitude: -100, longitude: 0)
