@@ -42,7 +42,7 @@ jobs:
           # The watchOS scheme has no test target, so it is build-only.
           - scheme: Solar watchOS
             action: build
-            destination: generic/platform=watchOS
+            destination: generic/platform=watchOS Simulator
     steps:
       - uses: actions/checkout@v4
       - name: Show toolchain
