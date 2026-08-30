@@ -4,7 +4,7 @@
 
 # Solar
 
-[![Version](https://img.shields.io/cocoapods/v/Solar.svg?style=flat)](http://cocoapods.org/pods/Solar) [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) [![POD compatible](https://img.shields.io/badge/Cocoapods-compatible-4BC51D.svg?style=flat)](https://cocoapods.org) [![SPM compatible](https://img.shields.io/badge/SPM-compatible-4BC51D.svg?style=flat)](https://swift.org/package-manager/) [![CI](https://github.com/ceeK/Solar/actions/workflows/ci.yml/badge.svg)](https://github.com/ceeK/Solar/actions/workflows/ci.yml)
+[![SPM compatible](https://img.shields.io/badge/SPM-compatible-4BC51D.svg?style=flat)](https://swift.org/package-manager/) [![CI](https://github.com/ceeK/Solar/actions/workflows/ci.yml/badge.svg)](https://github.com/ceeK/Solar/actions/workflows/ci.yml)
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/hyperium/hyper/master/LICENSE)
 
 A Swift helper for generating Sunrise and Sunset times. 
@@ -59,29 +59,7 @@ let isNighttime = solar.isNighttime
 
 ## Installation
 
-Solar is available through CocoaPods, Carthage, and Swift Package Manager. 
-
-### CocoaPods
-
-To include Solar in an application, add the following [pod](https://guides.cocoapods.org/syntax/podfile.html#pod) to your Podfile, then run `pod install`:
-
-```ruby
-pod "Solar-dev", "~> 3.0"
-```
-
-To include Solar in another pod, add the following [dependency](https://guides.cocoapods.org/syntax/podspec.html#dependency) to your podspec:
-
-```ruby
-s.dependency "Solar", "~> 3.0"
-```
-
-### Carthage
-
-Add the `ceek/Solar` project to your [Cartfile](https://github.com/Carthage/Carthage/blob/master/Documentation/Artifacts.md#cartfile), then follow the rest of [Carthage’s XCFramework installation instructions](https://github.com/Carthage/Carthage#building-platform-independent-xcframeworks-xcode-12-and-above):
-
-```ruby
-github "ceeK/Solar" ~> 3.0
-```
+Solar is available through Swift Package Manager.
 
 ### Swift Package Manager
 
