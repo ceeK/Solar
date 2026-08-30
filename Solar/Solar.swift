@@ -204,24 +204,29 @@ public struct Solar {
 
 extension Solar {
     
-    /// Whether the location specified by the `latitude` and `longitude` is in daytime on `date`
+    fileprivate static let secondsPerDay: TimeInterval = 60 * 60 * 24
+
+    /// Whether the location specified by the `latitude` and `longitude` is in daytime on `date`.
+    /// The `sunrise` / `sunset` window is anchored to the UTC calendar day of `date`, so when
+    /// the local solar day straddles UTC midnight the window containing `date` can belong to
+    /// the previous or next UTC day; those windows are checked too.
     /// - Complexity: O(1)
     public var isDaytime: Bool {
-        guard
-            let sunrise = sunrise,
-            let sunset = sunset
-            else {
-                return false
+        if let sunrise = sunrise, let sunset = sunset, date >= sunrise, date < sunset {
+            return true
         }
-        
-        let beginningOfDay = sunrise.timeIntervalSince1970
-        let endOfDay = sunset.timeIntervalSince1970
-        let currentTime = self.date.timeIntervalSince1970
-        
-        let isSunriseOrLater = currentTime >= beginningOfDay
-        let isBeforeSunset = currentTime < endOfDay
-        
-        return isSunriseOrLater && isBeforeSunset
+
+        return [-Solar.secondsPerDay, Solar.secondsPerDay].contains { dayOffset in
+            let candidateDate = date.addingTimeInterval(dayOffset)
+            guard
+                let sunrise = calculate(.sunrise, for: candidateDate, and: .official),
+                let sunset = calculate(.sunset, for: candidateDate, and: .official)
+                else {
+                    return false
+            }
+
+            return date >= sunrise && date < sunset
+        }
     }
     
     /// Whether the location specified by the `latitude` and `longitude` is in nighttime on `date`
