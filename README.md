@@ -67,12 +67,12 @@ To include Solar in an application in Xcode:
 
 1. Go to File ‣ Swift Packages ‣ Add Package Dependency.
 1. Enter `https://github.com/ceeK/Solar.git` as the package repository and click Next.
-1. Set Rules to Version, Up to Next Major, and enter `3.0.0` as the minimum version requirement. Click Next.
+1. Set Rules to Version, Up to Next Major, and enter `4.0.0` as the minimum version requirement. Click Next.
 
 To include Solar in another Swift package, add the following [dependency](https://developer.apple.com/documentation/swift_packages/package/dependency) to your Package.swift:
 
 ```swift
-.package(name: "Solar", url: "https://github.com/ceeK/Solar.git", from: "3.0.0")
+.package(name: "Solar", url: "https://github.com/ceeK/Solar.git", from: "4.0.0")
 ```
 
 # License
