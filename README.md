@@ -5,13 +5,13 @@
 # Solar
 
 [![SPM compatible](https://img.shields.io/badge/SPM-compatible-4BC51D.svg?style=flat)](https://swift.org/package-manager/) [![CI](https://github.com/ceeK/Solar/actions/workflows/ci.yml/badge.svg)](https://github.com/ceeK/Solar/actions/workflows/ci.yml)
-[![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/ceeK/Solar/blob/main/LICENSE)
 [![Swift Compatibility](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2FceeK%2FSolar%2Fbadge%3Ftype%3Dswift-versions)](https://swiftpackageindex.com/ceeK/Solar)
 [![Platform Compatibility](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2FceeK%2FSolar%2Fbadge%3Ftype%3Dplatforms)](https://swiftpackageindex.com/ceeK/Solar)
+[![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/ceeK/Solar/blob/main/LICENSE)
 
-A Swift helper for generating Sunrise and Sunset times. 
+A Swift micro library for generating Sunrise and Sunset times, requiring no network access.
 
-Solar performs its calculations locally using an algorithm from the [United States Naval Observatory](http://edwilliams.org/sunrise_sunset_algorithm.htm), and thus does not require the use of a network.
+Solar performs its calculations locally using an algorithm from the [United States Naval Observatory](http://edwilliams.org/sunrise_sunset_algorithm.htm).
 
 ## Usage
 
