@@ -24,16 +24,28 @@ struct City {
     let coordinate: CLLocationCoordinate2D
     let sunrise: Date
     let sunset: Date
-    
+    let civilSunrise: Date
+    let civilSunset: Date
+    let nauticalSunrise: Date
+    let nauticalSunset: Date
+    let astronomicalSunrise: Date
+    let astronomicalSunset: Date
+
     init(json: [String: Any]) {
+        func date(_ key: String) -> Date {
+            guard
+                let string = json[key] as? String,
+                let date = DateFormatter.isoDateFormatter.date(from: string)
+                else {
+                    fatalError("Could not read '\(key)' from JSON: \(json)")
+            }
+            return date
+        }
+
         guard
             let name = json["city"] as? String,
             let latitude = json["latitude"] as? Double,
-            let longitude = json["longitude"] as? Double,
-            let sunriseString = json["sunrise"] as? String,
-            let sunsetString = json["sunset"] as? String,
-            let sunrise = DateFormatter.isoDateFormatter.date(from: sunriseString),
-            let sunset = DateFormatter.isoDateFormatter.date(from: sunsetString)
+            let longitude = json["longitude"] as? Double
             else {
                 fatalError("Could not instantiate a city from JSON: \(json)")
         }
@@ -41,10 +53,16 @@ struct City {
         guard CLLocationCoordinate2DIsValid(coordinate) else {
             fatalError("City has invalid coordinates: \(coordinate)")
         }
-        
+
         self.name = name
         self.coordinate = coordinate
-        self.sunrise = sunrise
-        self.sunset = sunset
+        self.sunrise = date("sunrise")
+        self.sunset = date("sunset")
+        self.civilSunrise = date("civilSunrise")
+        self.civilSunset = date("civilSunset")
+        self.nauticalSunrise = date("nauticalSunrise")
+        self.nauticalSunset = date("nauticalSunset")
+        self.astronomicalSunrise = date("astronomicalSunrise")
+        self.astronomicalSunset = date("astronomicalSunset")
     }
 }

@@ -3,1421 +3,2843 @@
     "latitude": 24.46667,
     "longitude": 54.36667,
     "sunrise": "2017-02-09T02:59:40+00:00",
-    "sunset": "2017-02-09T14:13:47+00:00"
+    "sunset": "2017-02-09T14:13:47+00:00",
+    "civilSunrise": "2017-02-09T02:36:33+00:00",
+    "civilSunset": "2017-02-09T14:37:15+00:00",
+    "nauticalSunrise": "2017-02-09T02:09:43+00:00",
+    "nauticalSunset": "2017-02-09T15:04:05+00:00",
+    "astronomicalSunrise": "2017-02-09T01:43:01+00:00",
+    "astronomicalSunset": "2017-02-09T15:30:47+00:00"
  }, {
     "city": "Abuja",
     "latitude": 9.05735,
     "longitude": 7.48976,
     "sunrise": "2017-02-09T05:50:01+00:00",
-    "sunset": "2017-02-09T17:38:27+00:00"
+    "sunset": "2017-02-09T17:38:27+00:00",
+    "civilSunrise": "2017-02-09T05:28:28+00:00",
+    "civilSunset": "2017-02-09T18:00:09+00:00",
+    "nauticalSunrise": "2017-02-09T05:03:36+00:00",
+    "nauticalSunset": "2017-02-09T18:25:01+00:00",
+    "astronomicalSunrise": "2017-02-09T04:38:43+00:00",
+    "astronomicalSunset": "2017-02-09T18:49:53+00:00"
  }, {
     "city": "Accra",
     "latitude": 5.55602,
     "longitude": -0.1969,
     "sunrise": "2017-02-09T06:17:09+00:00",
-    "sunset": "2017-02-09T18:12:49+00:00"
+    "sunset": "2017-02-09T18:12:49+00:00",
+    "civilSunrise": "2017-02-09T05:55:41+00:00",
+    "civilSunset": "2017-02-09T18:34:23+00:00",
+    "nauticalSunrise": "2017-02-09T05:30:58+00:00",
+    "nauticalSunset": "2017-02-09T18:59:06+00:00",
+    "astronomicalSunrise": "2017-02-09T05:06:11+00:00",
+    "astronomicalSunset": "2017-02-09T19:23:51+00:00"
  }, {
     "city": "Adamstown",
     "latitude": -25.06597,
     "longitude": -130.10147,
     "sunrise": "2017-02-09T14:23:26+00:00",
-    "sunset": "2017-02-10T03:25:47+00:00"
+    "sunset": "2017-02-10T03:25:47+00:00",
+    "civilSunrise": "2017-02-09T13:58:49+00:00",
+    "civilSunset": "2017-02-10T03:50:03+00:00",
+    "nauticalSunrise": "2017-02-09T13:30:35+00:00",
+    "nauticalSunset": "2017-02-10T04:18:12+00:00",
+    "astronomicalSunrise": "2017-02-09T13:01:32+00:00",
+    "astronomicalSunset": "2017-02-10T04:47:10+00:00"
  }, {
     "city": "Addis Ababa",
     "latitude": 9.02497,
     "longitude": 38.74689,
     "sunrise": "2017-02-09T03:44:59+00:00",
-    "sunset": "2017-02-09T15:33:26+00:00"
+    "sunset": "2017-02-09T15:33:26+00:00",
+    "civilSunrise": "2017-02-09T03:23:25+00:00",
+    "civilSunset": "2017-02-09T15:55:08+00:00",
+    "nauticalSunrise": "2017-02-09T02:58:33+00:00",
+    "nauticalSunset": "2017-02-09T16:20:00+00:00",
+    "astronomicalSunrise": "2017-02-09T02:33:40+00:00",
+    "astronomicalSunset": "2017-02-09T16:44:52+00:00"
  }, {
     "city": "Algiers",
     "latitude": 36.7525,
     "longitude": 3.04197,
     "sunrise": "2017-02-09T06:41:38+00:00",
-    "sunset": "2017-02-09T17:22:25+00:00"
+    "sunset": "2017-02-09T17:22:25+00:00",
+    "civilSunrise": "2017-02-09T06:15:27+00:00",
+    "civilSunset": "2017-02-09T17:49:08+00:00",
+    "nauticalSunrise": "2017-02-09T05:45:02+00:00",
+    "nauticalSunset": "2017-02-09T18:19:35+00:00",
+    "astronomicalSunrise": "2017-02-09T05:14:54+00:00",
+    "astronomicalSunset": "2017-02-09T18:49:44+00:00"
  }, {
     "city": "Alofi",
     "latitude": -19.05952,
     "longitude": -169.91867,
     "sunrise": "2017-02-09T17:10:04+00:00",
-    "sunset": "2017-02-10T05:57:41+00:00"
+    "sunset": "2017-02-10T05:57:41+00:00",
+    "civilSunrise": "2017-02-09T16:46:45+00:00",
+    "civilSunset": "2017-02-10T06:20:46+00:00",
+    "nauticalSunrise": "2017-02-09T16:20:02+00:00",
+    "nauticalSunset": "2017-02-10T06:47:26+00:00",
+    "astronomicalSunrise": "2017-02-09T15:52:46+00:00",
+    "astronomicalSunset": "2017-02-10T07:14:37+00:00"
  }, {
     "city": "Amman",
     "latitude": 31.95522,
     "longitude": 35.94503,
     "sunrise": "2017-02-09T04:23:02+00:00",
-    "sunset": "2017-02-09T15:17:47+00:00"
+    "sunset": "2017-02-09T15:17:47+00:00",
+    "civilSunrise": "2017-02-09T03:58:18+00:00",
+    "civilSunset": "2017-02-09T15:42:59+00:00",
+    "nauticalSunrise": "2017-02-09T03:29:33+00:00",
+    "nauticalSunset": "2017-02-09T16:11:44+00:00",
+    "astronomicalSunrise": "2017-02-09T03:01:02+00:00",
+    "astronomicalSunset": "2017-02-09T16:40:16+00:00"
  }, {
     "city": "Amsterdam",
     "latitude": 52.37403,
     "longitude": 4.88969,
     "sunrise": "2017-02-09T07:06:08+00:00",
-    "sunset": "2017-02-09T16:43:09+00:00"
+    "sunset": "2017-02-09T16:43:09+00:00",
+    "civilSunrise": "2017-02-09T06:31:18+00:00",
+    "civilSunset": "2017-02-09T17:18:49+00:00",
+    "nauticalSunrise": "2017-02-09T05:51:16+00:00",
+    "nauticalSunset": "2017-02-09T17:58:54+00:00",
+    "astronomicalSunrise": "2017-02-09T05:11:55+00:00",
+    "astronomicalSunset": "2017-02-09T18:38:20+00:00"
  }, {
     "city": "Andorra la Vella",
     "latitude": 42.50779,
     "longitude": 1.52109,
     "sunrise": "2017-02-09T06:57:28+00:00",
-    "sunset": "2017-02-09T17:18:45+00:00"
+    "sunset": "2017-02-09T17:18:45+00:00",
+    "civilSunrise": "2017-02-09T06:28:58+00:00",
+    "civilSunset": "2017-02-09T17:47:53+00:00",
+    "nauticalSunrise": "2017-02-09T05:55:54+00:00",
+    "nauticalSunset": "2017-02-09T18:20:59+00:00",
+    "astronomicalSunrise": "2017-02-09T05:23:13+00:00",
+    "astronomicalSunset": "2017-02-09T18:53:42+00:00"
  }, {
     "city": "Ankara",
     "latitude": 39.91987,
     "longitude": 32.85427,
     "sunrise": "2017-02-09T04:47:39+00:00",
-    "sunset": "2017-02-09T15:17:54+00:00"
+    "sunset": "2017-02-09T15:17:54+00:00",
+    "civilSunrise": "2017-02-09T04:20:16+00:00",
+    "civilSunset": "2017-02-09T15:45:52+00:00",
+    "nauticalSunrise": "2017-02-09T03:48:29+00:00",
+    "nauticalSunset": "2017-02-09T16:17:41+00:00",
+    "astronomicalSunrise": "2017-02-09T03:17:02+00:00",
+    "astronomicalSunset": "2017-02-09T16:49:09+00:00"
  }, {
     "city": "Antananarivo",
     "latitude": -18.91433,
     "longitude": 47.53098,
     "sunrise": "2017-02-09T02:40:08+00:00",
-    "sunset": "2017-02-09T15:28:00+00:00"
+    "sunset": "2017-02-09T15:28:00+00:00",
+    "civilSunrise": "2017-02-09T02:16:49+00:00",
+    "civilSunset": "2017-02-09T15:51:05+00:00",
+    "nauticalSunrise": "2017-02-09T01:50:06+00:00",
+    "nauticalSunset": "2017-02-09T16:17:45+00:00",
+    "astronomicalSunrise": "2017-02-09T01:22:49+00:00",
+    "astronomicalSunset": "2017-02-09T16:44:57+00:00"
  }, {
     "city": "Apia",
     "latitude": -13.83333,
     "longitude": -171.76666,
     "sunrise": "2017-02-09T17:23:21+00:00",
-    "sunset": "2017-02-10T05:59:12+00:00"
+    "sunset": "2017-02-10T05:59:12+00:00",
+    "civilSunrise": "2017-02-09T17:00:50+00:00",
+    "civilSunset": "2017-02-10T06:21:33+00:00",
+    "nauticalSunrise": "2017-02-09T16:35:02+00:00",
+    "nauticalSunset": "2017-02-10T06:47:18+00:00",
+    "astronomicalSunrise": "2017-02-09T16:08:51+00:00",
+    "astronomicalSunset": "2017-02-10T07:13:26+00:00"
  }, {
     "city": "Ashgabat",
     "latitude": 37.95,
     "longitude": 58.38333,
     "sunrise": "2017-02-09T03:02:20+00:00",
-    "sunset": "2017-02-09T13:38:59+00:00"
+    "sunset": "2017-02-09T13:38:59+00:00",
+    "civilSunrise": "2017-02-09T02:35:42+00:00",
+    "civilSunset": "2017-02-09T14:06:09+00:00",
+    "nauticalSunrise": "2017-02-09T02:04:48+00:00",
+    "nauticalSunset": "2017-02-09T14:37:05+00:00",
+    "astronomicalSunrise": "2017-02-09T01:34:11+00:00",
+    "astronomicalSunset": "2017-02-09T15:07:43+00:00"
  }, {
     "city": "Asmara",
     "latitude": 15.33333,
     "longitude": 38.93333,
     "sunrise": "2017-02-09T03:50:56+00:00",
-    "sunset": "2017-02-09T15:25:59+00:00"
+    "sunset": "2017-02-09T15:25:59+00:00",
+    "civilSunrise": "2017-02-09T03:28:59+00:00",
+    "civilSunset": "2017-02-09T15:48:10+00:00",
+    "nauticalSunrise": "2017-02-09T03:03:35+00:00",
+    "nauticalSunset": "2017-02-09T16:13:34+00:00",
+    "astronomicalSunrise": "2017-02-09T02:38:14+00:00",
+    "astronomicalSunset": "2017-02-09T16:38:54+00:00"
  }, {
     "city": "Astana",
     "latitude": 51.1801,
     "longitude": 71.44598,
     "sunrise": "2017-02-09T02:37:03+00:00",
-    "sunset": "2017-02-09T12:19:47+00:00"
+    "sunset": "2017-02-09T12:19:47+00:00",
+    "civilSunrise": "2017-02-09T02:03:10+00:00",
+    "civilSunset": "2017-02-09T12:54:27+00:00",
+    "nauticalSunrise": "2017-02-09T01:24:12+00:00",
+    "nauticalSunset": "2017-02-09T13:33:29+00:00",
+    "astronomicalSunrise": "2017-02-09T00:45:51+00:00",
+    "astronomicalSunset": "2017-02-09T14:11:54+00:00"
  }, {
     "city": "Asunción",
     "latitude": -25.30066,
     "longitude": -57.63591,
     "sunrise": "2017-02-09T09:33:08+00:00",
-    "sunset": "2017-02-09T22:36:22+00:00"
+    "sunset": "2017-02-09T22:36:22+00:00",
+    "civilSunrise": "2017-02-09T09:08:26+00:00",
+    "civilSunset": "2017-02-09T23:00:41+00:00",
+    "nauticalSunrise": "2017-02-09T08:40:08+00:00",
+    "nauticalSunset": "2017-02-09T23:28:55+00:00",
+    "astronomicalSunrise": "2017-02-09T08:10:58+00:00",
+    "astronomicalSunset": "2017-02-09T23:57:59+00:00"
  }, {
     "city": "Athens",
     "latitude": 37.97945,
     "longitude": 23.71622,
     "sunrise": "2017-02-09T05:20:57+00:00",
-    "sunset": "2017-02-09T15:57:43+00:00"
+    "sunset": "2017-02-09T15:57:43+00:00",
+    "civilSunrise": "2017-02-09T04:54:19+00:00",
+    "civilSunset": "2017-02-09T16:24:53+00:00",
+    "nauticalSunrise": "2017-02-09T04:23:24+00:00",
+    "nauticalSunset": "2017-02-09T16:55:50+00:00",
+    "astronomicalSunrise": "2017-02-09T03:52:47+00:00",
+    "astronomicalSunset": "2017-02-09T17:26:29+00:00"
  }, {
     "city": "Avarua",
     "latitude": -21.20778,
     "longitude": -159.775,
     "sunrise": "2017-02-09T16:26:57+00:00",
-    "sunset": "2017-02-10T05:19:39+00:00"
+    "sunset": "2017-02-10T05:19:39+00:00",
+    "civilSunrise": "2017-02-09T16:03:13+00:00",
+    "civilSunset": "2017-02-10T05:43:07+00:00",
+    "nauticalSunrise": "2017-02-09T15:36:01+00:00",
+    "nauticalSunset": "2017-02-10T06:10:15+00:00",
+    "astronomicalSunrise": "2017-02-09T15:08:11+00:00",
+    "astronomicalSunset": "2017-02-10T06:38:00+00:00"
  }, {
     "city": "Baghdad",
     "latitude": 33.34058,
     "longitude": 44.40088,
     "sunrise": "2017-02-09T03:51:12+00:00",
-    "sunset": "2017-02-09T14:41:59+00:00"
+    "sunset": "2017-02-09T14:41:59+00:00",
+    "civilSunrise": "2017-02-09T03:26:04+00:00",
+    "civilSunset": "2017-02-09T15:07:35+00:00",
+    "nauticalSunrise": "2017-02-09T02:56:53+00:00",
+    "nauticalSunset": "2017-02-09T15:36:47+00:00",
+    "astronomicalSunrise": "2017-02-09T02:27:57+00:00",
+    "astronomicalSunset": "2017-02-09T16:05:44+00:00"
  }, {
     "city": "Baku",
     "latitude": 40.37767,
     "longitude": 49.89201,
     "sunrise": "2017-02-09T03:40:20+00:00",
-    "sunset": "2017-02-09T14:08:55+00:00"
+    "sunset": "2017-02-09T14:08:55+00:00",
+    "civilSunrise": "2017-02-09T03:12:46+00:00",
+    "civilSunset": "2017-02-09T14:37:05+00:00",
+    "nauticalSunrise": "2017-02-09T02:40:46+00:00",
+    "nauticalSunset": "2017-02-09T15:09:06+00:00",
+    "astronomicalSunrise": "2017-02-09T02:09:07+00:00",
+    "astronomicalSunset": "2017-02-09T15:40:47+00:00"
  }, {
     "city": "Bamako",
     "latitude": 12.65,
     "longitude": -8,
     "sunrise": "2017-02-09T06:55:45+00:00",
-    "sunset": "2017-02-09T18:36:39+00:00"
+    "sunset": "2017-02-09T18:36:39+00:00",
+    "civilSunrise": "2017-02-09T06:34:00+00:00",
+    "civilSunset": "2017-02-09T18:58:35+00:00",
+    "nauticalSunrise": "2017-02-09T06:08:52+00:00",
+    "nauticalSunset": "2017-02-09T19:23:42+00:00",
+    "astronomicalSunrise": "2017-02-09T05:43:46+00:00",
+    "astronomicalSunset": "2017-02-09T19:48:48+00:00"
  }, {
     "city": "Bandar Seri Begawan",
     "latitude": 4.94029,
     "longitude": 114.94806,
     "sunrise": "2017-02-08T22:35:58+00:00",
-    "sunset": "2017-02-09T10:32:50+00:00"
+    "sunset": "2017-02-09T10:32:50+00:00",
+    "civilSunrise": "2017-02-08T22:14:30+00:00",
+    "civilSunset": "2017-02-09T10:54:23+00:00",
+    "nauticalSunrise": "2017-02-08T21:49:47+00:00",
+    "nauticalSunset": "2017-02-09T11:19:06+00:00",
+    "astronomicalSunrise": "2017-02-08T21:25:00+00:00",
+    "astronomicalSunset": "2017-02-09T11:43:51+00:00"
  }, {
     "city": "Bangkok",
     "latitude": 13.75,
     "longitude": 100.51667,
     "sunrise": "2017-02-08T23:42:57+00:00",
-    "sunset": "2017-02-09T11:21:18+00:00"
+    "sunset": "2017-02-09T11:21:18+00:00",
+    "civilSunrise": "2017-02-08T23:21:07+00:00",
+    "civilSunset": "2017-02-09T11:43:21+00:00",
+    "nauticalSunrise": "2017-02-08T22:55:52+00:00",
+    "nauticalSunset": "2017-02-09T12:08:35+00:00",
+    "astronomicalSunrise": "2017-02-08T22:30:40+00:00",
+    "astronomicalSunset": "2017-02-09T12:33:46+00:00"
  }, {
     "city": "Bangui",
     "latitude": 4.36122,
     "longitude": 18.55496,
     "sunrise": "2017-02-09T05:00:55+00:00",
-    "sunset": "2017-02-09T16:59:02+00:00"
+    "sunset": "2017-02-09T16:59:02+00:00",
+    "civilSunrise": "2017-02-09T04:39:28+00:00",
+    "civilSunset": "2017-02-09T17:20:34+00:00",
+    "nauticalSunrise": "2017-02-09T04:14:46+00:00",
+    "nauticalSunset": "2017-02-09T17:45:15+00:00",
+    "astronomicalSunrise": "2017-02-09T03:50:00+00:00",
+    "astronomicalSunset": "2017-02-09T18:10:00+00:00"
  }, {
     "city": "Banjul",
     "latitude": 13.45274,
     "longitude": -16.57803,
     "sunrise": "2017-02-09T07:30:54+00:00",
-    "sunset": "2017-02-09T19:10:07+00:00"
+    "sunset": "2017-02-09T19:10:07+00:00",
+    "civilSunrise": "2017-02-09T07:09:06+00:00",
+    "civilSunset": "2017-02-09T19:32:07+00:00",
+    "nauticalSunrise": "2017-02-09T06:43:54+00:00",
+    "nauticalSunset": "2017-02-09T19:57:19+00:00",
+    "astronomicalSunrise": "2017-02-09T06:18:44+00:00",
+    "astronomicalSunset": "2017-02-09T20:22:28+00:00"
  }, {
     "city": "Basseterre",
     "latitude": 17.29484,
     "longitude": -62.7261,
     "sunrise": "2017-02-09T10:39:37+00:00",
-    "sunset": "2017-02-09T22:10:36+00:00"
+    "sunset": "2017-02-09T22:10:36+00:00",
+    "civilSunrise": "2017-02-09T10:17:29+00:00",
+    "civilSunset": "2017-02-09T22:32:59+00:00",
+    "nauticalSunrise": "2017-02-09T09:51:51+00:00",
+    "nauticalSunset": "2017-02-09T22:58:36+00:00",
+    "astronomicalSunrise": "2017-02-09T09:26:18+00:00",
+    "astronomicalSunset": "2017-02-09T23:24:09+00:00"
  }, {
     "city": "Basse-Terre",
     "latitude": 15.99854,
     "longitude": -61.72548,
     "sunrise": "2017-02-09T10:34:11+00:00",
-    "sunset": "2017-02-09T22:08:01+00:00"
+    "sunset": "2017-02-09T22:08:01+00:00",
+    "civilSunrise": "2017-02-09T10:12:11+00:00",
+    "civilSunset": "2017-02-09T22:30:15+00:00",
+    "nauticalSunrise": "2017-02-09T09:46:43+00:00",
+    "nauticalSunset": "2017-02-09T22:55:43+00:00",
+    "astronomicalSunrise": "2017-02-09T09:21:19+00:00",
+    "astronomicalSunset": "2017-02-09T23:21:07+00:00"
  }, {
     "city": "Beijing",
     "latitude": 39.9075,
     "longitude": 116.39723,
     "sunrise": "2017-02-08T23:13:43+00:00",
-    "sunset": "2017-02-09T09:43:29+00:00"
+    "sunset": "2017-02-09T09:43:29+00:00",
+    "civilSunrise": "2017-02-08T22:46:19+00:00",
+    "civilSunset": "2017-02-09T10:11:27+00:00",
+    "nauticalSunrise": "2017-02-08T22:14:32+00:00",
+    "nauticalSunset": "2017-02-09T10:43:16+00:00",
+    "astronomicalSunrise": "2017-02-08T21:43:05+00:00",
+    "astronomicalSunset": "2017-02-09T11:14:44+00:00"
  }, {
     "city": "Beirut",
     "latitude": 33.88894,
     "longitude": 35.49442,
     "sunrise": "2017-02-09T04:27:36+00:00",
-    "sunset": "2017-02-09T15:16:50+00:00"
+    "sunset": "2017-02-09T15:16:50+00:00",
+    "civilSunrise": "2017-02-09T04:02:19+00:00",
+    "civilSunset": "2017-02-09T15:42:36+00:00",
+    "nauticalSunrise": "2017-02-09T03:32:57+00:00",
+    "nauticalSunset": "2017-02-09T16:11:59+00:00",
+    "astronomicalSunrise": "2017-02-09T03:03:49+00:00",
+    "astronomicalSunset": "2017-02-09T16:41:08+00:00"
  }, {
     "city": "Belgrade",
     "latitude": 44.80401,
     "longitude": 20.46513,
     "sunrise": "2017-02-09T05:46:11+00:00",
-    "sunset": "2017-02-09T15:58:29+00:00"
+    "sunset": "2017-02-09T15:58:29+00:00",
+    "civilSunrise": "2017-02-09T05:16:31+00:00",
+    "civilSunset": "2017-02-09T16:28:50+00:00",
+    "nauticalSunrise": "2017-02-09T04:42:09+00:00",
+    "nauticalSunset": "2017-02-09T17:03:13+00:00",
+    "astronomicalSunrise": "2017-02-09T04:08:13+00:00",
+    "astronomicalSunset": "2017-02-09T17:37:12+00:00"
  }, {
     "city": "Belmopan",
     "latitude": 17.25,
     "longitude": -88.76667,
     "sunrise": "2017-02-09T12:23:42+00:00",
-    "sunset": "2017-02-09T23:54:50+00:00"
+    "sunset": "2017-02-09T23:54:50+00:00",
+    "civilSunrise": "2017-02-09T12:01:34+00:00",
+    "civilSunset": "2017-02-10T00:17:13+00:00",
+    "nauticalSunrise": "2017-02-09T11:35:57+00:00",
+    "nauticalSunset": "2017-02-10T00:42:50+00:00",
+    "astronomicalSunrise": "2017-02-09T11:10:24+00:00",
+    "astronomicalSunset": "2017-02-10T01:08:22+00:00"
  }, {
     "city": "Berlin",
     "latitude": 52.52437,
     "longitude": 13.41053,
     "sunrise": "2017-02-09T06:32:30+00:00",
-    "sunset": "2017-02-09T16:08:36+00:00"
+    "sunset": "2017-02-09T16:08:36+00:00",
+    "civilSunrise": "2017-02-09T05:57:32+00:00",
+    "civilSunset": "2017-02-09T16:44:25+00:00",
+    "nauticalSunrise": "2017-02-09T05:17:22+00:00",
+    "nauticalSunset": "2017-02-09T17:24:38+00:00",
+    "astronomicalSunrise": "2017-02-09T04:37:53+00:00",
+    "astronomicalSunset": "2017-02-09T18:04:12+00:00"
  }, {
     "city": "Bern",
     "latitude": 46.94809,
     "longitude": 7.44744,
     "sunrise": "2017-02-09T06:42:41+00:00",
-    "sunset": "2017-02-09T16:46:08+00:00"
+    "sunset": "2017-02-09T16:46:08+00:00",
+    "civilSunrise": "2017-02-09T06:11:47+00:00",
+    "civilSunset": "2017-02-09T17:17:45+00:00",
+    "nauticalSunrise": "2017-02-09T05:36:03+00:00",
+    "nauticalSunset": "2017-02-09T17:53:31+00:00",
+    "astronomicalSunrise": "2017-02-09T05:00:48+00:00",
+    "astronomicalSunset": "2017-02-09T18:28:49+00:00"
  }, {
     "city": "Bishkek",
     "latitude": 42.87306,
     "longitude": 74.60028,
     "sunrise": "2017-02-09T02:06:06+00:00",
-    "sunset": "2017-02-09T12:25:29+00:00"
+    "sunset": "2017-02-09T12:25:29+00:00",
+    "civilSunrise": "2017-02-09T01:37:24+00:00",
+    "civilSunset": "2017-02-09T12:54:49+00:00",
+    "nauticalSunrise": "2017-02-09T01:04:07+00:00",
+    "nauticalSunset": "2017-02-09T13:28:07+00:00",
+    "astronomicalSunrise": "2017-02-09T00:31:15+00:00",
+    "astronomicalSunset": "2017-02-09T14:01:02+00:00"
  }, {
     "city": "Bissau",
     "latitude": 11.85,
     "longitude": -15.58333,
     "sunrise": "2017-02-09T07:25:13+00:00",
-    "sunset": "2017-02-09T19:07:50+00:00"
+    "sunset": "2017-02-09T19:07:50+00:00",
+    "civilSunrise": "2017-02-09T07:03:32+00:00",
+    "civilSunset": "2017-02-09T19:29:43+00:00",
+    "nauticalSunrise": "2017-02-09T06:38:28+00:00",
+    "nauticalSunset": "2017-02-09T19:54:46+00:00",
+    "astronomicalSunrise": "2017-02-09T06:13:26+00:00",
+    "astronomicalSunset": "2017-02-09T20:19:48+00:00"
  }, {
     "city": "Bogotá",
     "latitude": 4.60971,
     "longitude": -74.08175,
     "sunrise": "2017-02-09T11:11:42+00:00",
-    "sunset": "2017-02-09T23:09:21+00:00"
+    "sunset": "2017-02-09T23:09:21+00:00",
+    "civilSunrise": "2017-02-09T10:50:15+00:00",
+    "civilSunset": "2017-02-09T23:30:53+00:00",
+    "nauticalSunrise": "2017-02-09T10:25:33+00:00",
+    "nauticalSunset": "2017-02-09T23:55:34+00:00",
+    "astronomicalSunrise": "2017-02-09T10:00:48+00:00",
+    "astronomicalSunset": "2017-02-10T00:20:19+00:00"
  }, {
     "city": "Brasília",
     "latitude": -15.77972,
     "longitude": -47.92972,
     "sunrise": "2017-02-09T09:05:42+00:00",
-    "sunset": "2017-02-09T21:46:08+00:00"
+    "sunset": "2017-02-09T21:46:08+00:00",
+    "civilSunrise": "2017-02-09T08:42:54+00:00",
+    "civilSunset": "2017-02-09T22:08:44+00:00",
+    "nauticalSunrise": "2017-02-09T08:16:47+00:00",
+    "nauticalSunset": "2017-02-09T22:34:49+00:00",
+    "astronomicalSunrise": "2017-02-09T07:50:14+00:00",
+    "astronomicalSunset": "2017-02-09T23:01:19+00:00"
  }, {
     "city": "Bratislava",
     "latitude": 48.14816,
     "longitude": 17.10674,
     "sunrise": "2017-02-09T06:06:45+00:00",
-    "sunset": "2017-02-09T16:04:47+00:00"
+    "sunset": "2017-02-09T16:04:47+00:00",
+    "civilSunrise": "2017-02-09T05:35:05+00:00",
+    "civilSunset": "2017-02-09T16:37:11+00:00",
+    "nauticalSunrise": "2017-02-09T04:58:31+00:00",
+    "nauticalSunset": "2017-02-09T17:13:48+00:00",
+    "astronomicalSunrise": "2017-02-09T04:22:28+00:00",
+    "astronomicalSunset": "2017-02-09T17:49:54+00:00"
  }, {
     "city": "Brazzaville",
     "latitude": -4.2669,
     "longitude": 15.28327,
     "sunrise": "2017-02-09T05:05:09+00:00",
-    "sunset": "2017-02-09T17:20:59+00:00"
+    "sunset": "2017-02-09T17:20:59+00:00",
+    "civilSunrise": "2017-02-09T04:43:29+00:00",
+    "civilSunset": "2017-02-09T17:42:37+00:00",
+    "nauticalSunrise": "2017-02-09T04:18:37+00:00",
+    "nauticalSunset": "2017-02-09T18:07:27+00:00",
+    "astronomicalSunrise": "2017-02-09T03:53:34+00:00",
+    "astronomicalSunset": "2017-02-09T18:32:28+00:00"
  }, {
     "city": "Bridgetown",
     "latitude": 13.1,
     "longitude": -59.61667,
     "sunrise": "2017-02-09T10:22:39+00:00",
-    "sunset": "2017-02-09T22:02:41+00:00"
+    "sunset": "2017-02-09T22:02:41+00:00",
+    "civilSunrise": "2017-02-09T10:00:53+00:00",
+    "civilSunset": "2017-02-09T22:24:39+00:00",
+    "nauticalSunrise": "2017-02-09T09:35:43+00:00",
+    "nauticalSunset": "2017-02-09T22:49:49+00:00",
+    "astronomicalSunrise": "2017-02-09T09:10:35+00:00",
+    "astronomicalSunset": "2017-02-09T23:14:56+00:00"
  }, {
     "city": "Brussels",
     "latitude": 50.85045,
     "longitude": 4.34878,
     "sunrise": "2017-02-09T07:04:15+00:00",
-    "sunset": "2017-02-09T16:49:21+00:00"
+    "sunset": "2017-02-09T16:49:21+00:00",
+    "civilSunrise": "2017-02-09T06:30:40+00:00",
+    "civilSunset": "2017-02-09T17:23:45+00:00",
+    "nauticalSunrise": "2017-02-09T05:51:59+00:00",
+    "nauticalSunset": "2017-02-09T18:02:28+00:00",
+    "astronomicalSunrise": "2017-02-09T05:13:54+00:00",
+    "astronomicalSunset": "2017-02-09T18:40:37+00:00"
  }, {
     "city": "București",
     "latitude": 44.43225,
     "longitude": 26.10626,
     "sunrise": "2017-02-09T05:22:54+00:00",
-    "sunset": "2017-02-09T15:36:38+00:00"
+    "sunset": "2017-02-09T15:36:38+00:00",
+    "civilSunrise": "2017-02-09T04:53:26+00:00",
+    "civilSunset": "2017-02-09T16:06:47+00:00",
+    "nauticalSunrise": "2017-02-09T04:19:17+00:00",
+    "nauticalSunset": "2017-02-09T16:40:57+00:00",
+    "astronomicalSunrise": "2017-02-09T03:45:34+00:00",
+    "astronomicalSunset": "2017-02-09T17:14:43+00:00"
  }, {
     "city": "Budapest",
     "latitude": 47.49801,
     "longitude": 19.03991,
     "sunrise": "2017-02-09T05:57:34+00:00",
-    "sunset": "2017-02-09T15:58:30+00:00"
+    "sunset": "2017-02-09T15:58:30+00:00",
+    "civilSunrise": "2017-02-09T05:26:19+00:00",
+    "civilSunset": "2017-02-09T16:30:28+00:00",
+    "nauticalSunrise": "2017-02-09T04:50:13+00:00",
+    "nauticalSunset": "2017-02-09T17:06:37+00:00",
+    "astronomicalSunrise": "2017-02-09T04:14:36+00:00",
+    "astronomicalSunset": "2017-02-09T17:42:17+00:00"
  }, {
     "city": "Buenos Aires",
     "latitude": -34.61315,
     "longitude": -58.37723,
     "sunrise": "2017-02-09T09:22:49+00:00",
-    "sunset": "2017-02-09T22:52:36+00:00"
+    "sunset": "2017-02-09T22:52:36+00:00",
+    "civilSunrise": "2017-02-09T08:55:05+00:00",
+    "civilSunset": "2017-02-09T23:19:45+00:00",
+    "nauticalSunrise": "2017-02-09T08:23:04+00:00",
+    "nauticalSunset": "2017-02-09T23:51:39+00:00",
+    "astronomicalSunrise": "2017-02-09T07:49:21+00:00",
+    "astronomicalSunset": "2017-02-10T00:25:13+00:00"
  }, {
     "city": "Bujumbura",
     "latitude": -3.37611,
     "longitude": 29.36,
     "sunrise": "2017-02-09T04:09:45+00:00",
-    "sunset": "2017-02-09T16:23:45+00:00"
+    "sunset": "2017-02-09T16:23:45+00:00",
+    "civilSunrise": "2017-02-09T03:48:09+00:00",
+    "civilSunset": "2017-02-09T16:45:21+00:00",
+    "nauticalSunrise": "2017-02-09T03:23:19+00:00",
+    "nauticalSunset": "2017-02-09T17:10:09+00:00",
+    "astronomicalSunrise": "2017-02-09T02:58:19+00:00",
+    "astronomicalSunset": "2017-02-09T17:35:07+00:00"
  }, {
     "city": "Cairo",
     "latitude": 30.06263,
     "longitude": 31.24967,
     "sunrise": "2017-02-09T04:39:14+00:00",
-    "sunset": "2017-02-09T15:39:10+00:00"
+    "sunset": "2017-02-09T15:39:10+00:00",
+    "civilSunrise": "2017-02-09T04:14:57+00:00",
+    "civilSunset": "2017-02-09T16:03:52+00:00",
+    "nauticalSunrise": "2017-02-09T03:46:46+00:00",
+    "nauticalSunset": "2017-02-09T16:32:03+00:00",
+    "astronomicalSunrise": "2017-02-09T03:18:48+00:00",
+    "astronomicalSunset": "2017-02-09T17:00:03+00:00"
  }, {
     "city": "Canberra",
     "latitude": -35.28346,
     "longitude": 149.12807,
     "sunrise": "2017-02-08T19:31:08+00:00",
-    "sunset": "2017-02-09T09:04:13+00:00"
+    "sunset": "2017-02-09T09:04:13+00:00",
+    "civilSunrise": "2017-02-08T19:03:05+00:00",
+    "civilSunset": "2017-02-09T09:31:40+00:00",
+    "nauticalSunrise": "2017-02-08T18:30:39+00:00",
+    "nauticalSunset": "2017-02-09T10:03:59+00:00",
+    "astronomicalSunrise": "2017-02-08T17:56:23+00:00",
+    "astronomicalSunset": "2017-02-09T10:38:05+00:00"
  }, {
     "city": "Caracas",
     "latitude": 10.5,
     "longitude": -66.91667,
     "sunrise": "2017-02-09T10:49:06+00:00",
-    "sunset": "2017-02-09T22:34:37+00:00"
+    "sunset": "2017-02-09T22:34:37+00:00",
+    "civilSunrise": "2017-02-09T10:27:30+00:00",
+    "civilSunset": "2017-02-09T22:56:24+00:00",
+    "nauticalSunrise": "2017-02-09T10:02:32+00:00",
+    "nauticalSunset": "2017-02-09T23:21:21+00:00",
+    "astronomicalSunrise": "2017-02-09T09:37:35+00:00",
+    "astronomicalSunset": "2017-02-09T23:46:17+00:00"
  }, {
     "city": "Castries",
     "latitude": 13.9957,
     "longitude": -61.00614,
     "sunrise": "2017-02-09T10:29:09+00:00",
-    "sunset": "2017-02-09T22:07:17+00:00"
+    "sunset": "2017-02-09T22:07:17+00:00",
+    "civilSunrise": "2017-02-09T10:07:19+00:00",
+    "civilSunset": "2017-02-09T22:29:20+00:00",
+    "nauticalSunrise": "2017-02-09T09:42:04+00:00",
+    "nauticalSunset": "2017-02-09T22:54:35+00:00",
+    "astronomicalSunrise": "2017-02-09T09:16:52+00:00",
+    "astronomicalSunset": "2017-02-09T23:19:47+00:00"
  }, {
     "city": "Cayenne",
     "latitude": 4.93333,
     "longitude": -52.33333,
     "sunrise": "2017-02-09T09:45:02+00:00",
-    "sunset": "2017-02-09T21:42:01+00:00"
+    "sunset": "2017-02-09T21:42:01+00:00",
+    "civilSunrise": "2017-02-09T09:23:36+00:00",
+    "civilSunset": "2017-02-09T22:03:34+00:00",
+    "nauticalSunrise": "2017-02-09T08:58:53+00:00",
+    "nauticalSunset": "2017-02-09T22:28:16+00:00",
+    "astronomicalSunrise": "2017-02-09T08:34:07+00:00",
+    "astronomicalSunset": "2017-02-09T22:53:00+00:00"
  }, {
     "city": "Charlotte Amalie",
     "latitude": 18.3419,
     "longitude": -64.9307,
     "sunrise": "2017-02-09T10:49:35+00:00",
-    "sunset": "2017-02-09T22:18:16+00:00"
+    "sunset": "2017-02-09T22:18:16+00:00",
+    "civilSunrise": "2017-02-09T10:27:20+00:00",
+    "civilSunset": "2017-02-09T22:40:47+00:00",
+    "nauticalSunrise": "2017-02-09T10:01:34+00:00",
+    "nauticalSunset": "2017-02-09T23:06:32+00:00",
+    "astronomicalSunrise": "2017-02-09T09:35:53+00:00",
+    "astronomicalSunset": "2017-02-09T23:32:13+00:00"
  }, {
     "city": "Chișinău",
     "latitude": 47.00556,
     "longitude": 28.8575,
     "sunrise": "2017-02-09T05:17:15+00:00",
-    "sunset": "2017-02-09T15:20:16+00:00"
+    "sunset": "2017-02-09T15:20:16+00:00",
+    "civilSunrise": "2017-02-09T04:46:19+00:00",
+    "civilSunset": "2017-02-09T15:51:56+00:00",
+    "nauticalSunrise": "2017-02-09T04:10:32+00:00",
+    "nauticalSunset": "2017-02-09T16:27:45+00:00",
+    "astronomicalSunrise": "2017-02-09T03:35:15+00:00",
+    "astronomicalSunset": "2017-02-09T17:03:05+00:00"
  }, {
     "city": "Cockburn Town",
     "latitude": 21.46122,
     "longitude": -71.14188,
     "sunrise": "2017-02-09T11:17:57+00:00",
-    "sunset": "2017-02-09T22:39:35+00:00"
+    "sunset": "2017-02-09T22:39:35+00:00",
+    "civilSunrise": "2017-02-09T10:55:19+00:00",
+    "civilSunset": "2017-02-09T23:02:32+00:00",
+    "nauticalSunrise": "2017-02-09T10:29:04+00:00",
+    "nauticalSunset": "2017-02-09T23:28:47+00:00",
+    "astronomicalSunrise": "2017-02-09T10:02:55+00:00",
+    "astronomicalSunset": "2017-02-09T23:54:55+00:00"
  }, {
     "city": "Colombo",
     "latitude": 6.93194,
     "longitude": 79.84778,
     "sunrise": "2017-02-09T00:58:25+00:00",
-    "sunset": "2017-02-09T12:51:11+00:00"
+    "sunset": "2017-02-09T12:51:11+00:00",
+    "civilSunrise": "2017-02-09T00:36:55+00:00",
+    "civilSunset": "2017-02-09T13:12:48+00:00",
+    "nauticalSunrise": "2017-02-09T00:12:08+00:00",
+    "nauticalSunset": "2017-02-09T13:37:34+00:00",
+    "astronomicalSunrise": "2017-02-08T23:47:20+00:00",
+    "astronomicalSunset": "2017-02-09T14:02:22+00:00"
  }, {
     "city": "Conakry",
     "latitude": 9.53795,
     "longitude": -13.67729,
     "sunrise": "2017-02-09T07:15:11+00:00",
-    "sunset": "2017-02-09T19:02:38+00:00"
+    "sunset": "2017-02-09T19:02:38+00:00",
+    "civilSunrise": "2017-02-09T06:53:36+00:00",
+    "civilSunset": "2017-02-09T19:24:22+00:00",
+    "nauticalSunrise": "2017-02-09T06:28:42+00:00",
+    "nauticalSunset": "2017-02-09T19:49:15+00:00",
+    "astronomicalSunrise": "2017-02-09T06:03:48+00:00",
+    "astronomicalSunset": "2017-02-09T20:14:08+00:00"
  }, {
     "city": "Copenhagen",
     "latitude": 55.67594,
     "longitude": 12.56553,
     "sunrise": "2017-02-09T06:45:21+00:00",
-    "sunset": "2017-02-09T16:02:31+00:00"
+    "sunset": "2017-02-09T16:02:31+00:00",
+    "civilSunrise": "2017-02-09T06:07:19+00:00",
+    "civilSunset": "2017-02-09T16:41:28+00:00",
+    "nauticalSunrise": "2017-02-09T05:23:54+00:00",
+    "nauticalSunset": "2017-02-09T17:24:58+00:00",
+    "astronomicalSunrise": "2017-02-09T04:41:19+00:00",
+    "astronomicalSunset": "2017-02-09T18:07:39+00:00"
  }, {
     "city": "Dakar",
     "latitude": 14.6937,
     "longitude": -17.44406,
     "sunrise": "2017-02-09T07:35:42+00:00",
-    "sunset": "2017-02-09T19:12:15+00:00"
+    "sunset": "2017-02-09T19:12:15+00:00",
+    "civilSunrise": "2017-02-09T07:13:48+00:00",
+    "civilSunset": "2017-02-09T19:34:22+00:00",
+    "nauticalSunrise": "2017-02-09T06:48:29+00:00",
+    "nauticalSunset": "2017-02-09T19:59:41+00:00",
+    "astronomicalSunrise": "2017-02-09T06:23:12+00:00",
+    "astronomicalSunset": "2017-02-09T20:24:57+00:00"
  }, {
     "city": "Damascus",
     "latitude": 33.5102,
     "longitude": 36.29128,
     "sunrise": "2017-02-09T04:23:52+00:00",
-    "sunset": "2017-02-09T15:14:12+00:00"
+    "sunset": "2017-02-09T15:14:12+00:00",
+    "civilSunrise": "2017-02-09T03:58:41+00:00",
+    "civilSunset": "2017-02-09T15:39:51+00:00",
+    "nauticalSunrise": "2017-02-09T03:29:27+00:00",
+    "nauticalSunset": "2017-02-09T16:09:06+00:00",
+    "astronomicalSunrise": "2017-02-09T03:00:27+00:00",
+    "astronomicalSunset": "2017-02-09T16:38:07+00:00"
  }, {
     "city": "Dhaka",
     "latitude": 23.7104,
     "longitude": 90.40744,
     "sunrise": "2017-02-09T00:34:39+00:00",
-    "sunset": "2017-02-09T11:50:28+00:00"
+    "sunset": "2017-02-09T11:50:28+00:00",
+    "civilSunrise": "2017-02-09T00:11:39+00:00",
+    "civilSunset": "2017-02-09T12:13:49+00:00",
+    "nauticalSunrise": "2017-02-08T23:44:58+00:00",
+    "nauticalSunset": "2017-02-09T12:40:30+00:00",
+    "astronomicalSunrise": "2017-02-08T23:18:25+00:00",
+    "astronomicalSunset": "2017-02-09T13:07:03+00:00"
  }, {
     "city": "Dili",
     "latitude": -8.55861,
     "longitude": 125.57361,
     "sunrise": "2017-02-08T21:39:25+00:00",
-    "sunset": "2017-02-09T10:04:22+00:00"
+    "sunset": "2017-02-09T10:04:22+00:00",
+    "civilSunrise": "2017-02-08T21:17:27+00:00",
+    "civilSunset": "2017-02-09T10:26:15+00:00",
+    "nauticalSunrise": "2017-02-08T20:52:15+00:00",
+    "nauticalSunset": "2017-02-09T10:51:25+00:00",
+    "astronomicalSunrise": "2017-02-08T20:26:47+00:00",
+    "astronomicalSunset": "2017-02-09T11:16:51+00:00"
  }, {
     "city": "Djibouti",
     "latitude": 11.58767,
     "longitude": 43.14468,
     "sunrise": "2017-02-09T03:30:05+00:00",
-    "sunset": "2017-02-09T15:13:09+00:00"
+    "sunset": "2017-02-09T15:13:09+00:00",
+    "civilSunrise": "2017-02-09T03:08:24+00:00",
+    "civilSunset": "2017-02-09T15:35:01+00:00",
+    "nauticalSunrise": "2017-02-09T02:43:21+00:00",
+    "nauticalSunset": "2017-02-09T16:00:03+00:00",
+    "astronomicalSunrise": "2017-02-09T02:18:19+00:00",
+    "astronomicalSunset": "2017-02-09T16:25:04+00:00"
  }, {
     "city": "Dodoma",
     "latitude": -6.17486,
     "longitude": 35.73792,
     "sunrise": "2017-02-09T03:41:20+00:00",
-    "sunset": "2017-02-09T16:01:09+00:00"
+    "sunset": "2017-02-09T16:01:09+00:00",
+    "civilSunrise": "2017-02-09T03:19:33+00:00",
+    "civilSunset": "2017-02-09T16:22:53+00:00",
+    "nauticalSunrise": "2017-02-09T02:54:34+00:00",
+    "nauticalSunset": "2017-02-09T16:47:51+00:00",
+    "astronomicalSunrise": "2017-02-09T02:29:21+00:00",
+    "astronomicalSunset": "2017-02-09T17:13:01+00:00"
  }, {
     "city": "Doha",
     "latitude": 25.27932,
     "longitude": 51.52245,
     "sunrise": "2017-02-09T03:12:02+00:00",
-    "sunset": "2017-02-09T14:24:10+00:00"
+    "sunset": "2017-02-09T14:24:10+00:00",
+    "civilSunrise": "2017-02-09T02:48:46+00:00",
+    "civilSunset": "2017-02-09T14:47:48+00:00",
+    "nauticalSunrise": "2017-02-09T02:21:46+00:00",
+    "nauticalSunset": "2017-02-09T15:14:48+00:00",
+    "astronomicalSunrise": "2017-02-09T01:54:55+00:00",
+    "astronomicalSunset": "2017-02-09T15:41:40+00:00"
  }, {
     "city": "Douglas",
     "latitude": 54.15,
     "longitude": -4.48333,
     "sunrise": "2017-02-09T07:48:40+00:00",
-    "sunset": "2017-02-09T17:15:35+00:00"
+    "sunset": "2017-02-09T17:15:35+00:00",
+    "civilSunrise": "2017-02-09T07:12:13+00:00",
+    "civilSunset": "2017-02-09T17:52:56+00:00",
+    "nauticalSunrise": "2017-02-09T06:30:28+00:00",
+    "nauticalSunset": "2017-02-09T18:34:45+00:00",
+    "astronomicalSunrise": "2017-02-09T05:49:27+00:00",
+    "astronomicalSunset": "2017-02-09T19:15:51+00:00"
  }, {
     "city": "Dublin",
     "latitude": 53.34399,
     "longitude": -6.26719,
     "sunrise": "2017-02-09T07:53:26+00:00",
-    "sunset": "2017-02-09T17:25:06+00:00"
+    "sunset": "2017-02-09T17:25:06+00:00",
+    "civilSunrise": "2017-02-09T07:17:44+00:00",
+    "civilSunset": "2017-02-09T18:01:40+00:00",
+    "nauticalSunrise": "2017-02-09T06:36:47+00:00",
+    "nauticalSunset": "2017-02-09T18:42:40+00:00",
+    "astronomicalSunrise": "2017-02-09T05:56:33+00:00",
+    "astronomicalSunset": "2017-02-09T19:22:59+00:00"
  }, {
     "city": "Dushanbe",
     "latitude": 38.53575,
     "longitude": 68.77905,
     "sunrise": "2017-02-09T02:21:44+00:00",
-    "sunset": "2017-02-09T12:56:25+00:00"
+    "sunset": "2017-02-09T12:56:25+00:00",
+    "civilSunrise": "2017-02-09T01:54:53+00:00",
+    "civilSunset": "2017-02-09T13:23:49+00:00",
+    "nauticalSunrise": "2017-02-09T01:23:44+00:00",
+    "nauticalSunset": "2017-02-09T13:55:00+00:00",
+    "astronomicalSunrise": "2017-02-09T00:52:53+00:00",
+    "astronomicalSunset": "2017-02-09T14:25:53+00:00"
  }, {
     "city": "Flying Fish Cove",
     "latitude": -10.42172,
     "longitude": 105.67912,
     "sunrise": "2017-02-08T22:57:01+00:00",
-    "sunset": "2017-02-09T11:25:56+00:00"
+    "sunset": "2017-02-09T11:25:56+00:00",
+    "civilSunrise": "2017-02-08T22:34:52+00:00",
+    "civilSunset": "2017-02-09T11:47:58+00:00",
+    "nauticalSunrise": "2017-02-08T22:09:29+00:00",
+    "nauticalSunset": "2017-02-09T12:13:19+00:00",
+    "astronomicalSunrise": "2017-02-08T21:43:47+00:00",
+    "astronomicalSunset": "2017-02-09T12:38:59+00:00"
  }, {
     "city": "Fort-de-France",
     "latitude": 14.60892,
     "longitude": -61.07334,
     "sunrise": "2017-02-09T10:30:05+00:00",
-    "sunset": "2017-02-09T22:06:54+00:00"
+    "sunset": "2017-02-09T22:06:54+00:00",
+    "civilSunrise": "2017-02-09T10:08:12+00:00",
+    "civilSunset": "2017-02-09T22:29:00+00:00",
+    "nauticalSunrise": "2017-02-09T09:42:53+00:00",
+    "nauticalSunset": "2017-02-09T22:54:19+00:00",
+    "astronomicalSunrise": "2017-02-09T09:17:37+00:00",
+    "astronomicalSunset": "2017-02-09T23:19:34+00:00"
  }, {
     "city": "Freetown",
     "latitude": 8.484,
     "longitude": -13.22994,
     "sunrise": "2017-02-09T07:12:18+00:00",
-    "sunset": "2017-02-09T19:01:56+00:00"
+    "sunset": "2017-02-09T19:01:56+00:00",
+    "civilSunrise": "2017-02-09T06:50:46+00:00",
+    "civilSunset": "2017-02-09T19:23:37+00:00",
+    "nauticalSunrise": "2017-02-09T06:25:55+00:00",
+    "nauticalSunset": "2017-02-09T19:48:26+00:00",
+    "astronomicalSunrise": "2017-02-09T06:01:04+00:00",
+    "astronomicalSunset": "2017-02-09T20:13:17+00:00"
  }, {
     "city": "Funafuti",
     "latitude": -8.52425,
     "longitude": 179.19417,
     "sunrise": "2017-02-08T18:04:57+00:00",
-    "sunset": "2017-02-09T06:29:53+00:00"
+    "sunset": "2017-02-09T06:29:53+00:00",
+    "civilSunrise": "2017-02-08T17:42:58+00:00",
+    "civilSunset": "2017-02-09T06:51:46+00:00",
+    "nauticalSunrise": "2017-02-08T17:17:46+00:00",
+    "nauticalSunset": "2017-02-09T07:16:56+00:00",
+    "astronomicalSunrise": "2017-02-08T16:52:17+00:00",
+    "astronomicalSunset": "2017-02-09T07:42:22+00:00"
  }, {
     "city": "Gaborone",
     "latitude": -24.65451,
     "longitude": 25.90859,
     "sunrise": "2017-02-09T03:59:37+00:00",
-    "sunset": "2017-02-09T17:01:30+00:00"
+    "sunset": "2017-02-09T17:01:30+00:00",
+    "civilSunrise": "2017-02-09T03:35:05+00:00",
+    "civilSunset": "2017-02-09T17:25:41+00:00",
+    "nauticalSunrise": "2017-02-09T03:06:57+00:00",
+    "nauticalSunset": "2017-02-09T17:53:45+00:00",
+    "astronomicalSunrise": "2017-02-09T02:38:00+00:00",
+    "astronomicalSunset": "2017-02-09T18:22:37+00:00"
  }, {
     "city": "George Town",
     "latitude": 19.28692,
     "longitude": -81.36706,
     "sunrise": "2017-02-09T11:56:22+00:00",
-    "sunset": "2017-02-09T23:22:58+00:00"
+    "sunset": "2017-02-09T23:22:58+00:00",
+    "civilSunrise": "2017-02-09T11:34:00+00:00",
+    "civilSunset": "2017-02-09T23:45:36+00:00",
+    "nauticalSunrise": "2017-02-09T11:08:06+00:00",
+    "nauticalSunset": "2017-02-10T00:11:30+00:00",
+    "astronomicalSunrise": "2017-02-09T10:42:18+00:00",
+    "astronomicalSunset": "2017-02-10T00:37:19+00:00"
  }, {
     "city": "Georgetown",
     "latitude": 6.80448,
     "longitude": -58.15527,
     "sunrise": "2017-02-09T10:10:15+00:00",
-    "sunset": "2017-02-09T22:03:24+00:00"
+    "sunset": "2017-02-09T22:03:24+00:00",
+    "civilSunrise": "2017-02-09T09:48:46+00:00",
+    "civilSunset": "2017-02-09T22:25:00+00:00",
+    "nauticalSunrise": "2017-02-09T09:24:00+00:00",
+    "nauticalSunset": "2017-02-09T22:49:45+00:00",
+    "astronomicalSunrise": "2017-02-09T08:59:12+00:00",
+    "astronomicalSunset": "2017-02-09T23:14:31+00:00"
  }, {
     "city": "Gibraltar",
     "latitude": 36.14474,
     "longitude": -5.35257,
     "sunrise": "2017-02-09T07:14:15+00:00",
-    "sunset": "2017-02-09T17:56:58+00:00"
+    "sunset": "2017-02-09T17:56:58+00:00",
+    "civilSunrise": "2017-02-09T06:48:16+00:00",
+    "civilSunset": "2017-02-09T18:23:28+00:00",
+    "nauticalSunrise": "2017-02-09T06:18:05+00:00",
+    "nauticalSunset": "2017-02-09T18:53:40+00:00",
+    "astronomicalSunrise": "2017-02-09T05:48:11+00:00",
+    "astronomicalSunset": "2017-02-09T19:23:36+00:00"
  }, {
     "city": "Grytviken",
     "latitude": -54.28111,
     "longitude": -36.5092,
     "sunrise": "2017-02-09T07:10:34+00:00",
-    "sunset": "2017-02-09T22:09:54+00:00"
+    "sunset": "2017-02-09T22:09:54+00:00",
+    "civilSunrise": "2017-02-09T06:27:08+00:00",
+    "civilSunset": "2017-02-09T22:51:46+00:00",
+    "nauticalSunrise": "2017-02-09T05:32:18+00:00",
+    "nauticalSunset": "2017-02-09T23:45:57+00:00",
+    "astronomicalSunrise": "2017-02-09T04:18:03+00:00",
+    "astronomicalSunset": "2017-02-10T00:58:10+00:00"
  }, {
     "city": "Guatemala City",
     "latitude": 14.64072,
     "longitude": -90.51327,
     "sunrise": "2017-02-09T12:27:51+00:00",
-    "sunset": "2017-02-10T00:04:39+00:00"
+    "sunset": "2017-02-10T00:04:39+00:00",
+    "civilSunrise": "2017-02-09T12:05:58+00:00",
+    "civilSunset": "2017-02-10T00:26:46+00:00",
+    "nauticalSunrise": "2017-02-09T11:40:39+00:00",
+    "nauticalSunset": "2017-02-10T00:52:04+00:00",
+    "astronomicalSunrise": "2017-02-09T11:15:23+00:00",
+    "astronomicalSunset": "2017-02-10T01:17:19+00:00"
  }, {
     "city": "Gustavia",
     "latitude": 17.89618,
     "longitude": -62.84978,
     "sunrise": "2017-02-09T10:40:46+00:00",
-    "sunset": "2017-02-09T22:10:26+00:00"
+    "sunset": "2017-02-09T22:10:26+00:00",
+    "civilSunrise": "2017-02-09T10:18:34+00:00",
+    "civilSunset": "2017-02-09T22:32:53+00:00",
+    "nauticalSunrise": "2017-02-09T09:52:52+00:00",
+    "nauticalSunset": "2017-02-09T22:58:35+00:00",
+    "astronomicalSunrise": "2017-02-09T09:27:14+00:00",
+    "astronomicalSunset": "2017-02-09T23:24:13+00:00"
  }, {
     "city": "Hà Nội",
     "latitude": 21.0245,
     "longitude": 105.84117,
     "sunrise": "2017-02-08T23:29:46+00:00",
-    "sunset": "2017-02-09T10:51:53+00:00"
+    "sunset": "2017-02-09T10:51:53+00:00",
+    "civilSunrise": "2017-02-08T23:07:10+00:00",
+    "civilSunset": "2017-02-09T11:14:47+00:00",
+    "nauticalSunrise": "2017-02-08T22:40:58+00:00",
+    "nauticalSunset": "2017-02-09T11:40:59+00:00",
+    "astronomicalSunrise": "2017-02-08T22:14:53+00:00",
+    "astronomicalSunset": "2017-02-09T12:07:04+00:00"
  }, {
     "city": "Hagåtña",
     "latitude": 13.47417,
     "longitude": 144.74778,
     "sunrise": "2017-02-08T20:45:46+00:00",
-    "sunset": "2017-02-09T08:24:38+00:00"
+    "sunset": "2017-02-09T08:24:38+00:00",
+    "civilSunrise": "2017-02-08T20:23:56+00:00",
+    "civilSunset": "2017-02-09T08:46:39+00:00",
+    "nauticalSunrise": "2017-02-08T19:58:43+00:00",
+    "nauticalSunset": "2017-02-09T09:11:52+00:00",
+    "astronomicalSunrise": "2017-02-08T19:33:32+00:00",
+    "astronomicalSunset": "2017-02-09T09:37:02+00:00"
  }, {
     "city": "Hamilton",
     "latitude": 32.29149,
     "longitude": -64.77797,
     "sunrise": "2017-02-09T11:06:10+00:00",
-    "sunset": "2017-02-09T22:00:27+00:00"
+    "sunset": "2017-02-09T22:00:27+00:00",
+    "civilSunrise": "2017-02-09T10:41:21+00:00",
+    "civilSunset": "2017-02-09T22:25:44+00:00",
+    "nauticalSunrise": "2017-02-09T10:12:31+00:00",
+    "nauticalSunset": "2017-02-09T22:54:35+00:00",
+    "astronomicalSunrise": "2017-02-09T09:43:54+00:00",
+    "astronomicalSunset": "2017-02-09T23:23:13+00:00"
  }, {
     "city": "Harare",
     "latitude": -17.82935,
     "longitude": 31.05389,
     "sunrise": "2017-02-09T03:47:20+00:00",
-    "sunset": "2017-02-09T16:32:37+00:00"
+    "sunset": "2017-02-09T16:32:37+00:00",
+    "civilSunrise": "2017-02-09T03:24:12+00:00",
+    "civilSunset": "2017-02-09T16:55:32+00:00",
+    "nauticalSunrise": "2017-02-09T02:57:42+00:00",
+    "nauticalSunset": "2017-02-09T17:21:59+00:00",
+    "astronomicalSunrise": "2017-02-09T02:30:41+00:00",
+    "astronomicalSunset": "2017-02-09T17:48:56+00:00"
  }, {
     "city": "Havana",
     "latitude": 23.13302,
     "longitude": -82.38304,
     "sunrise": "2017-02-09T12:04:51+00:00",
-    "sunset": "2017-02-09T23:22:37+00:00"
+    "sunset": "2017-02-09T23:22:37+00:00",
+    "civilSunrise": "2017-02-09T11:41:58+00:00",
+    "civilSunset": "2017-02-09T23:45:50+00:00",
+    "nauticalSunrise": "2017-02-09T11:15:24+00:00",
+    "nauticalSunset": "2017-02-10T00:12:23+00:00",
+    "astronomicalSunrise": "2017-02-09T10:48:59+00:00",
+    "astronomicalSunset": "2017-02-10T00:38:49+00:00"
  }, {
     "city": "Helsinki",
     "latitude": 60.16952,
     "longitude": 24.93545,
     "sunrise": "2017-02-09T06:12:49+00:00",
-    "sunset": "2017-02-09T14:56:06+00:00"
+    "sunset": "2017-02-09T14:56:06+00:00",
+    "civilSunrise": "2017-02-09T05:28:54+00:00",
+    "civilSunset": "2017-02-09T15:41:04+00:00",
+    "nauticalSunrise": "2017-02-09T04:39:29+00:00",
+    "nauticalSunset": "2017-02-09T16:30:35+00:00",
+    "astronomicalSunrise": "2017-02-09T03:51:15+00:00",
+    "astronomicalSunset": "2017-02-09T17:18:58+00:00"
  }, {
     "city": "Hong Kong",
     "latitude": 22.28552,
     "longitude": 114.15769,
     "sunrise": "2017-02-08T22:58:00+00:00",
-    "sunset": "2017-02-09T10:17:08+00:00"
+    "sunset": "2017-02-09T10:17:08+00:00",
+    "civilSunrise": "2017-02-08T22:35:12+00:00",
+    "civilSunset": "2017-02-09T10:40:14+00:00",
+    "nauticalSunrise": "2017-02-08T22:08:47+00:00",
+    "nauticalSunset": "2017-02-09T11:06:39+00:00",
+    "astronomicalSunrise": "2017-02-08T21:42:30+00:00",
+    "astronomicalSunset": "2017-02-09T11:32:56+00:00"
  }, {
     "city": "Honiara",
     "latitude": -9.43333,
     "longitude": 159.95,
     "sunrise": "2017-02-08T19:20:58+00:00",
-    "sunset": "2017-02-09T07:47:49+00:00"
+    "sunset": "2017-02-09T07:47:49+00:00",
+    "civilSunrise": "2017-02-08T18:58:54+00:00",
+    "civilSunset": "2017-02-09T08:09:47+00:00",
+    "nauticalSunrise": "2017-02-08T18:33:36+00:00",
+    "nauticalSunset": "2017-02-09T08:35:02+00:00",
+    "astronomicalSunrise": "2017-02-08T18:08:02+00:00",
+    "astronomicalSunset": "2017-02-09T09:00:34+00:00"
  }, {
     "city": "Islāmābād",
     "latitude": 33.72148,
     "longitude": 73.04329,
     "sunrise": "2017-02-09T01:57:15+00:00",
-    "sunset": "2017-02-09T12:46:47+00:00"
+    "sunset": "2017-02-09T12:46:47+00:00",
+    "civilSunrise": "2017-02-09T01:32:01+00:00",
+    "civilSunset": "2017-02-09T13:12:30+00:00",
+    "nauticalSunrise": "2017-02-09T01:02:42+00:00",
+    "nauticalSunset": "2017-02-09T13:41:50+00:00",
+    "astronomicalSunrise": "2017-02-09T00:33:37+00:00",
+    "astronomicalSunset": "2017-02-09T14:10:55+00:00"
  }, {
     "city": "Jakarta",
     "latitude": -6.21462,
     "longitude": 106.84513,
     "sunrise": "2017-02-08T22:56:50+00:00",
-    "sunset": "2017-02-09T11:16:47+00:00"
+    "sunset": "2017-02-09T11:16:47+00:00",
+    "civilSunrise": "2017-02-08T22:35:02+00:00",
+    "civilSunset": "2017-02-09T11:38:32+00:00",
+    "nauticalSunrise": "2017-02-08T22:10:02+00:00",
+    "nauticalSunset": "2017-02-09T12:03:30+00:00",
+    "astronomicalSunrise": "2017-02-08T21:44:49+00:00",
+    "astronomicalSunset": "2017-02-09T12:28:41+00:00"
  }, {
     "city": "Jamestown",
     "latitude": -15.93872,
     "longitude": -5.71675,
     "sunrise": "2017-02-09T06:16:38+00:00",
-    "sunset": "2017-02-09T18:57:30+00:00"
+    "sunset": "2017-02-09T18:57:30+00:00",
+    "civilSunrise": "2017-02-09T05:53:48+00:00",
+    "civilSunset": "2017-02-09T19:20:08+00:00",
+    "nauticalSunrise": "2017-02-09T05:27:39+00:00",
+    "nauticalSunset": "2017-02-09T19:46:14+00:00",
+    "astronomicalSunrise": "2017-02-09T05:01:03+00:00",
+    "astronomicalSunset": "2017-02-09T20:12:47+00:00"
  }, {
     "city": "Kabul",
     "latitude": 34.52813,
     "longitude": 69.17233,
     "sunrise": "2017-02-09T02:13:55+00:00",
-    "sunset": "2017-02-09T13:01:06+00:00"
+    "sunset": "2017-02-09T13:01:06+00:00",
+    "civilSunrise": "2017-02-09T01:48:26+00:00",
+    "civilSunset": "2017-02-09T13:27:04+00:00",
+    "nauticalSunrise": "2017-02-09T01:18:50+00:00",
+    "nauticalSunset": "2017-02-09T13:56:41+00:00",
+    "astronomicalSunrise": "2017-02-09T00:49:30+00:00",
+    "astronomicalSunset": "2017-02-09T14:26:02+00:00"
  }, {
     "city": "Kampala",
     "latitude": 0.31628,
     "longitude": 32.58219,
     "sunrise": "2017-02-09T04:00:40+00:00",
-    "sunset": "2017-02-09T16:07:04+00:00"
+    "sunset": "2017-02-09T16:07:04+00:00",
+    "civilSunrise": "2017-02-09T03:39:11+00:00",
+    "civilSunset": "2017-02-09T16:28:35+00:00",
+    "nauticalSunrise": "2017-02-09T03:14:29+00:00",
+    "nauticalSunset": "2017-02-09T16:53:16+00:00",
+    "astronomicalSunrise": "2017-02-09T02:49:39+00:00",
+    "astronomicalSunset": "2017-02-09T17:18:04+00:00"
  }, {
     "city": "Kathmandu",
     "latitude": 27.70169,
     "longitude": 85.3206,
     "sunrise": "2017-02-09T00:59:57+00:00",
-    "sunset": "2017-02-09T12:05:52+00:00"
+    "sunset": "2017-02-09T12:05:52+00:00",
+    "civilSunrise": "2017-02-09T00:36:12+00:00",
+    "civilSunset": "2017-02-09T12:30:00+00:00",
+    "nauticalSunrise": "2017-02-09T00:08:38+00:00",
+    "nauticalSunset": "2017-02-09T12:57:34+00:00",
+    "astronomicalSunrise": "2017-02-08T23:41:15+00:00",
+    "astronomicalSunset": "2017-02-09T13:24:58+00:00"
  }, {
     "city": "Khartoum",
     "latitude": 15.54665,
     "longitude": 32.53361,
     "sunrise": "2017-02-09T04:16:46+00:00",
-    "sunset": "2017-02-09T15:51:22+00:00"
+    "sunset": "2017-02-09T15:51:22+00:00",
+    "civilSunrise": "2017-02-09T03:54:47+00:00",
+    "civilSunset": "2017-02-09T16:13:34+00:00",
+    "nauticalSunrise": "2017-02-09T03:29:22+00:00",
+    "nauticalSunset": "2017-02-09T16:38:59+00:00",
+    "astronomicalSunrise": "2017-02-09T03:04:00+00:00",
+    "astronomicalSunset": "2017-02-09T17:04:20+00:00"
  }, {
     "city": "Kiev",
     "latitude": 50.45466,
     "longitude": 30.5238,
     "sunrise": "2017-02-09T05:18:40+00:00",
-    "sunset": "2017-02-09T15:05:32+00:00"
+    "sunset": "2017-02-09T15:05:32+00:00",
+    "civilSunrise": "2017-02-09T04:45:23+00:00",
+    "civilSunset": "2017-02-09T15:39:37+00:00",
+    "nauticalSunrise": "2017-02-09T04:07:01+00:00",
+    "nauticalSunset": "2017-02-09T16:18:01+00:00",
+    "astronomicalSunrise": "2017-02-09T03:29:16+00:00",
+    "astronomicalSunset": "2017-02-09T16:55:50+00:00"
  }, {
     "city": "Kigali",
     "latitude": -1.94995,
     "longitude": 30.05885,
     "sunrise": "2017-02-09T04:08:26+00:00",
-    "sunset": "2017-02-09T16:19:29+00:00"
+    "sunset": "2017-02-09T16:19:29+00:00",
+    "civilSunrise": "2017-02-09T03:46:53+00:00",
+    "civilSunset": "2017-02-09T16:41:03+00:00",
+    "nauticalSunrise": "2017-02-09T03:22:07+00:00",
+    "nauticalSunset": "2017-02-09T17:05:47+00:00",
+    "astronomicalSunrise": "2017-02-09T02:57:12+00:00",
+    "astronomicalSunset": "2017-02-09T17:30:40+00:00"
  }, {
     "city": "Kingston",
     "latitude": -29.05459,
     "longitude": 167.96628,
     "sunrise": "2017-02-08T18:25:11+00:00",
-    "sunset": "2017-02-09T07:39:28+00:00"
+    "sunset": "2017-02-09T07:39:28+00:00",
+    "civilSunrise": "2017-02-08T17:59:25+00:00",
+    "civilSunset": "2017-02-09T08:04:47+00:00",
+    "nauticalSunrise": "2017-02-08T17:29:47+00:00",
+    "nauticalSunset": "2017-02-09T08:34:20+00:00",
+    "astronomicalSunrise": "2017-02-08T16:59:02+00:00",
+    "astronomicalSunset": "2017-02-09T09:04:58+00:00"
  }, {
     "city": "Kingston",
     "latitude": 17.99702,
     "longitude": -76.79358,
     "sunrise": "2017-02-09T11:36:38+00:00",
-    "sunset": "2017-02-09T23:06:07+00:00"
+    "sunset": "2017-02-09T23:06:07+00:00",
+    "civilSunrise": "2017-02-09T11:14:26+00:00",
+    "civilSunset": "2017-02-09T23:28:35+00:00",
+    "nauticalSunrise": "2017-02-09T10:48:43+00:00",
+    "nauticalSunset": "2017-02-09T23:54:18+00:00",
+    "astronomicalSunrise": "2017-02-09T10:23:05+00:00",
+    "astronomicalSunset": "2017-02-10T00:19:56+00:00"
  }, {
     "city": "Kingstown",
     "latitude": 13.15872,
     "longitude": -61.22475,
     "sunrise": "2017-02-09T10:29:08+00:00",
-    "sunset": "2017-02-09T22:09:03+00:00"
+    "sunset": "2017-02-09T22:09:03+00:00",
+    "civilSunrise": "2017-02-09T10:07:22+00:00",
+    "civilSunset": "2017-02-09T22:31:02+00:00",
+    "nauticalSunrise": "2017-02-09T09:42:12+00:00",
+    "nauticalSunset": "2017-02-09T22:56:12+00:00",
+    "astronomicalSunrise": "2017-02-09T09:17:04+00:00",
+    "astronomicalSunset": "2017-02-09T23:21:19+00:00"
  }, {
     "city": "Kinshasa",
     "latitude": -4.32459,
     "longitude": 15.32146,
     "sunrise": "2017-02-09T05:04:56+00:00",
-    "sunset": "2017-02-09T17:20:53+00:00"
+    "sunset": "2017-02-09T17:20:53+00:00",
+    "civilSunrise": "2017-02-09T04:43:16+00:00",
+    "civilSunset": "2017-02-09T17:42:31+00:00",
+    "nauticalSunrise": "2017-02-09T04:18:24+00:00",
+    "nauticalSunset": "2017-02-09T18:07:22+00:00",
+    "astronomicalSunrise": "2017-02-09T03:53:21+00:00",
+    "astronomicalSunset": "2017-02-09T18:32:23+00:00"
  }, {
     "city": "Kuala Lumpur",
     "latitude": 3.1412,
     "longitude": 101.68653,
     "sunrise": "2017-02-08T23:27:09+00:00",
-    "sunset": "2017-02-09T11:27:44+00:00"
+    "sunset": "2017-02-09T11:27:44+00:00",
+    "civilSunrise": "2017-02-08T23:05:42+00:00",
+    "civilSunset": "2017-02-09T11:49:16+00:00",
+    "nauticalSunrise": "2017-02-08T22:41:00+00:00",
+    "nauticalSunset": "2017-02-09T12:13:57+00:00",
+    "astronomicalSunrise": "2017-02-08T22:16:13+00:00",
+    "astronomicalSunset": "2017-02-09T12:38:42+00:00"
  }, {
     "city": "Kuwait",
     "latitude": 29.36972,
     "longitude": 47.97833,
     "sunrise": "2017-02-09T03:31:26+00:00",
-    "sunset": "2017-02-09T14:33:08+00:00"
+    "sunset": "2017-02-09T14:33:08+00:00",
+    "civilSunrise": "2017-02-09T03:07:19+00:00",
+    "civilSunset": "2017-02-09T14:57:40+00:00",
+    "nauticalSunrise": "2017-02-09T02:39:19+00:00",
+    "nauticalSunset": "2017-02-09T15:25:40+00:00",
+    "astronomicalSunrise": "2017-02-09T02:11:31+00:00",
+    "astronomicalSunset": "2017-02-09T15:53:28+00:00"
  }, {
     "city": "La Paz",
     "latitude": -16.5,
     "longitude": -68.15,
     "sunrise": "2017-02-09T10:25:48+00:00",
-    "sunset": "2017-02-09T23:07:48+00:00"
+    "sunset": "2017-02-09T23:07:48+00:00",
+    "civilSunrise": "2017-02-09T10:02:54+00:00",
+    "civilSunset": "2017-02-09T23:30:30+00:00",
+    "nauticalSunrise": "2017-02-09T09:36:39+00:00",
+    "nauticalSunset": "2017-02-09T23:56:42+00:00",
+    "astronomicalSunrise": "2017-02-09T09:09:57+00:00",
+    "astronomicalSunset": "2017-02-10T00:23:20+00:00"
  }, {
     "city": "Libreville",
     "latitude": 0.38333,
     "longitude": 9.45,
     "sunrise": "2017-02-09T05:33:16+00:00",
-    "sunset": "2017-02-09T17:39:32+00:00"
+    "sunset": "2017-02-09T17:39:32+00:00",
+    "civilSunrise": "2017-02-09T05:11:47+00:00",
+    "civilSunset": "2017-02-09T18:01:03+00:00",
+    "nauticalSunrise": "2017-02-09T04:47:05+00:00",
+    "nauticalSunset": "2017-02-09T18:25:44+00:00",
+    "astronomicalSunrise": "2017-02-09T04:22:16+00:00",
+    "astronomicalSunset": "2017-02-09T18:50:31+00:00"
  }, {
     "city": "Lilongwe",
     "latitude": -13.98333,
     "longitude": 33.78333,
     "sunrise": "2017-02-09T03:40:46+00:00",
-    "sunset": "2017-02-09T16:17:21+00:00"
+    "sunset": "2017-02-09T16:17:21+00:00",
+    "civilSunrise": "2017-02-09T03:18:13+00:00",
+    "civilSunset": "2017-02-09T16:39:45+00:00",
+    "nauticalSunrise": "2017-02-09T02:52:22+00:00",
+    "nauticalSunset": "2017-02-09T17:05:33+00:00",
+    "astronomicalSunrise": "2017-02-09T02:26:08+00:00",
+    "astronomicalSunset": "2017-02-09T17:31:44+00:00"
  }, {
     "city": "Lima",
     "latitude": -12.04318,
     "longitude": -77.02824,
     "sunrise": "2017-02-09T11:06:15+00:00",
-    "sunset": "2017-02-09T23:38:23+00:00"
+    "sunset": "2017-02-09T23:38:23+00:00",
+    "civilSunrise": "2017-02-09T10:43:57+00:00",
+    "civilSunset": "2017-02-10T00:00:33+00:00",
+    "nauticalSunrise": "2017-02-09T10:18:23+00:00",
+    "nauticalSunset": "2017-02-10T00:26:04+00:00",
+    "astronomicalSunrise": "2017-02-09T09:52:29+00:00",
+    "astronomicalSunset": "2017-02-10T00:51:56+00:00"
  }, {
     "city": "Lisbon",
     "latitude": 38.71667,
     "longitude": -9.13333,
     "sunrise": "2017-02-09T07:33:27+00:00",
-    "sunset": "2017-02-09T18:08:01+00:00"
+    "sunset": "2017-02-09T18:08:01+00:00",
+    "civilSunrise": "2017-02-09T07:06:33+00:00",
+    "civilSunset": "2017-02-09T18:35:28+00:00",
+    "nauticalSunrise": "2017-02-09T06:35:19+00:00",
+    "nauticalSunset": "2017-02-09T19:06:44+00:00",
+    "astronomicalSunrise": "2017-02-09T06:04:24+00:00",
+    "astronomicalSunset": "2017-02-09T19:37:41+00:00"
  }, {
     "city": "Ljubljana",
     "latitude": 46.05108,
     "longitude": 14.50513,
     "sunrise": "2017-02-09T06:12:34+00:00",
-    "sunset": "2017-02-09T16:19:47+00:00"
+    "sunset": "2017-02-09T16:19:47+00:00",
+    "civilSunrise": "2017-02-09T05:42:12+00:00",
+    "civilSunset": "2017-02-09T16:50:51+00:00",
+    "nauticalSunrise": "2017-02-09T05:07:03+00:00",
+    "nauticalSunset": "2017-02-09T17:26:02+00:00",
+    "astronomicalSunrise": "2017-02-09T04:32:22+00:00",
+    "astronomicalSunset": "2017-02-09T18:00:45+00:00"
  }, {
     "city": "Lomé",
     "latitude": 6.13748,
     "longitude": 1.21227,
     "sunrise": "2017-02-09T06:12:07+00:00",
-    "sunset": "2017-02-09T18:06:35+00:00"
+    "sunset": "2017-02-09T18:06:35+00:00",
+    "civilSunrise": "2017-02-09T05:50:38+00:00",
+    "civilSunset": "2017-02-09T18:28:10+00:00",
+    "nauticalSunrise": "2017-02-09T05:25:54+00:00",
+    "nauticalSunset": "2017-02-09T18:52:54+00:00",
+    "astronomicalSunrise": "2017-02-09T05:01:06+00:00",
+    "astronomicalSunset": "2017-02-09T19:17:40+00:00"
  }, {
     "city": "London",
     "latitude": 51.50853,
     "longitude": -0.12574,
     "sunrise": "2017-02-09T07:23:50+00:00",
-    "sunset": "2017-02-09T17:05:34+00:00"
+    "sunset": "2017-02-09T17:05:34+00:00",
+    "civilSunrise": "2017-02-09T06:49:43+00:00",
+    "civilSunset": "2017-02-09T17:40:29+00:00",
+    "nauticalSunrise": "2017-02-09T06:10:29+00:00",
+    "nauticalSunset": "2017-02-09T18:19:47+00:00",
+    "astronomicalSunrise": "2017-02-09T05:31:52+00:00",
+    "astronomicalSunset": "2017-02-09T18:58:28+00:00"
  }, {
     "city": "Luanda",
     "latitude": -8.83833,
     "longitude": 13.23444,
     "sunrise": "2017-02-09T05:08:33+00:00",
-    "sunset": "2017-02-09T17:33:57+00:00"
+    "sunset": "2017-02-09T17:33:57+00:00",
+    "civilSunrise": "2017-02-09T04:46:34+00:00",
+    "civilSunset": "2017-02-09T17:55:51+00:00",
+    "nauticalSunrise": "2017-02-09T04:21:21+00:00",
+    "nauticalSunset": "2017-02-09T18:21:02+00:00",
+    "astronomicalSunrise": "2017-02-09T03:55:52+00:00",
+    "astronomicalSunset": "2017-02-09T18:46:29+00:00"
  }, {
     "city": "Lusaka",
     "latitude": -15.40809,
     "longitude": 28.28636,
     "sunrise": "2017-02-09T04:01:10+00:00",
-    "sunset": "2017-02-09T16:40:55+00:00"
+    "sunset": "2017-02-09T16:40:55+00:00",
+    "civilSunrise": "2017-02-09T03:38:25+00:00",
+    "civilSunset": "2017-02-09T17:03:30+00:00",
+    "nauticalSunrise": "2017-02-09T03:12:21+00:00",
+    "nauticalSunset": "2017-02-09T17:29:31+00:00",
+    "astronomicalSunrise": "2017-02-09T02:45:51+00:00",
+    "astronomicalSunset": "2017-02-09T17:55:58+00:00"
  }, {
     "city": "Luxembourg",
     "latitude": 49.61167,
     "longitude": 6.13,
     "sunrise": "2017-02-09T06:54:03+00:00",
-    "sunset": "2017-02-09T16:45:18+00:00"
+    "sunset": "2017-02-09T16:45:18+00:00",
+    "civilSunrise": "2017-02-09T06:21:23+00:00",
+    "civilSunset": "2017-02-09T17:18:44+00:00",
+    "nauticalSunrise": "2017-02-09T05:43:43+00:00",
+    "nauticalSunset": "2017-02-09T17:56:27+00:00",
+    "astronomicalSunrise": "2017-02-09T05:06:36+00:00",
+    "astronomicalSunset": "2017-02-09T18:33:38+00:00"
  }, {
     "city": "Macau",
     "latitude": 22.20056,
     "longitude": 113.54611,
     "sunrise": "2017-02-08T23:00:20+00:00",
-    "sunset": "2017-02-09T10:19:40+00:00"
+    "sunset": "2017-02-09T10:19:40+00:00",
+    "civilSunrise": "2017-02-08T22:37:34+00:00",
+    "civilSunset": "2017-02-09T10:42:46+00:00",
+    "nauticalSunrise": "2017-02-08T22:11:10+00:00",
+    "nauticalSunset": "2017-02-09T11:09:10+00:00",
+    "astronomicalSunrise": "2017-02-08T21:44:53+00:00",
+    "astronomicalSunset": "2017-02-09T11:35:26+00:00"
  }, {
     "city": "Madrid",
     "latitude": 40.4165,
     "longitude": -3.70256,
     "sunrise": "2017-02-09T07:14:37+00:00",
-    "sunset": "2017-02-09T17:43:24+00:00"
+    "sunset": "2017-02-09T17:43:24+00:00",
+    "civilSunrise": "2017-02-09T06:47:02+00:00",
+    "civilSunset": "2017-02-09T18:11:34+00:00",
+    "nauticalSunrise": "2017-02-09T06:15:01+00:00",
+    "nauticalSunset": "2017-02-09T18:43:37+00:00",
+    "astronomicalSunrise": "2017-02-09T05:43:21+00:00",
+    "astronomicalSunset": "2017-02-09T19:15:19+00:00"
  }, {
     "city": "Majuro",
     "latitude": 7.08971,
     "longitude": 171.38027,
     "sunrise": "2017-02-08T18:52:29+00:00",
-    "sunset": "2017-02-09T06:44:51+00:00"
+    "sunset": "2017-02-09T06:44:51+00:00",
+    "civilSunrise": "2017-02-08T18:30:59+00:00",
+    "civilSunset": "2017-02-09T07:06:28+00:00",
+    "nauticalSunrise": "2017-02-08T18:06:11+00:00",
+    "nauticalSunset": "2017-02-09T07:31:15+00:00",
+    "astronomicalSunrise": "2017-02-08T17:41:21+00:00",
+    "astronomicalSunset": "2017-02-09T07:56:04+00:00"
  }, {
     "city": "Malabo",
     "latitude": 3.75,
     "longitude": 8.78333,
     "sunrise": "2017-02-09T05:39:23+00:00",
-    "sunset": "2017-02-09T17:38:45+00:00"
+    "sunset": "2017-02-09T17:38:45+00:00",
+    "civilSunrise": "2017-02-09T05:17:56+00:00",
+    "civilSunset": "2017-02-09T18:00:16+00:00",
+    "nauticalSunrise": "2017-02-09T04:53:14+00:00",
+    "nauticalSunset": "2017-02-09T18:24:57+00:00",
+    "astronomicalSunrise": "2017-02-09T04:28:28+00:00",
+    "astronomicalSunset": "2017-02-09T18:49:42+00:00"
  }, {
     "city": "Male",
     "latitude": 4.1748,
     "longitude": 73.50888,
     "sunrise": "2017-02-09T01:20:55+00:00",
-    "sunset": "2017-02-09T13:19:23+00:00"
+    "sunset": "2017-02-09T13:19:23+00:00",
+    "civilSunrise": "2017-02-09T00:59:28+00:00",
+    "civilSunset": "2017-02-09T13:40:56+00:00",
+    "nauticalSunrise": "2017-02-09T00:34:46+00:00",
+    "nauticalSunset": "2017-02-09T14:05:37+00:00",
+    "astronomicalSunrise": "2017-02-09T00:09:59+00:00",
+    "astronomicalSunset": "2017-02-09T14:30:22+00:00"
  }, {
     "city": "Mamoudzou",
     "latitude": -12.77944,
     "longitude": 45.22722,
     "sunrise": "2017-02-09T02:56:19+00:00",
-    "sunset": "2017-02-09T15:30:15+00:00"
+    "sunset": "2017-02-09T15:30:15+00:00",
+    "civilSunrise": "2017-02-09T02:33:54+00:00",
+    "civilSunset": "2017-02-09T15:52:31+00:00",
+    "nauticalSunrise": "2017-02-09T02:08:14+00:00",
+    "nauticalSunset": "2017-02-09T16:18:09+00:00",
+    "astronomicalSunrise": "2017-02-09T01:42:12+00:00",
+    "astronomicalSunset": "2017-02-09T16:44:08+00:00"
  }, {
     "city": "Managua",
     "latitude": 12.13282,
     "longitude": -86.2504,
     "sunrise": "2017-02-09T12:08:08+00:00",
-    "sunset": "2017-02-09T23:50:16+00:00"
+    "sunset": "2017-02-09T23:50:16+00:00",
+    "civilSunrise": "2017-02-09T11:46:26+00:00",
+    "civilSunset": "2017-02-10T00:12:09+00:00",
+    "nauticalSunrise": "2017-02-09T11:21:21+00:00",
+    "nauticalSunset": "2017-02-10T00:37:14+00:00",
+    "astronomicalSunrise": "2017-02-09T10:56:18+00:00",
+    "astronomicalSunset": "2017-02-10T01:02:16+00:00"
  }, {
     "city": "Manama",
     "latitude": 26.21536,
     "longitude": 50.5832,
     "sunrise": "2017-02-09T03:16:57+00:00",
-    "sunset": "2017-02-09T14:26:46+00:00"
+    "sunset": "2017-02-09T14:26:46+00:00",
+    "civilSunrise": "2017-02-09T02:53:30+00:00",
+    "civilSunset": "2017-02-09T14:50:35+00:00",
+    "nauticalSunrise": "2017-02-09T02:26:18+00:00",
+    "nauticalSunset": "2017-02-09T15:17:48+00:00",
+    "astronomicalSunrise": "2017-02-09T01:59:15+00:00",
+    "astronomicalSunset": "2017-02-09T15:44:51+00:00"
  }, {
     "city": "Manila",
     "latitude": 14.6042,
     "longitude": 120.9822,
     "sunrise": "2017-02-08T22:22:02+00:00",
-    "sunset": "2017-02-09T09:58:30+00:00"
+    "sunset": "2017-02-09T09:58:30+00:00",
+    "civilSunrise": "2017-02-08T22:00:07+00:00",
+    "civilSunset": "2017-02-09T10:20:37+00:00",
+    "nauticalSunrise": "2017-02-08T21:34:47+00:00",
+    "nauticalSunset": "2017-02-09T10:45:56+00:00",
+    "astronomicalSunrise": "2017-02-08T21:09:31+00:00",
+    "astronomicalSunset": "2017-02-09T11:11:13+00:00"
  }, {
     "city": "Maputo",
     "latitude": -25.96528,
     "longitude": 32.58917,
     "sunrise": "2017-02-09T03:31:11+00:00",
-    "sunset": "2017-02-09T16:36:29+00:00"
+    "sunset": "2017-02-09T16:36:29+00:00",
+    "civilSunrise": "2017-02-09T03:06:19+00:00",
+    "civilSunset": "2017-02-09T17:00:59+00:00",
+    "nauticalSunrise": "2017-02-09T02:37:47+00:00",
+    "nauticalSunset": "2017-02-09T17:29:27+00:00",
+    "astronomicalSunrise": "2017-02-09T02:08:21+00:00",
+    "astronomicalSunset": "2017-02-09T17:58:47+00:00"
  }, {
     "city": "Mariehamn",
     "latitude": 60.09726,
     "longitude": 19.93481,
     "sunrise": "2017-02-09T06:32:28+00:00",
-    "sunset": "2017-02-09T15:16:27+00:00"
+    "sunset": "2017-02-09T15:16:27+00:00",
+    "civilSunrise": "2017-02-09T05:48:41+00:00",
+    "civilSunset": "2017-02-09T16:01:18+00:00",
+    "nauticalSunrise": "2017-02-09T04:59:22+00:00",
+    "nauticalSunset": "2017-02-09T16:50:42+00:00",
+    "astronomicalSunrise": "2017-02-09T04:11:14+00:00",
+    "astronomicalSunset": "2017-02-09T17:38:58+00:00"
  }, {
     "city": "Marigot",
     "latitude": 18.06667,
     "longitude": -63.08333,
     "sunrise": "2017-02-09T10:41:53+00:00",
-    "sunset": "2017-02-09T22:11:10+00:00"
+    "sunset": "2017-02-09T22:11:10+00:00",
+    "civilSunrise": "2017-02-09T10:19:40+00:00",
+    "civilSunset": "2017-02-09T22:33:39+00:00",
+    "nauticalSunrise": "2017-02-09T09:53:57+00:00",
+    "nauticalSunset": "2017-02-09T22:59:23+00:00",
+    "astronomicalSunrise": "2017-02-09T09:28:18+00:00",
+    "astronomicalSunset": "2017-02-09T23:25:01+00:00"
  }, {
     "city": "Maseru",
     "latitude": -29.31667,
     "longitude": 27.48333,
     "sunrise": "2017-02-09T03:47:04+00:00",
-    "sunset": "2017-02-09T17:01:28+00:00"
+    "sunset": "2017-02-09T17:01:28+00:00",
+    "civilSunrise": "2017-02-09T03:21:14+00:00",
+    "civilSunset": "2017-02-09T17:26:51+00:00",
+    "nauticalSunrise": "2017-02-09T02:51:32+00:00",
+    "nauticalSunset": "2017-02-09T17:56:27+00:00",
+    "astronomicalSunrise": "2017-02-09T02:20:43+00:00",
+    "astronomicalSunset": "2017-02-09T18:27:10+00:00"
  }, {
     "city": "Matā'utu",
     "latitude": -13.28163,
     "longitude": -176.17453,
     "sunrise": "2017-02-09T17:41:35+00:00",
-    "sunset": "2017-02-10T06:16:13+00:00"
+    "sunset": "2017-02-10T06:16:13+00:00",
+    "civilSunrise": "2017-02-09T17:19:08+00:00",
+    "civilSunset": "2017-02-10T06:38:31+00:00",
+    "nauticalSunrise": "2017-02-09T16:53:25+00:00",
+    "nauticalSunset": "2017-02-10T07:04:11+00:00",
+    "astronomicalSunrise": "2017-02-09T16:27:20+00:00",
+    "astronomicalSunset": "2017-02-10T07:30:13+00:00"
  }, {
     "city": "Mbabane",
     "latitude": -26.31667,
     "longitude": 31.13333,
     "sunrise": "2017-02-09T03:36:33+00:00",
-    "sunset": "2017-02-09T16:42:47+00:00"
+    "sunset": "2017-02-09T16:42:47+00:00",
+    "civilSunrise": "2017-02-09T03:11:35+00:00",
+    "civilSunset": "2017-02-09T17:07:21+00:00",
+    "nauticalSunrise": "2017-02-09T02:42:57+00:00",
+    "nauticalSunset": "2017-02-09T17:35:55+00:00",
+    "astronomicalSunrise": "2017-02-09T02:13:23+00:00",
+    "astronomicalSunset": "2017-02-09T18:05:23+00:00"
  }, {
     "city": "Mexico City",
     "latitude": 19.42847,
     "longitude": -99.12766,
     "sunrise": "2017-02-09T13:07:33+00:00",
-    "sunset": "2017-02-10T00:33:53+00:00"
+    "sunset": "2017-02-10T00:33:53+00:00",
+    "civilSunrise": "2017-02-09T12:45:10+00:00",
+    "civilSunset": "2017-02-10T00:56:32+00:00",
+    "nauticalSunrise": "2017-02-09T12:19:15+00:00",
+    "nauticalSunset": "2017-02-10T01:22:27+00:00",
+    "astronomicalSunrise": "2017-02-09T11:53:25+00:00",
+    "astronomicalSunset": "2017-02-10T01:48:17+00:00"
  }, {
     "city": "Minsk",
     "latitude": 53.9,
     "longitude": 27.56667,
     "sunrise": "2017-02-09T05:39:54+00:00",
-    "sunset": "2017-02-09T15:07:57+00:00"
+    "sunset": "2017-02-09T15:07:57+00:00",
+    "civilSunrise": "2017-02-09T05:03:40+00:00",
+    "civilSunset": "2017-02-09T15:45:03+00:00",
+    "nauticalSunrise": "2017-02-09T04:22:10+00:00",
+    "nauticalSunset": "2017-02-09T16:26:38+00:00",
+    "astronomicalSunrise": "2017-02-09T03:41:24+00:00",
+    "astronomicalSunset": "2017-02-09T17:07:29+00:00"
  }, {
     "city": "Mogadishu",
     "latitude": 2.03711,
     "longitude": 45.34375,
     "sunrise": "2017-02-09T03:11:23+00:00",
-    "sunset": "2017-02-09T15:14:15+00:00"
+    "sunset": "2017-02-09T15:14:15+00:00",
+    "civilSunrise": "2017-02-09T02:49:56+00:00",
+    "civilSunset": "2017-02-09T15:35:46+00:00",
+    "nauticalSunrise": "2017-02-09T02:25:14+00:00",
+    "nauticalSunset": "2017-02-09T16:00:26+00:00",
+    "astronomicalSunrise": "2017-02-09T02:00:27+00:00",
+    "astronomicalSunset": "2017-02-09T16:25:12+00:00"
  }, {
     "city": "Monaco",
     "latitude": 43.73333,
     "longitude": 7.41667,
     "sunrise": "2017-02-09T06:36:14+00:00",
-    "sunset": "2017-02-09T16:52:50+00:00"
+    "sunset": "2017-02-09T16:52:50+00:00",
+    "civilSunrise": "2017-02-09T06:07:07+00:00",
+    "civilSunset": "2017-02-09T17:22:36+00:00",
+    "nauticalSunrise": "2017-02-09T05:33:23+00:00",
+    "nauticalSunset": "2017-02-09T17:56:22+00:00",
+    "astronomicalSunrise": "2017-02-09T05:00:03+00:00",
+    "astronomicalSunset": "2017-02-09T18:29:44+00:00"
  }, {
     "city": "Monrovia",
     "latitude": 6.30054,
     "longitude": -10.7969,
     "sunrise": "2017-02-09T07:00:19+00:00",
-    "sunset": "2017-02-09T18:54:27+00:00"
+    "sunset": "2017-02-09T18:54:27+00:00",
+    "civilSunrise": "2017-02-09T06:38:50+00:00",
+    "civilSunset": "2017-02-09T19:16:03+00:00",
+    "nauticalSunrise": "2017-02-09T06:14:05+00:00",
+    "nauticalSunset": "2017-02-09T19:40:47+00:00",
+    "astronomicalSunrise": "2017-02-09T05:49:18+00:00",
+    "astronomicalSunset": "2017-02-09T20:05:33+00:00"
  }, {
     "city": "Montevideo",
     "latitude": -34.83346,
     "longitude": -56.16735,
     "sunrise": "2017-02-09T09:13:37+00:00",
-    "sunset": "2017-02-09T22:44:07+00:00"
+    "sunset": "2017-02-09T22:44:07+00:00",
+    "civilSunrise": "2017-02-09T08:45:48+00:00",
+    "civilSunset": "2017-02-09T23:11:21+00:00",
+    "nauticalSunrise": "2017-02-09T08:13:40+00:00",
+    "nauticalSunset": "2017-02-09T23:43:22+00:00",
+    "astronomicalSunrise": "2017-02-09T07:39:48+00:00",
+    "astronomicalSunset": "2017-02-10T00:17:04+00:00"
  }, {
     "city": "Moroni",
     "latitude": -11.70216,
     "longitude": 43.25506,
     "sunrise": "2017-02-09T03:05:23+00:00",
-    "sunset": "2017-02-09T15:36:58+00:00"
+    "sunset": "2017-02-09T15:36:58+00:00",
+    "civilSunrise": "2017-02-09T02:43:06+00:00",
+    "civilSunset": "2017-02-09T15:59:07+00:00",
+    "nauticalSunrise": "2017-02-09T02:17:34+00:00",
+    "nauticalSunset": "2017-02-09T16:24:37+00:00",
+    "astronomicalSunrise": "2017-02-09T01:51:42+00:00",
+    "astronomicalSunset": "2017-02-09T16:50:26+00:00"
  }, {
     "city": "Moscow",
     "latitude": 55.75222,
     "longitude": 37.61556,
     "sunrise": "2017-02-09T05:05:33+00:00",
-    "sunset": "2017-02-09T14:21:55+00:00"
+    "sunset": "2017-02-09T14:21:55+00:00",
+    "civilSunrise": "2017-02-09T04:27:25+00:00",
+    "civilSunset": "2017-02-09T15:00:58+00:00",
+    "nauticalSunrise": "2017-02-09T03:43:55+00:00",
+    "nauticalSunset": "2017-02-09T15:44:33+00:00",
+    "astronomicalSunrise": "2017-02-09T03:01:14+00:00",
+    "astronomicalSunset": "2017-02-09T16:27:19+00:00"
  }, {
     "city": "Muscat",
     "latitude": 23.61333,
     "longitude": 58.59333,
     "sunrise": "2017-02-09T02:41:45+00:00",
-    "sunset": "2017-02-09T13:57:54+00:00"
+    "sunset": "2017-02-09T13:57:54+00:00",
+    "civilSunrise": "2017-02-09T02:18:45+00:00",
+    "civilSunset": "2017-02-09T14:21:13+00:00",
+    "nauticalSunrise": "2017-02-09T01:52:06+00:00",
+    "nauticalSunset": "2017-02-09T14:47:53+00:00",
+    "astronomicalSunrise": "2017-02-09T01:25:34+00:00",
+    "astronomicalSunset": "2017-02-09T15:14:24+00:00"
  }, {
     "city": "Nairobi",
     "latitude": -1.28333,
     "longitude": 36.81667,
     "sunrise": "2017-02-09T03:42:05+00:00",
-    "sunset": "2017-02-09T15:51:46+00:00"
+    "sunset": "2017-02-09T15:51:46+00:00",
+    "civilSunrise": "2017-02-09T03:20:33+00:00",
+    "civilSunset": "2017-02-09T16:13:19+00:00",
+    "nauticalSunrise": "2017-02-09T02:55:49+00:00",
+    "nauticalSunset": "2017-02-09T16:38:02+00:00",
+    "astronomicalSunrise": "2017-02-09T02:30:56+00:00",
+    "astronomicalSunset": "2017-02-09T17:02:53+00:00"
  }, {
     "city": "Nassau",
     "latitude": 25.05823,
     "longitude": -77.34306,
     "sunrise": "2017-02-09T11:47:00+00:00",
-    "sunset": "2017-02-09T23:00:08+00:00"
+    "sunset": "2017-02-09T23:00:08+00:00",
+    "civilSunrise": "2017-02-09T11:23:47+00:00",
+    "civilSunset": "2017-02-09T23:23:43+00:00",
+    "nauticalSunrise": "2017-02-09T10:56:51+00:00",
+    "nauticalSunset": "2017-02-09T23:50:39+00:00",
+    "astronomicalSunrise": "2017-02-09T10:30:03+00:00",
+    "astronomicalSunset": "2017-02-10T00:17:27+00:00"
  }, {
     "city": "Nay Pyi Taw",
     "latitude": 19.745,
     "longitude": 96.12972,
     "sunrise": "2017-02-09T00:07:08+00:00",
-    "sunset": "2017-02-09T11:32:13+00:00"
+    "sunset": "2017-02-09T11:32:13+00:00",
+    "civilSunrise": "2017-02-08T23:44:42+00:00",
+    "civilSunset": "2017-02-09T11:54:56+00:00",
+    "nauticalSunrise": "2017-02-08T23:18:42+00:00",
+    "nauticalSunset": "2017-02-09T12:20:55+00:00",
+    "astronomicalSunrise": "2017-02-08T22:52:49+00:00",
+    "astronomicalSunset": "2017-02-09T12:46:48+00:00"
  }, {
     "city": "N'Djamena",
     "latitude": 12.11058,
     "longitude": 15.03479,
     "sunrise": "2017-02-09T05:23:03+00:00",
-    "sunset": "2017-02-09T17:05:04+00:00"
+    "sunset": "2017-02-09T17:05:04+00:00",
+    "civilSunrise": "2017-02-09T05:01:20+00:00",
+    "civilSunset": "2017-02-09T17:26:58+00:00",
+    "nauticalSunrise": "2017-02-09T04:36:15+00:00",
+    "nauticalSunset": "2017-02-09T17:52:02+00:00",
+    "astronomicalSunrise": "2017-02-09T04:11:11+00:00",
+    "astronomicalSunset": "2017-02-09T18:17:05+00:00"
  }, {
     "city": "New Delhi",
     "latitude": 28.63576,
     "longitude": 77.22445,
     "sunrise": "2017-02-09T01:33:32+00:00",
-    "sunset": "2017-02-09T12:37:03+00:00"
+    "sunset": "2017-02-09T12:37:03+00:00",
+    "civilSunrise": "2017-02-09T01:09:35+00:00",
+    "civilSunset": "2017-02-09T13:01:24+00:00",
+    "nauticalSunrise": "2017-02-09T00:41:47+00:00",
+    "nauticalSunset": "2017-02-09T13:29:13+00:00",
+    "astronomicalSunrise": "2017-02-09T00:14:10+00:00",
+    "astronomicalSunset": "2017-02-09T13:56:50+00:00"
  }, {
     "city": "Ngerulmud",
     "latitude": 7.50043,
     "longitude": 134.62355,
     "sunrise": "2017-02-08T21:19:56+00:00",
-    "sunset": "2017-02-09T09:11:28+00:00"
+    "sunset": "2017-02-09T09:11:28+00:00",
+    "civilSunrise": "2017-02-08T20:58:25+00:00",
+    "civilSunset": "2017-02-09T09:33:06+00:00",
+    "nauticalSunrise": "2017-02-08T20:33:36+00:00",
+    "nauticalSunset": "2017-02-09T09:57:54+00:00",
+    "astronomicalSunrise": "2017-02-08T20:08:46+00:00",
+    "astronomicalSunset": "2017-02-09T10:22:43+00:00"
  }, {
     "city": "Niamey",
     "latitude": 13.5125,
     "longitude": 2.11178,
     "sunrise": "2017-02-09T06:16:13+00:00",
-    "sunset": "2017-02-09T17:55:16+00:00"
+    "sunset": "2017-02-09T17:55:16+00:00",
+    "civilSunrise": "2017-02-09T05:54:25+00:00",
+    "civilSunset": "2017-02-09T18:17:17+00:00",
+    "nauticalSunrise": "2017-02-09T05:29:13+00:00",
+    "nauticalSunset": "2017-02-09T18:42:29+00:00",
+    "astronomicalSunrise": "2017-02-09T05:04:02+00:00",
+    "astronomicalSunset": "2017-02-09T19:07:39+00:00"
  }, {
     "city": "Nicosia",
     "latitude": 35.16667,
     "longitude": 33.36667,
     "sunrise": "2017-02-09T04:38:00+00:00",
-    "sunset": "2017-02-09T15:23:28+00:00"
+    "sunset": "2017-02-09T15:23:28+00:00",
+    "civilSunrise": "2017-02-09T04:12:19+00:00",
+    "civilSunset": "2017-02-09T15:49:38+00:00",
+    "nauticalSunrise": "2017-02-09T03:42:30+00:00",
+    "nauticalSunset": "2017-02-09T16:19:28+00:00",
+    "astronomicalSunrise": "2017-02-09T03:12:57+00:00",
+    "astronomicalSunset": "2017-02-09T16:49:03+00:00"
  }, {
     "city": "Nouakchott",
     "latitude": 18.10033,
     "longitude": -15.94975,
     "sunrise": "2017-02-09T07:33:27+00:00",
-    "sunset": "2017-02-09T19:02:32+00:00"
+    "sunset": "2017-02-09T19:02:32+00:00",
+    "civilSunrise": "2017-02-09T07:11:13+00:00",
+    "civilSunset": "2017-02-09T19:25:02+00:00",
+    "nauticalSunrise": "2017-02-09T06:45:29+00:00",
+    "nauticalSunset": "2017-02-09T19:50:46+00:00",
+    "astronomicalSunrise": "2017-02-09T06:19:50+00:00",
+    "astronomicalSunset": "2017-02-09T20:16:25+00:00"
  }, {
     "city": "Nouméa",
     "latitude": -22.27631,
     "longitude": 166.4572,
     "sunrise": "2017-02-08T18:40:11+00:00",
-    "sunset": "2017-02-09T07:36:32+00:00"
+    "sunset": "2017-02-09T07:36:32+00:00",
+    "civilSunrise": "2017-02-08T18:16:11+00:00",
+    "civilSunset": "2017-02-09T08:00:14+00:00",
+    "nauticalSunrise": "2017-02-08T17:48:40+00:00",
+    "nauticalSunset": "2017-02-09T08:27:41+00:00",
+    "astronomicalSunrise": "2017-02-08T17:20:27+00:00",
+    "astronomicalSunset": "2017-02-09T08:55:49+00:00"
  }, {
     "city": "Nuku`alofa",
     "latitude": -21.13333,
     "longitude": -175.2,
     "sunrise": "2017-02-09T17:28:46+00:00",
-    "sunset": "2017-02-10T06:21:15+00:00"
+    "sunset": "2017-02-10T06:21:15+00:00",
+    "civilSunrise": "2017-02-09T17:05:02+00:00",
+    "civilSunset": "2017-02-10T06:44:41+00:00",
+    "nauticalSunrise": "2017-02-09T16:37:52+00:00",
+    "nauticalSunset": "2017-02-10T07:11:48+00:00",
+    "astronomicalSunrise": "2017-02-09T16:10:04+00:00",
+    "astronomicalSunset": "2017-02-10T07:39:32+00:00"
  }, {
     "city": "Nuuk",
     "latitude": 64.18347,
     "longitude": -51.72157,
     "sunrise": "2017-02-09T11:38:57+00:00",
-    "sunset": "2017-02-09T19:43:13+00:00"
+    "sunset": "2017-02-09T19:43:13+00:00",
+    "civilSunrise": "2017-02-09T10:47:30+00:00",
+    "civilSunset": "2017-02-09T20:35:54+00:00",
+    "nauticalSunrise": "2017-02-09T09:50:44+00:00",
+    "nauticalSunset": "2017-02-09T21:32:47+00:00",
+    "astronomicalSunrise": "2017-02-09T08:55:40+00:00",
+    "astronomicalSunset": "2017-02-09T22:28:03+00:00"
  }, {
     "city": "Oranjestad",
     "latitude": 12.52398,
     "longitude": -70.02703,
     "sunrise": "2017-02-09T11:03:40+00:00",
-    "sunset": "2017-02-09T22:44:57+00:00"
+    "sunset": "2017-02-09T22:44:57+00:00",
+    "civilSunrise": "2017-02-09T10:41:56+00:00",
+    "civilSunset": "2017-02-09T23:06:52+00:00",
+    "nauticalSunrise": "2017-02-09T10:16:50+00:00",
+    "nauticalSunset": "2017-02-09T23:31:58+00:00",
+    "astronomicalSunrise": "2017-02-09T09:51:44+00:00",
+    "astronomicalSunset": "2017-02-09T23:57:03+00:00"
  }, {
     "city": "Oslo",
     "latitude": 59.91273,
     "longitude": 10.74609,
     "sunrise": "2017-02-09T07:08:22+00:00",
-    "sunset": "2017-02-09T15:54:03+00:00"
+    "sunset": "2017-02-09T15:54:03+00:00",
+    "civilSunrise": "2017-02-09T06:24:52+00:00",
+    "civilSunset": "2017-02-09T16:38:37+00:00",
+    "nauticalSunrise": "2017-02-09T05:35:51+00:00",
+    "nauticalSunset": "2017-02-09T17:27:43+00:00",
+    "astronomicalSunrise": "2017-02-09T04:47:59+00:00",
+    "astronomicalSunset": "2017-02-09T18:15:44+00:00"
  }, {
     "city": "Ottawa",
     "latitude": 45.41117,
     "longitude": -75.69812,
     "sunrise": "2017-02-09T12:11:42+00:00",
-    "sunset": "2017-02-09T22:22:17+00:00"
+    "sunset": "2017-02-09T22:22:17+00:00",
+    "civilSunrise": "2017-02-09T11:41:43+00:00",
+    "civilSunset": "2017-02-09T22:52:58+00:00",
+    "nauticalSunrise": "2017-02-09T11:06:59+00:00",
+    "nauticalSunset": "2017-02-09T23:27:43+00:00",
+    "astronomicalSunrise": "2017-02-09T10:32:42+00:00",
+    "astronomicalSunset": "2017-02-10T00:02:03+00:00"
  }, {
     "city": "Ouagadougou",
     "latitude": 12.36423,
     "longitude": -1.53834,
     "sunrise": "2017-02-09T06:29:36+00:00",
-    "sunset": "2017-02-09T18:11:06+00:00"
+    "sunset": "2017-02-09T18:11:06+00:00",
+    "civilSunrise": "2017-02-09T06:07:52+00:00",
+    "civilSunset": "2017-02-09T18:33:01+00:00",
+    "nauticalSunrise": "2017-02-09T05:42:46+00:00",
+    "nauticalSunset": "2017-02-09T18:58:07+00:00",
+    "astronomicalSunrise": "2017-02-09T05:17:41+00:00",
+    "astronomicalSunset": "2017-02-09T19:23:11+00:00"
  }, {
     "city": "Pago Pago",
     "latitude": -14.27806,
     "longitude": -170.7025,
     "sunrise": "2017-02-09T17:18:36+00:00",
-    "sunset": "2017-02-10T05:55:25+00:00"
+    "sunset": "2017-02-10T05:55:25+00:00",
+    "civilSunrise": "2017-02-09T16:56:02+00:00",
+    "civilSunset": "2017-02-10T06:17:50+00:00",
+    "nauticalSunrise": "2017-02-09T16:30:10+00:00",
+    "nauticalSunset": "2017-02-10T06:43:39+00:00",
+    "astronomicalSunrise": "2017-02-09T16:03:55+00:00",
+    "astronomicalSunset": "2017-02-10T07:09:51+00:00"
  }, {
     "city": "Palikir - National Government Center",
     "latitude": 6.92477,
     "longitude": 158.16109,
     "sunrise": "2017-02-08T19:45:11+00:00",
-    "sunset": "2017-02-09T07:37:54+00:00"
+    "sunset": "2017-02-09T07:37:54+00:00",
+    "civilSunrise": "2017-02-08T19:23:41+00:00",
+    "civilSunset": "2017-02-09T07:59:31+00:00",
+    "nauticalSunrise": "2017-02-08T18:58:54+00:00",
+    "nauticalSunset": "2017-02-09T08:24:18+00:00",
+    "astronomicalSunrise": "2017-02-08T18:34:04+00:00",
+    "astronomicalSunset": "2017-02-09T08:49:06+00:00"
  }, {
     "city": "Panamá",
     "latitude": 8.9936,
     "longitude": -79.51973,
     "sunrise": "2017-02-09T11:37:57+00:00",
-    "sunset": "2017-02-09T23:26:37+00:00"
+    "sunset": "2017-02-09T23:26:37+00:00",
+    "civilSunrise": "2017-02-09T11:16:24+00:00",
+    "civilSunset": "2017-02-09T23:48:18+00:00",
+    "nauticalSunrise": "2017-02-09T10:51:32+00:00",
+    "nauticalSunset": "2017-02-10T00:13:09+00:00",
+    "astronomicalSunrise": "2017-02-09T10:26:40+00:00",
+    "astronomicalSunset": "2017-02-10T00:38:01+00:00"
  }, {
     "city": "Papeete",
     "latitude": -17.53333,
     "longitude": -149.56667,
     "sunrise": "2017-02-09T15:50:24+00:00",
-    "sunset": "2017-02-10T04:34:33+00:00"
+    "sunset": "2017-02-10T04:34:33+00:00",
+    "civilSunrise": "2017-02-09T15:27:20+00:00",
+    "civilSunset": "2017-02-10T04:57:23+00:00",
+    "nauticalSunrise": "2017-02-09T15:00:55+00:00",
+    "nauticalSunset": "2017-02-10T05:23:45+00:00",
+    "astronomicalSunrise": "2017-02-09T14:34:00+00:00",
+    "astronomicalSunset": "2017-02-10T05:50:36+00:00"
  }, {
     "city": "Paramaribo",
     "latitude": 5.86638,
     "longitude": -55.16682,
     "sunrise": "2017-02-09T09:57:20+00:00",
-    "sunset": "2017-02-09T21:52:24+00:00"
+    "sunset": "2017-02-09T21:52:24+00:00",
+    "civilSunrise": "2017-02-09T09:35:52+00:00",
+    "civilSunset": "2017-02-09T22:13:58+00:00",
+    "nauticalSunrise": "2017-02-09T09:11:08+00:00",
+    "nauticalSunset": "2017-02-09T22:38:41+00:00",
+    "astronomicalSunrise": "2017-02-09T08:46:22+00:00",
+    "astronomicalSunset": "2017-02-09T23:03:27+00:00"
  }, {
     "city": "Paris",
     "latitude": 48.85341,
     "longitude": 2.3488,
     "sunrise": "2017-02-09T07:07:21+00:00",
-    "sunset": "2017-02-09T17:02:15+00:00"
+    "sunset": "2017-02-09T17:02:15+00:00",
+    "civilSunrise": "2017-02-09T06:35:13+00:00",
+    "civilSunset": "2017-02-09T17:35:08+00:00",
+    "nauticalSunrise": "2017-02-09T05:58:08+00:00",
+    "nauticalSunset": "2017-02-09T18:12:16+00:00",
+    "astronomicalSunrise": "2017-02-09T05:21:35+00:00",
+    "astronomicalSunset": "2017-02-09T18:48:53+00:00"
  }, {
     "city": "Philipsburg",
     "latitude": 18.026,
     "longitude": -63.04582,
     "sunrise": "2017-02-09T10:41:42+00:00",
-    "sunset": "2017-02-09T22:11:04+00:00"
+    "sunset": "2017-02-09T22:11:04+00:00",
+    "civilSunrise": "2017-02-09T10:19:29+00:00",
+    "civilSunset": "2017-02-09T22:33:33+00:00",
+    "nauticalSunrise": "2017-02-09T09:53:46+00:00",
+    "nauticalSunset": "2017-02-09T22:59:16+00:00",
+    "astronomicalSunrise": "2017-02-09T09:28:07+00:00",
+    "astronomicalSunset": "2017-02-09T23:24:54+00:00"
  }, {
     "city": "Phnom Penh",
     "latitude": 11.56245,
     "longitude": 104.91601,
     "sunrise": "2017-02-08T23:23:01+00:00",
-    "sunset": "2017-02-09T11:06:03+00:00"
+    "sunset": "2017-02-09T11:06:03+00:00",
+    "civilSunrise": "2017-02-08T23:01:19+00:00",
+    "civilSunset": "2017-02-09T11:27:54+00:00",
+    "nauticalSunrise": "2017-02-08T22:36:16+00:00",
+    "nauticalSunset": "2017-02-09T11:52:57+00:00",
+    "astronomicalSunrise": "2017-02-08T22:11:14+00:00",
+    "astronomicalSunset": "2017-02-09T12:17:58+00:00"
  }, {
     "city": "Plymouth",
     "latitude": 16.70555,
     "longitude": -62.21292,
     "sunrise": "2017-02-09T10:36:55+00:00",
-    "sunset": "2017-02-09T22:09:11+00:00"
+    "sunset": "2017-02-09T22:09:11+00:00",
+    "civilSunrise": "2017-02-09T10:14:50+00:00",
+    "civilSunset": "2017-02-09T22:31:31+00:00",
+    "nauticalSunrise": "2017-02-09T09:49:17+00:00",
+    "nauticalSunset": "2017-02-09T22:57:03+00:00",
+    "astronomicalSunrise": "2017-02-09T09:23:48+00:00",
+    "astronomicalSunset": "2017-02-09T23:22:32+00:00"
  }, {
     "city": "Podgorica",
     "latitude": 42.44111,
     "longitude": 19.26361,
     "sunrise": "2017-02-09T05:46:27+00:00",
-    "sunset": "2017-02-09T16:07:50+00:00"
+    "sunset": "2017-02-09T16:07:50+00:00",
+    "civilSunrise": "2017-02-09T05:17:57+00:00",
+    "civilSunset": "2017-02-09T16:36:57+00:00",
+    "nauticalSunrise": "2017-02-09T04:44:56+00:00",
+    "nauticalSunset": "2017-02-09T17:10:01+00:00",
+    "astronomicalSunrise": "2017-02-09T04:12:16+00:00",
+    "astronomicalSunset": "2017-02-09T17:42:42+00:00"
  }, {
     "city": "Port Louis",
     "latitude": -20.16194,
     "longitude": 57.49889,
     "sunrise": "2017-02-09T01:58:46+00:00",
-    "sunset": "2017-02-09T14:49:37+00:00"
+    "sunset": "2017-02-09T14:49:37+00:00",
+    "civilSunrise": "2017-02-09T01:35:13+00:00",
+    "civilSunset": "2017-02-09T15:12:55+00:00",
+    "nauticalSunrise": "2017-02-09T01:08:14+00:00",
+    "nauticalSunset": "2017-02-09T15:39:51+00:00",
+    "astronomicalSunrise": "2017-02-09T00:40:38+00:00",
+    "astronomicalSunset": "2017-02-09T16:07:22+00:00"
  }, {
     "city": "Port Moresby",
     "latitude": -9.44314,
     "longitude": 147.17972,
     "sunrise": "2017-02-08T20:12:02+00:00",
-    "sunset": "2017-02-09T08:38:54+00:00"
+    "sunset": "2017-02-09T08:38:54+00:00",
+    "civilSunrise": "2017-02-08T19:49:59+00:00",
+    "civilSunset": "2017-02-09T09:00:52+00:00",
+    "nauticalSunrise": "2017-02-08T19:24:41+00:00",
+    "nauticalSunset": "2017-02-09T09:26:07+00:00",
+    "astronomicalSunrise": "2017-02-08T18:59:07+00:00",
+    "astronomicalSunset": "2017-02-09T09:51:39+00:00"
  }, {
     "city": "Port-au-Prince",
     "latitude": 18.53917,
     "longitude": -72.335,
     "sunrise": "2017-02-09T11:19:25+00:00",
-    "sunset": "2017-02-09T22:47:40+00:00"
+    "sunset": "2017-02-09T22:47:40+00:00",
+    "civilSunrise": "2017-02-09T10:57:09+00:00",
+    "civilSunset": "2017-02-09T23:10:12+00:00",
+    "nauticalSunrise": "2017-02-09T10:31:21+00:00",
+    "nauticalSunset": "2017-02-09T23:36:00+00:00",
+    "astronomicalSunrise": "2017-02-09T10:05:38+00:00",
+    "astronomicalSunset": "2017-02-10T00:01:42+00:00"
  }, {
     "city": "Port-aux-Français",
     "latitude": -49.35,
     "longitude": 70.21667,
     "sunrise": "2017-02-09T00:17:56+00:00",
-    "sunset": "2017-02-09T14:48:43+00:00"
+    "sunset": "2017-02-09T14:48:43+00:00",
+    "civilSunrise": "2017-02-08T23:40:32+00:00",
+    "civilSunset": "2017-02-09T15:24:56+00:00",
+    "nauticalSunrise": "2017-02-08T22:55:21+00:00",
+    "nauticalSunset": "2017-02-09T16:09:46+00:00",
+    "astronomicalSunrise": "2017-02-08T22:02:08+00:00",
+    "astronomicalSunset": "2017-02-09T17:02:16+00:00"
  }, {
     "city": "Port-of-Spain",
     "latitude": 10.66617,
     "longitude": -61.51657,
     "sunrise": "2017-02-09T10:27:41+00:00",
-    "sunset": "2017-02-09T22:12:51+00:00"
+    "sunset": "2017-02-09T22:12:51+00:00",
+    "civilSunrise": "2017-02-09T10:06:04+00:00",
+    "civilSunset": "2017-02-09T22:34:38+00:00",
+    "nauticalSunrise": "2017-02-09T09:41:06+00:00",
+    "nauticalSunset": "2017-02-09T22:59:36+00:00",
+    "astronomicalSunrise": "2017-02-09T09:16:08+00:00",
+    "astronomicalSunset": "2017-02-09T23:24:33+00:00"
  }, {
     "city": "Porto-Novo",
     "latitude": 6.49646,
     "longitude": 2.60359,
     "sunrise": "2017-02-09T06:06:55+00:00",
-    "sunset": "2017-02-09T18:00:39+00:00"
+    "sunset": "2017-02-09T18:00:39+00:00",
+    "civilSunrise": "2017-02-09T05:45:26+00:00",
+    "civilSunset": "2017-02-09T18:22:14+00:00",
+    "nauticalSunrise": "2017-02-09T05:20:41+00:00",
+    "nauticalSunset": "2017-02-09T18:46:59+00:00",
+    "astronomicalSunrise": "2017-02-09T04:55:53+00:00",
+    "astronomicalSunset": "2017-02-09T19:11:46+00:00"
  }, {
     "city": "Port-Vila",
     "latitude": -17.73381,
     "longitude": 168.32188,
     "sunrise": "2017-02-08T18:38:12+00:00",
-    "sunset": "2017-02-09T07:23:36+00:00"
+    "sunset": "2017-02-09T07:23:36+00:00",
+    "civilSunrise": "2017-02-08T18:15:04+00:00",
+    "civilSunset": "2017-02-09T07:46:31+00:00",
+    "nauticalSunrise": "2017-02-08T17:48:33+00:00",
+    "nauticalSunset": "2017-02-09T08:12:58+00:00",
+    "astronomicalSunrise": "2017-02-08T17:21:33+00:00",
+    "astronomicalSunset": "2017-02-09T08:39:55+00:00"
  }, {
     "city": "Praha",
     "latitude": 50.08804,
     "longitude": 14.42076,
     "sunrise": "2017-02-09T06:22:06+00:00",
-    "sunset": "2017-02-09T16:10:56+00:00"
+    "sunset": "2017-02-09T16:10:56+00:00",
+    "civilSunrise": "2017-02-09T05:49:05+00:00",
+    "civilSunset": "2017-02-09T16:44:44+00:00",
+    "nauticalSunrise": "2017-02-09T05:11:02+00:00",
+    "nauticalSunset": "2017-02-09T17:22:50+00:00",
+    "astronomicalSunrise": "2017-02-09T04:33:33+00:00",
+    "astronomicalSunset": "2017-02-09T18:00:22+00:00"
  }, {
     "city": "Praia",
     "latitude": 14.92148,
     "longitude": -23.50868,
     "sunrise": "2017-02-09T08:00:12+00:00",
-    "sunset": "2017-02-09T19:36:16+00:00"
+    "sunset": "2017-02-09T19:36:16+00:00",
+    "civilSunrise": "2017-02-09T07:38:17+00:00",
+    "civilSunset": "2017-02-09T19:58:24+00:00",
+    "nauticalSunrise": "2017-02-09T07:12:56+00:00",
+    "nauticalSunset": "2017-02-09T20:23:45+00:00",
+    "astronomicalSunrise": "2017-02-09T06:47:38+00:00",
+    "astronomicalSunset": "2017-02-09T20:49:02+00:00"
  }, {
     "city": "Pretoria",
     "latitude": -25.74486,
     "longitude": 28.18783,
     "sunrise": "2017-02-09T03:49:05+00:00",
-    "sunset": "2017-02-09T16:53:48+00:00"
+    "sunset": "2017-02-09T16:53:48+00:00",
+    "civilSunrise": "2017-02-09T03:24:17+00:00",
+    "civilSunset": "2017-02-09T17:18:14+00:00",
+    "nauticalSunrise": "2017-02-09T02:55:49+00:00",
+    "nauticalSunset": "2017-02-09T17:46:38+00:00",
+    "astronomicalSunrise": "2017-02-09T02:26:28+00:00",
+    "astronomicalSunset": "2017-02-09T18:15:53+00:00"
  }, {
     "city": "Pristina",
     "latitude": 42.67272,
     "longitude": 21.16688,
     "sunrise": "2017-02-09T05:39:16+00:00",
-    "sunset": "2017-02-09T15:59:47+00:00"
+    "sunset": "2017-02-09T15:59:47+00:00",
+    "civilSunrise": "2017-02-09T05:10:40+00:00",
+    "civilSunset": "2017-02-09T16:29:01+00:00",
+    "nauticalSunrise": "2017-02-09T04:37:31+00:00",
+    "nauticalSunset": "2017-02-09T17:02:12+00:00",
+    "astronomicalSunrise": "2017-02-09T04:04:45+00:00",
+    "astronomicalSunset": "2017-02-09T17:35:00+00:00"
  }, {
     "city": "Pyongyang",
     "latitude": 39.03385,
     "longitude": 125.75432,
     "sunrise": "2017-02-08T22:34:50+00:00",
-    "sunset": "2017-02-09T09:07:30+00:00"
+    "sunset": "2017-02-09T09:07:30+00:00",
+    "civilSunrise": "2017-02-08T22:07:47+00:00",
+    "civilSunset": "2017-02-09T09:35:07+00:00",
+    "nauticalSunrise": "2017-02-08T21:36:24+00:00",
+    "nauticalSunset": "2017-02-09T10:06:32+00:00",
+    "astronomicalSunrise": "2017-02-08T21:05:20+00:00",
+    "astronomicalSunset": "2017-02-09T10:37:37+00:00"
  }, {
     "city": "Quito",
     "latitude": -0.22985,
     "longitude": -78.52495,
     "sunrise": "2017-02-09T11:24:32+00:00",
-    "sunset": "2017-02-09T23:32:03+00:00"
+    "sunset": "2017-02-09T23:32:03+00:00",
+    "civilSunrise": "2017-02-09T11:03:04+00:00",
+    "civilSunset": "2017-02-09T23:53:34+00:00",
+    "nauticalSunrise": "2017-02-09T10:38:21+00:00",
+    "nauticalSunset": "2017-02-10T00:18:15+00:00",
+    "astronomicalSunrise": "2017-02-09T10:13:32+00:00",
+    "astronomicalSunset": "2017-02-10T00:43:03+00:00"
  }, {
     "city": "Rabat",
     "latitude": 34.01325,
     "longitude": -6.83255,
     "sunrise": "2017-02-09T07:16:59+00:00",
-    "sunset": "2017-02-09T18:06:04+00:00"
+    "sunset": "2017-02-09T18:06:04+00:00",
+    "civilSunrise": "2017-02-09T06:51:40+00:00",
+    "civilSunset": "2017-02-09T18:31:52+00:00",
+    "nauticalSunrise": "2017-02-09T06:22:15+00:00",
+    "nauticalSunset": "2017-02-09T19:01:18+00:00",
+    "astronomicalSunrise": "2017-02-09T05:53:06+00:00",
+    "astronomicalSunset": "2017-02-09T19:30:28+00:00"
  }, {
     "city": "Reykjavík",
     "latitude": 64.13548,
     "longitude": -21.89541,
     "sunrise": "2017-02-09T09:39:38+00:00",
-    "sunset": "2017-02-09T17:43:56+00:00"
+    "sunset": "2017-02-09T17:43:56+00:00",
+    "civilSunrise": "2017-02-09T08:48:16+00:00",
+    "civilSunset": "2017-02-09T18:36:31+00:00",
+    "nauticalSunrise": "2017-02-09T07:51:35+00:00",
+    "nauticalSunset": "2017-02-09T19:33:19+00:00",
+    "astronomicalSunrise": "2017-02-09T06:56:36+00:00",
+    "astronomicalSunset": "2017-02-09T20:28:30+00:00"
  }, {
     "city": "Riga",
     "latitude": 56.946,
     "longitude": 24.10589,
     "sunrise": "2017-02-09T06:03:34+00:00",
-    "sunset": "2017-02-09T15:11:58+00:00"
+    "sunset": "2017-02-09T15:11:58+00:00",
+    "civilSunrise": "2017-02-09T05:24:05+00:00",
+    "civilSunset": "2017-02-09T15:52:26+00:00",
+    "nauticalSunrise": "2017-02-09T04:39:09+00:00",
+    "nauticalSunset": "2017-02-09T16:37:26+00:00",
+    "astronomicalSunrise": "2017-02-09T03:55:08+00:00",
+    "astronomicalSunset": "2017-02-09T17:21:33+00:00"
  }, {
     "city": "Riyadh",
     "latitude": 24.68773,
     "longitude": 46.72185,
     "sunrise": "2017-02-09T03:30:31+00:00",
-    "sunset": "2017-02-09T14:44:06+00:00"
+    "sunset": "2017-02-09T14:44:06+00:00",
+    "civilSunrise": "2017-02-09T03:07:20+00:00",
+    "civilSunset": "2017-02-09T15:07:37+00:00",
+    "nauticalSunrise": "2017-02-09T02:40:28+00:00",
+    "nauticalSunset": "2017-02-09T15:34:30+00:00",
+    "astronomicalSunrise": "2017-02-09T02:13:44+00:00",
+    "astronomicalSunset": "2017-02-09T16:01:14+00:00"
  }, {
     "city": "Road Town",
     "latitude": 18.41667,
     "longitude": -64.61667,
     "sunrise": "2017-02-09T10:48:25+00:00",
-    "sunset": "2017-02-09T22:16:55+00:00"
+    "sunset": "2017-02-09T22:16:55+00:00",
+    "civilSunrise": "2017-02-09T10:26:09+00:00",
+    "civilSunset": "2017-02-09T22:39:27+00:00",
+    "nauticalSunrise": "2017-02-09T10:00:23+00:00",
+    "nauticalSunset": "2017-02-09T23:05:13+00:00",
+    "astronomicalSunrise": "2017-02-09T09:34:41+00:00",
+    "astronomicalSunset": "2017-02-09T23:30:54+00:00"
  }, {
     "city": "Roma",
     "latitude": 41.89474,
     "longitude": 12.4839,
     "sunrise": "2017-02-09T06:12:32+00:00",
-    "sunset": "2017-02-09T16:35:59+00:00"
+    "sunset": "2017-02-09T16:35:59+00:00",
+    "civilSunrise": "2017-02-09T05:44:18+00:00",
+    "civilSunset": "2017-02-09T17:04:50+00:00",
+    "nauticalSunrise": "2017-02-09T05:11:34+00:00",
+    "nauticalSunset": "2017-02-09T17:37:36+00:00",
+    "astronomicalSunrise": "2017-02-09T04:39:11+00:00",
+    "astronomicalSunset": "2017-02-09T18:10:01+00:00"
  }, {
     "city": "Roseau",
     "latitude": 15.30174,
     "longitude": -61.38808,
     "sunrise": "2017-02-09T10:32:05+00:00",
-    "sunset": "2017-02-09T22:07:25+00:00"
+    "sunset": "2017-02-09T22:07:25+00:00",
+    "civilSunrise": "2017-02-09T10:10:09+00:00",
+    "civilSunset": "2017-02-09T22:29:35+00:00",
+    "nauticalSunrise": "2017-02-09T09:44:45+00:00",
+    "nauticalSunset": "2017-02-09T22:54:58+00:00",
+    "astronomicalSunrise": "2017-02-09T09:19:26+00:00",
+    "astronomicalSunset": "2017-02-09T23:20:18+00:00"
  }, {
     "city": "São Tomé",
     "latitude": 0.33654,
     "longitude": 6.72732,
     "sunrise": "2017-02-09T05:44:06+00:00",
-    "sunset": "2017-02-09T17:50:28+00:00"
+    "sunset": "2017-02-09T17:50:28+00:00",
+    "civilSunrise": "2017-02-09T05:22:38+00:00",
+    "civilSunset": "2017-02-09T18:11:59+00:00",
+    "nauticalSunrise": "2017-02-09T04:57:55+00:00",
+    "nauticalSunset": "2017-02-09T18:36:40+00:00",
+    "astronomicalSunrise": "2017-02-09T04:33:06+00:00",
+    "astronomicalSunset": "2017-02-09T19:01:27+00:00"
  }, {
     "city": "Saint George's",
     "latitude": 12.05644,
     "longitude": -61.74849,
     "sunrise": "2017-02-09T10:30:04+00:00",
-    "sunset": "2017-02-09T22:12:19+00:00"
+    "sunset": "2017-02-09T22:12:19+00:00",
+    "civilSunrise": "2017-02-09T10:08:22+00:00",
+    "civilSunset": "2017-02-09T22:34:12+00:00",
+    "nauticalSunrise": "2017-02-09T09:43:18+00:00",
+    "nauticalSunset": "2017-02-09T22:59:16+00:00",
+    "astronomicalSunrise": "2017-02-09T09:18:15+00:00",
+    "astronomicalSunset": "2017-02-09T23:24:19+00:00"
  }, {
     "city": "Saint Helier",
     "latitude": 49.18333,
     "longitude": -2.1,
     "sunrise": "2017-02-09T07:25:54+00:00",
-    "sunset": "2017-02-09T17:19:17+00:00"
+    "sunset": "2017-02-09T17:19:17+00:00",
+    "civilSunrise": "2017-02-09T06:53:33+00:00",
+    "civilSunset": "2017-02-09T17:52:25+00:00",
+    "nauticalSunrise": "2017-02-09T06:16:13+00:00",
+    "nauticalSunset": "2017-02-09T18:29:47+00:00",
+    "astronomicalSunrise": "2017-02-09T05:39:25+00:00",
+    "astronomicalSunset": "2017-02-09T19:06:38+00:00"
  }, {
     "city": "Saint John’s",
     "latitude": 17.11667,
     "longitude": -61.85,
     "sunrise": "2017-02-09T10:35:55+00:00",
-    "sunset": "2017-02-09T22:07:17+00:00"
+    "sunset": "2017-02-09T22:07:17+00:00",
+    "civilSunrise": "2017-02-09T10:13:48+00:00",
+    "civilSunset": "2017-02-09T22:29:39+00:00",
+    "nauticalSunrise": "2017-02-09T09:48:12+00:00",
+    "nauticalSunset": "2017-02-09T22:55:15+00:00",
+    "astronomicalSunrise": "2017-02-09T09:22:40+00:00",
+    "astronomicalSunset": "2017-02-09T23:20:47+00:00"
  }, {
     "city": "Saint Peter Port",
     "latitude": 49.45981,
     "longitude": -2.53527,
     "sunrise": "2017-02-09T07:28:18+00:00",
-    "sunset": "2017-02-09T17:20:22+00:00"
+    "sunset": "2017-02-09T17:20:22+00:00",
+    "civilSunrise": "2017-02-09T06:55:45+00:00",
+    "civilSunset": "2017-02-09T17:53:42+00:00",
+    "nauticalSunrise": "2017-02-09T06:18:12+00:00",
+    "nauticalSunset": "2017-02-09T18:31:17+00:00",
+    "astronomicalSunrise": "2017-02-09T05:41:12+00:00",
+    "astronomicalSunset": "2017-02-09T19:08:21+00:00"
  }, {
     "city": "Saint-Denis",
     "latitude": -20.88231,
     "longitude": 55.4504,
     "sunrise": "2017-02-09T02:06:06+00:00",
-    "sunset": "2017-02-09T14:58:41+00:00"
+    "sunset": "2017-02-09T14:58:41+00:00",
+    "civilSunrise": "2017-02-09T01:42:24+00:00",
+    "civilSunset": "2017-02-09T15:22:06+00:00",
+    "nauticalSunrise": "2017-02-09T01:15:15+00:00",
+    "nauticalSunset": "2017-02-09T15:49:12+00:00",
+    "astronomicalSunrise": "2017-02-09T00:47:28+00:00",
+    "astronomicalSunset": "2017-02-09T16:16:54+00:00"
  }, {
     "city": "Saint-Pierre",
     "latitude": 46.76544,
     "longitude": -56.16949,
     "sunrise": "2017-02-09T10:56:29+00:00",
-    "sunset": "2017-02-09T21:01:16+00:00"
+    "sunset": "2017-02-09T21:01:16+00:00",
+    "civilSunrise": "2017-02-09T10:25:43+00:00",
+    "civilSunset": "2017-02-09T21:32:45+00:00",
+    "nauticalSunrise": "2017-02-09T09:50:07+00:00",
+    "nauticalSunset": "2017-02-09T22:08:23+00:00",
+    "astronomicalSunrise": "2017-02-09T09:15:00+00:00",
+    "astronomicalSunset": "2017-02-09T22:43:34+00:00"
  }, {
     "city": "San José",
     "latitude": 9.93333,
     "longitude": -84.08333,
     "sunrise": "2017-02-09T11:57:10+00:00",
-    "sunset": "2017-02-09T23:43:54+00:00"
+    "sunset": "2017-02-09T23:43:54+00:00",
+    "civilSunrise": "2017-02-09T11:35:35+00:00",
+    "civilSunset": "2017-02-10T00:05:38+00:00",
+    "nauticalSunrise": "2017-02-09T11:10:40+00:00",
+    "nauticalSunset": "2017-02-10T00:30:33+00:00",
+    "astronomicalSunrise": "2017-02-09T10:45:45+00:00",
+    "astronomicalSunset": "2017-02-10T00:55:27+00:00"
  }, {
     "city": "San Juan",
     "latitude": 18.46633,
     "longitude": -66.10572,
     "sunrise": "2017-02-09T10:54:25+00:00",
-    "sunset": "2017-02-09T22:22:49+00:00"
+    "sunset": "2017-02-09T22:22:49+00:00",
+    "civilSunrise": "2017-02-09T10:32:10+00:00",
+    "civilSunset": "2017-02-09T22:45:21+00:00",
+    "nauticalSunrise": "2017-02-09T10:06:23+00:00",
+    "nauticalSunset": "2017-02-09T23:11:08+00:00",
+    "astronomicalSunrise": "2017-02-09T09:40:41+00:00",
+    "astronomicalSunset": "2017-02-09T23:36:50+00:00"
  }, {
     "city": "San Marino",
     "latitude": 43.93333,
     "longitude": 12.45,
     "sunrise": "2017-02-09T06:16:30+00:00",
-    "sunset": "2017-02-09T16:32:17+00:00"
+    "sunset": "2017-02-09T16:32:17+00:00",
+    "civilSunrise": "2017-02-09T05:47:17+00:00",
+    "civilSunset": "2017-02-09T17:02:10+00:00",
+    "nauticalSunrise": "2017-02-09T05:13:26+00:00",
+    "nauticalSunset": "2017-02-09T17:36:03+00:00",
+    "astronomicalSunrise": "2017-02-09T04:39:59+00:00",
+    "astronomicalSunset": "2017-02-09T18:09:32+00:00"
  }, {
     "city": "San Salvador",
     "latitude": 13.68935,
     "longitude": -89.18718,
     "sunrise": "2017-02-09T12:21:32+00:00",
-    "sunset": "2017-02-10T00:00:22+00:00"
+    "sunset": "2017-02-10T00:00:22+00:00",
+    "civilSunrise": "2017-02-09T11:59:43+00:00",
+    "civilSunset": "2017-02-10T00:22:23+00:00",
+    "nauticalSunrise": "2017-02-09T11:34:30+00:00",
+    "nauticalSunset": "2017-02-10T00:47:36+00:00",
+    "astronomicalSunrise": "2017-02-09T11:09:19+00:00",
+    "astronomicalSunset": "2017-02-10T01:12:46+00:00"
  }, {
     "city": "Sanaa",
     "latitude": 15.35472,
     "longitude": 44.20667,
     "sunrise": "2017-02-09T03:29:52+00:00",
-    "sunset": "2017-02-09T15:04:52+00:00"
+    "sunset": "2017-02-09T15:04:52+00:00",
+    "civilSunrise": "2017-02-09T03:07:55+00:00",
+    "civilSunset": "2017-02-09T15:27:03+00:00",
+    "nauticalSunrise": "2017-02-09T02:42:30+00:00",
+    "nauticalSunset": "2017-02-09T15:52:27+00:00",
+    "astronomicalSunrise": "2017-02-09T02:17:10+00:00",
+    "astronomicalSunset": "2017-02-09T16:17:47+00:00"
  }, {
     "city": "Santiago",
     "latitude": -33.42628,
     "longitude": -70.56656,
     "sunrise": "2017-02-09T10:13:28+00:00",
-    "sunset": "2017-02-09T23:39:28+00:00"
+    "sunset": "2017-02-09T23:39:28+00:00",
+    "civilSunrise": "2017-02-09T09:46:13+00:00",
+    "civilSunset": "2017-02-10T00:06:10+00:00",
+    "nauticalSunrise": "2017-02-09T09:14:47+00:00",
+    "nauticalSunset": "2017-02-10T00:37:29+00:00",
+    "astronomicalSunrise": "2017-02-09T08:41:49+00:00",
+    "astronomicalSunset": "2017-02-10T01:10:19+00:00"
  }, {
     "city": "Santo Domingo",
     "latitude": 18.50012,
     "longitude": -69.98857,
     "sunrise": "2017-02-09T11:09:59+00:00",
-    "sunset": "2017-02-09T22:38:19+00:00"
+    "sunset": "2017-02-09T22:38:19+00:00",
+    "civilSunrise": "2017-02-09T10:47:43+00:00",
+    "civilSunset": "2017-02-09T23:00:51+00:00",
+    "nauticalSunrise": "2017-02-09T10:21:56+00:00",
+    "nauticalSunset": "2017-02-09T23:26:38+00:00",
+    "astronomicalSunrise": "2017-02-09T09:56:14+00:00",
+    "astronomicalSunset": "2017-02-09T23:52:21+00:00"
  }, {
     "city": "Sarajevo",
     "latitude": 43.84864,
     "longitude": 18.35644,
     "sunrise": "2017-02-09T05:52:44+00:00",
-    "sunset": "2017-02-09T16:08:48+00:00"
+    "sunset": "2017-02-09T16:08:48+00:00",
+    "civilSunrise": "2017-02-09T05:23:33+00:00",
+    "civilSunset": "2017-02-09T16:38:38+00:00",
+    "nauticalSunrise": "2017-02-09T04:49:45+00:00",
+    "nauticalSunset": "2017-02-09T17:12:28+00:00",
+    "astronomicalSunrise": "2017-02-09T04:16:21+00:00",
+    "astronomicalSunset": "2017-02-09T17:45:54+00:00"
  }, {
     "city": "Seoul",
     "latitude": 37.56826,
     "longitude": 126.97783,
     "sunrise": "2017-02-08T22:27:33+00:00",
-    "sunset": "2017-02-09T09:05:01+00:00"
+    "sunset": "2017-02-09T09:05:01+00:00",
+    "civilSunrise": "2017-02-08T22:01:02+00:00",
+    "civilSunset": "2017-02-09T09:32:03+00:00",
+    "nauticalSunrise": "2017-02-08T21:30:17+00:00",
+    "nauticalSunset": "2017-02-09T10:02:50+00:00",
+    "astronomicalSunrise": "2017-02-08T20:59:49+00:00",
+    "astronomicalSunset": "2017-02-09T10:33:19+00:00"
  }, {
     "city": "Singapore",
     "latitude": 1.28967,
     "longitude": 103.85007,
     "sunrise": "2017-02-08T23:16:36+00:00",
-    "sunset": "2017-02-09T11:20:59+00:00"
+    "sunset": "2017-02-09T11:20:59+00:00",
+    "civilSunrise": "2017-02-08T22:55:07+00:00",
+    "civilSunset": "2017-02-09T11:42:30+00:00",
+    "nauticalSunrise": "2017-02-08T22:30:25+00:00",
+    "nauticalSunset": "2017-02-09T12:07:11+00:00",
+    "astronomicalSunrise": "2017-02-08T22:05:37+00:00",
+    "astronomicalSunset": "2017-02-09T12:31:58+00:00"
  }, {
     "city": "Skopje",
     "latitude": 42,
     "longitude": 21.43333,
     "sunrise": "2017-02-09T05:36:58+00:00",
-    "sunset": "2017-02-09T15:59:58+00:00"
+    "sunset": "2017-02-09T15:59:58+00:00",
+    "civilSunrise": "2017-02-09T05:08:41+00:00",
+    "civilSunset": "2017-02-09T16:28:52+00:00",
+    "nauticalSunrise": "2017-02-09T04:35:53+00:00",
+    "nauticalSunset": "2017-02-09T17:01:41+00:00",
+    "astronomicalSunrise": "2017-02-09T04:03:27+00:00",
+    "astronomicalSunset": "2017-02-09T17:34:09+00:00"
  }, {
     "city": "Sofia",
     "latitude": 42.69751,
     "longitude": 23.32415,
     "sunrise": "2017-02-09T05:30:42+00:00",
-    "sunset": "2017-02-09T15:51:06+00:00"
+    "sunset": "2017-02-09T15:51:06+00:00",
+    "civilSunrise": "2017-02-09T05:02:05+00:00",
+    "civilSunset": "2017-02-09T16:20:21+00:00",
+    "nauticalSunrise": "2017-02-09T04:28:55+00:00",
+    "nauticalSunset": "2017-02-09T16:53:32+00:00",
+    "astronomicalSunrise": "2017-02-09T03:56:08+00:00",
+    "astronomicalSunset": "2017-02-09T17:26:22+00:00"
  }, {
     "city": "Stanley",
     "latitude": -51.7,
     "longitude": -57.85,
     "sunrise": "2017-02-09T08:44:14+00:00",
-    "sunset": "2017-02-09T23:26:58+00:00"
+    "sunset": "2017-02-09T23:26:58+00:00",
+    "civilSunrise": "2017-02-09T08:04:18+00:00",
+    "civilSunset": "2017-02-10T00:05:33+00:00",
+    "nauticalSunrise": "2017-02-09T07:15:15+00:00",
+    "nauticalSunset": "2017-02-10T00:54:09+00:00",
+    "astronomicalSunrise": "2017-02-09T06:14:45+00:00",
+    "astronomicalSunset": "2017-02-10T01:53:34+00:00"
  }, {
     "city": "Stockholm",
     "latitude": 59.33258,
     "longitude": 18.0649,
     "sunrise": "2017-02-09T06:36:44+00:00",
-    "sunset": "2017-02-09T15:27:09+00:00"
+    "sunset": "2017-02-09T15:27:09+00:00",
+    "civilSunrise": "2017-02-09T05:54:06+00:00",
+    "civilSunset": "2017-02-09T16:10:49+00:00",
+    "nauticalSunrise": "2017-02-09T05:05:57+00:00",
+    "nauticalSunset": "2017-02-09T16:59:04+00:00",
+    "astronomicalSunrise": "2017-02-09T04:18:53+00:00",
+    "astronomicalSunset": "2017-02-09T17:46:14+00:00"
  }, {
     "city": "Sucre",
     "latitude": -19.03332,
     "longitude": -65.26274,
     "sunrise": "2017-02-09T10:11:20+00:00",
-    "sunset": "2017-02-09T22:59:10+00:00"
+    "sunset": "2017-02-09T22:59:10+00:00",
+    "civilSunrise": "2017-02-09T09:48:00+00:00",
+    "civilSunset": "2017-02-09T23:22:15+00:00",
+    "nauticalSunrise": "2017-02-09T09:21:16+00:00",
+    "nauticalSunset": "2017-02-09T23:48:56+00:00",
+    "astronomicalSunrise": "2017-02-09T08:54:00+00:00",
+    "astronomicalSunset": "2017-02-10T00:16:08+00:00"
  }, {
     "city": "Suva",
     "latitude": -18.14161,
     "longitude": 178.44149,
     "sunrise": "2017-02-08T17:57:14+00:00",
-    "sunset": "2017-02-09T06:43:37+00:00"
+    "sunset": "2017-02-09T06:43:37+00:00",
+    "civilSunrise": "2017-02-08T17:34:01+00:00",
+    "civilSunset": "2017-02-09T07:06:35+00:00",
+    "nauticalSunrise": "2017-02-08T17:07:26+00:00",
+    "nauticalSunset": "2017-02-09T07:33:07+00:00",
+    "astronomicalSunrise": "2017-02-08T16:40:20+00:00",
+    "astronomicalSunset": "2017-02-09T08:00:10+00:00"
  }, {
     "city": "Tórshavn",
     "latitude": 62.00973,
     "longitude": -6.77164,
     "sunrise": "2017-02-09T08:27:53+00:00",
-    "sunset": "2017-02-09T16:54:41+00:00"
+    "sunset": "2017-02-09T16:54:41+00:00",
+    "civilSunrise": "2017-02-09T07:40:52+00:00",
+    "civilSunset": "2017-02-09T17:42:50+00:00",
+    "nauticalSunrise": "2017-02-09T06:48:23+00:00",
+    "nauticalSunset": "2017-02-09T18:35:26+00:00",
+    "astronomicalSunrise": "2017-02-09T05:57:15+00:00",
+    "astronomicalSunset": "2017-02-09T19:26:43+00:00"
  }, {
     "city": "Taipei",
     "latitude": 25.04776,
     "longitude": 121.53185,
     "sunrise": "2017-02-08T22:31:50+00:00",
-    "sunset": "2017-02-09T09:44:17+00:00"
+    "sunset": "2017-02-09T09:44:17+00:00",
+    "civilSunrise": "2017-02-08T22:08:36+00:00",
+    "civilSunset": "2017-02-09T10:07:53+00:00",
+    "nauticalSunrise": "2017-02-08T21:41:38+00:00",
+    "nauticalSunset": "2017-02-09T10:34:50+00:00",
+    "astronomicalSunrise": "2017-02-08T21:14:50+00:00",
+    "astronomicalSunset": "2017-02-09T11:01:39+00:00"
  }, {
     "city": "Tallinn",
     "latitude": 59.43696,
     "longitude": 24.75353,
     "sunrise": "2017-02-09T06:10:27+00:00",
-    "sunset": "2017-02-09T14:59:55+00:00"
+    "sunset": "2017-02-09T14:59:55+00:00",
+    "civilSunrise": "2017-02-09T05:27:39+00:00",
+    "civilSunset": "2017-02-09T15:43:45+00:00",
+    "nauticalSunrise": "2017-02-09T04:39:21+00:00",
+    "nauticalSunset": "2017-02-09T16:32:09+00:00",
+    "astronomicalSunrise": "2017-02-09T03:52:09+00:00",
+    "astronomicalSunset": "2017-02-09T17:19:28+00:00"
  }, {
     "city": "Tarawa",
     "latitude": 1.3278,
     "longitude": 172.97696,
     "sunrise": "2017-02-08T18:40:08+00:00",
-    "sunset": "2017-02-09T06:44:26+00:00"
+    "sunset": "2017-02-09T06:44:26+00:00",
+    "civilSunrise": "2017-02-08T18:18:39+00:00",
+    "civilSunset": "2017-02-09T07:05:57+00:00",
+    "nauticalSunrise": "2017-02-08T17:53:56+00:00",
+    "nauticalSunset": "2017-02-09T07:30:39+00:00",
+    "astronomicalSunrise": "2017-02-08T17:29:08+00:00",
+    "astronomicalSunset": "2017-02-09T07:55:26+00:00"
  }, {
     "city": "Tashkent",
     "latitude": 41.26465,
     "longitude": 69.21627,
     "sunrise": "2017-02-09T02:24:40+00:00",
-    "sunset": "2017-02-09T12:49:59+00:00"
+    "sunset": "2017-02-09T12:49:59+00:00",
+    "civilSunrise": "2017-02-09T01:56:42+00:00",
+    "civilSunset": "2017-02-09T13:18:33+00:00",
+    "nauticalSunrise": "2017-02-09T01:24:16+00:00",
+    "nauticalSunset": "2017-02-09T13:51:01+00:00",
+    "astronomicalSunrise": "2017-02-09T00:52:12+00:00",
+    "astronomicalSunset": "2017-02-09T14:23:07+00:00"
  }, {
     "city": "Tbilisi",
     "latitude": 41.69411,
     "longitude": 44.83368,
     "sunrise": "2017-02-09T04:02:53+00:00",
-    "sunset": "2017-02-09T14:26:50+00:00"
+    "sunset": "2017-02-09T14:26:50+00:00",
+    "civilSunrise": "2017-02-09T03:34:44+00:00",
+    "civilSunset": "2017-02-09T14:55:35+00:00",
+    "nauticalSunrise": "2017-02-09T03:02:06+00:00",
+    "nauticalSunset": "2017-02-09T15:28:16+00:00",
+    "astronomicalSunrise": "2017-02-09T02:29:49+00:00",
+    "astronomicalSunset": "2017-02-09T16:00:35+00:00"
  }, {
     "city": "Tegucigalpa",
     "latitude": 14.0818,
     "longitude": -87.20681,
     "sunrise": "2017-02-09T12:14:02+00:00",
-    "sunset": "2017-02-09T23:52:02+00:00"
+    "sunset": "2017-02-09T23:52:02+00:00",
+    "civilSunrise": "2017-02-09T11:52:11+00:00",
+    "civilSunset": "2017-02-10T00:14:05+00:00",
+    "nauticalSunrise": "2017-02-09T11:26:56+00:00",
+    "nauticalSunset": "2017-02-10T00:39:20+00:00",
+    "astronomicalSunrise": "2017-02-09T11:01:43+00:00",
+    "astronomicalSunset": "2017-02-10T01:04:32+00:00"
  }, {
     "city": "Tehrān",
     "latitude": 35.69439,
     "longitude": 51.42151,
     "sunrise": "2017-02-09T03:26:37+00:00",
-    "sunset": "2017-02-09T14:10:24+00:00"
+    "sunset": "2017-02-09T14:10:24+00:00",
+    "civilSunrise": "2017-02-09T03:00:46+00:00",
+    "civilSunset": "2017-02-09T14:36:45+00:00",
+    "nauticalSunrise": "2017-02-09T02:30:45+00:00",
+    "nauticalSunset": "2017-02-09T15:06:47+00:00",
+    "astronomicalSunrise": "2017-02-09T02:01:01+00:00",
+    "astronomicalSunset": "2017-02-09T15:36:33+00:00"
  }, {
     "city": "The Valley",
     "latitude": 18.21704,
     "longitude": -63.05783,
     "sunrise": "2017-02-09T10:41:57+00:00",
-    "sunset": "2017-02-09T22:10:54+00:00"
+    "sunset": "2017-02-09T22:10:54+00:00",
+    "civilSunrise": "2017-02-09T10:19:43+00:00",
+    "civilSunset": "2017-02-09T22:33:24+00:00",
+    "nauticalSunrise": "2017-02-09T09:53:58+00:00",
+    "nauticalSunset": "2017-02-09T22:59:09+00:00",
+    "astronomicalSunrise": "2017-02-09T09:28:18+00:00",
+    "astronomicalSunset": "2017-02-09T23:24:49+00:00"
  }, {
     "city": "Thimphu",
     "latitude": 27.46609,
     "longitude": 89.64191,
     "sunrise": "2017-02-09T00:42:23+00:00",
-    "sunset": "2017-02-09T11:48:52+00:00"
+    "sunset": "2017-02-09T11:48:52+00:00",
+    "civilSunrise": "2017-02-09T00:18:40+00:00",
+    "civilSunset": "2017-02-09T12:12:57+00:00",
+    "nauticalSunrise": "2017-02-08T23:51:10+00:00",
+    "nauticalSunset": "2017-02-09T12:40:28+00:00",
+    "astronomicalSunrise": "2017-02-08T23:23:50+00:00",
+    "astronomicalSunset": "2017-02-09T13:07:49+00:00"
  }, {
     "city": "Tirana",
     "latitude": 41.3275,
     "longitude": 19.81889,
     "sunrise": "2017-02-09T05:42:12+00:00",
-    "sunset": "2017-02-09T16:07:38+00:00"
+    "sunset": "2017-02-09T16:07:38+00:00",
+    "civilSunrise": "2017-02-09T05:14:13+00:00",
+    "civilSunset": "2017-02-09T16:36:13+00:00",
+    "nauticalSunrise": "2017-02-09T04:41:46+00:00",
+    "nauticalSunset": "2017-02-09T17:08:42+00:00",
+    "astronomicalSunrise": "2017-02-09T04:09:40+00:00",
+    "astronomicalSunset": "2017-02-09T17:40:50+00:00"
  }, {
     "city": "Tokyo",
     "latitude": 35.61488,
     "longitude": 139.5813,
     "sunrise": "2017-02-08T21:34:06+00:00",
-    "sunset": "2017-02-09T08:17:38+00:00"
+    "sunset": "2017-02-09T08:17:38+00:00",
+    "civilSunrise": "2017-02-08T21:08:16+00:00",
+    "civilSunset": "2017-02-09T08:43:58+00:00",
+    "nauticalSunrise": "2017-02-08T20:38:16+00:00",
+    "nauticalSunset": "2017-02-09T09:13:59+00:00",
+    "astronomicalSunrise": "2017-02-08T20:08:32+00:00",
+    "astronomicalSunset": "2017-02-09T09:43:44+00:00"
  }, {
     "city": "Tripoli",
     "latitude": 32.87519,
     "longitude": 13.18746,
     "sunrise": "2017-02-09T05:55:19+00:00",
-    "sunset": "2017-02-09T16:47:35+00:00"
+    "sunset": "2017-02-09T16:47:35+00:00",
+    "civilSunrise": "2017-02-09T05:30:19+00:00",
+    "civilSunset": "2017-02-09T17:13:02+00:00",
+    "nauticalSunrise": "2017-02-09T05:01:17+00:00",
+    "nauticalSunset": "2017-02-09T17:42:05+00:00",
+    "astronomicalSunrise": "2017-02-09T04:32:30+00:00",
+    "astronomicalSunset": "2017-02-09T18:10:53+00:00"
  }, {
     "city": "Tunis",
     "latitude": 36.81897,
     "longitude": 10.16579,
     "sunrise": "2017-02-09T06:13:16+00:00",
-    "sunset": "2017-02-09T16:53:48+00:00"
+    "sunset": "2017-02-09T16:53:48+00:00",
+    "civilSunrise": "2017-02-09T05:47:03+00:00",
+    "civilSunset": "2017-02-09T17:20:33+00:00",
+    "nauticalSunrise": "2017-02-09T05:16:36+00:00",
+    "nauticalSunset": "2017-02-09T17:51:00+00:00",
+    "astronomicalSunrise": "2017-02-09T04:46:27+00:00",
+    "astronomicalSunset": "2017-02-09T18:21:11+00:00"
  }, {
     "city": "Ulaanbaatar",
     "latitude": 47.90771,
     "longitude": 106.88324,
     "sunrise": "2017-02-09T00:07:30+00:00",
-    "sunset": "2017-02-09T10:05:49+00:00"
+    "sunset": "2017-02-09T10:05:49+00:00",
+    "civilSunrise": "2017-02-08T23:35:57+00:00",
+    "civilSunset": "2017-02-09T10:38:05+00:00",
+    "nauticalSunrise": "2017-02-08T22:59:33+00:00",
+    "nauticalSunset": "2017-02-09T11:14:33+00:00",
+    "astronomicalSunrise": "2017-02-08T22:23:39+00:00",
+    "astronomicalSunset": "2017-02-09T11:50:29+00:00"
  }, {
     "city": "Vaduz",
     "latitude": 47.14151,
     "longitude": 9.52154,
     "sunrise": "2017-02-09T06:34:49+00:00",
-    "sunset": "2017-02-09T16:37:24+00:00"
+    "sunset": "2017-02-09T16:37:24+00:00",
+    "civilSunrise": "2017-02-09T06:03:48+00:00",
+    "civilSunset": "2017-02-09T17:09:09+00:00",
+    "nauticalSunrise": "2017-02-09T05:27:56+00:00",
+    "nauticalSunset": "2017-02-09T17:45:03+00:00",
+    "astronomicalSunrise": "2017-02-09T04:52:34+00:00",
+    "astronomicalSunset": "2017-02-09T18:20:28+00:00"
  }, {
     "city": "Valletta",
     "latitude": 35.89972,
     "longitude": 14.51472,
     "sunrise": "2017-02-09T05:54:28+00:00",
-    "sunset": "2017-02-09T16:37:49+00:00"
+    "sunset": "2017-02-09T16:37:49+00:00",
+    "civilSunrise": "2017-02-09T05:28:33+00:00",
+    "civilSunset": "2017-02-09T17:04:14+00:00",
+    "nauticalSunrise": "2017-02-09T04:58:28+00:00",
+    "nauticalSunset": "2017-02-09T17:34:20+00:00",
+    "astronomicalSunrise": "2017-02-09T04:28:39+00:00",
+    "astronomicalSunset": "2017-02-09T18:04:11+00:00"
  }, {
     "city": "Vatican City",
     "latitude": 41.90236,
     "longitude": 12.45332,
     "sunrise": "2017-02-09T06:12:40+00:00",
-    "sunset": "2017-02-09T16:36:05+00:00"
+    "sunset": "2017-02-09T16:36:05+00:00",
+    "civilSunrise": "2017-02-09T05:44:26+00:00",
+    "civilSunset": "2017-02-09T17:04:56+00:00",
+    "nauticalSunrise": "2017-02-09T05:11:41+00:00",
+    "nauticalSunset": "2017-02-09T17:37:43+00:00",
+    "astronomicalSunrise": "2017-02-09T04:39:19+00:00",
+    "astronomicalSunset": "2017-02-09T18:10:08+00:00"
  }, {
     "city": "Victoria",
     "latitude": -4.61667,
     "longitude": 55.45,
     "sunrise": "2017-02-09T02:24:06+00:00",
-    "sunset": "2017-02-09T14:40:41+00:00"
+    "sunset": "2017-02-09T14:40:41+00:00",
+    "civilSunrise": "2017-02-09T02:02:25+00:00",
+    "civilSunset": "2017-02-09T15:02:20+00:00",
+    "nauticalSunrise": "2017-02-09T01:37:32+00:00",
+    "nauticalSunset": "2017-02-09T15:27:12+00:00",
+    "astronomicalSunrise": "2017-02-09T01:12:27+00:00",
+    "astronomicalSunset": "2017-02-09T15:52:15+00:00"
  }, {
     "city": "Vienna",
     "latitude": 48.20849,
     "longitude": 16.37208,
     "sunrise": "2017-02-09T06:09:50+00:00",
-    "sunset": "2017-02-09T16:07:35+00:00"
+    "sunset": "2017-02-09T16:07:35+00:00",
+    "civilSunrise": "2017-02-09T05:38:07+00:00",
+    "civilSunset": "2017-02-09T16:40:02+00:00",
+    "nauticalSunrise": "2017-02-09T05:01:31+00:00",
+    "nauticalSunset": "2017-02-09T17:16:41+00:00",
+    "astronomicalSunrise": "2017-02-09T04:25:25+00:00",
+    "astronomicalSunset": "2017-02-09T17:52:50+00:00"
  }, {
     "city": "Vientiane",
     "latitude": 17.96667,
     "longitude": 102.6,
     "sunrise": "2017-02-08T23:39:15+00:00",
-    "sunset": "2017-02-09T11:08:20+00:00"
+    "sunset": "2017-02-09T11:08:20+00:00",
+    "civilSunrise": "2017-02-08T23:17:01+00:00",
+    "civilSunset": "2017-02-09T11:30:49+00:00",
+    "nauticalSunrise": "2017-02-08T22:51:17+00:00",
+    "nauticalSunset": "2017-02-09T11:56:33+00:00",
+    "astronomicalSunrise": "2017-02-08T22:25:38+00:00",
+    "astronomicalSunset": "2017-02-09T12:22:12+00:00"
  }, {
     "city": "Vilnius",
     "latitude": 54.68916,
     "longitude": 25.2798,
     "sunrise": "2017-02-09T05:51:26+00:00",
-    "sunset": "2017-02-09T15:14:43+00:00"
+    "sunset": "2017-02-09T15:14:43+00:00",
+    "civilSunrise": "2017-02-09T05:14:26+00:00",
+    "civilSunset": "2017-02-09T15:52:37+00:00",
+    "nauticalSunrise": "2017-02-09T04:32:06+00:00",
+    "nauticalSunset": "2017-02-09T16:35:01+00:00",
+    "astronomicalSunrise": "2017-02-09T03:50:33+00:00",
+    "astronomicalSunset": "2017-02-09T17:16:40+00:00"
  }, {
     "city": "Warsaw",
     "latitude": 52.22977,
     "longitude": 21.01178,
     "sunrise": "2017-02-09T06:01:20+00:00",
-    "sunset": "2017-02-09T15:38:58+00:00"
+    "sunset": "2017-02-09T15:38:58+00:00",
+    "civilSunrise": "2017-02-09T05:26:37+00:00",
+    "civilSunset": "2017-02-09T16:14:31+00:00",
+    "nauticalSunrise": "2017-02-09T04:46:43+00:00",
+    "nauticalSunset": "2017-02-09T16:54:28+00:00",
+    "astronomicalSunrise": "2017-02-09T04:07:29+00:00",
+    "astronomicalSunset": "2017-02-09T17:33:47+00:00"
  }, {
     "city": "Washington, D. C.",
     "latitude": 38.89511,
     "longitude": -77.03637,
     "sunrise": "2017-02-09T12:05:09+00:00",
-    "sunset": "2017-02-09T22:39:33+00:00"
+    "sunset": "2017-02-09T22:39:33+00:00",
+    "civilSunrise": "2017-02-09T11:38:11+00:00",
+    "civilSunset": "2017-02-09T23:07:04+00:00",
+    "nauticalSunrise": "2017-02-09T11:06:53+00:00",
+    "nauticalSunset": "2017-02-09T23:38:24+00:00",
+    "astronomicalSunrise": "2017-02-09T10:35:54+00:00",
+    "astronomicalSunset": "2017-02-10T00:09:25+00:00"
  }, {
     "city": "Wellington",
     "latitude": -41.28664,
     "longitude": 174.77557,
     "sunrise": "2017-02-08T17:37:42+00:00",
-    "sunset": "2017-02-09T07:32:28+00:00"
+    "sunset": "2017-02-09T07:32:28+00:00",
+    "civilSunrise": "2017-02-08T17:06:35+00:00",
+    "civilSunset": "2017-02-09T08:02:47+00:00",
+    "nauticalSunrise": "2017-02-08T16:30:11+00:00",
+    "nauticalSunset": "2017-02-09T08:39:00+00:00",
+    "astronomicalSunrise": "2017-02-08T15:50:39+00:00",
+    "astronomicalSunset": "2017-02-09T09:18:16+00:00"
  }, {
     "city": "West Island",
     "latitude": -12.15681,
     "longitude": 96.82251,
     "sunrise": "2017-02-08T23:30:34+00:00",
-    "sunset": "2017-02-09T12:03:14+00:00"
+    "sunset": "2017-02-09T12:03:14+00:00",
+    "civilSunrise": "2017-02-08T23:08:14+00:00",
+    "civilSunset": "2017-02-09T12:25:26+00:00",
+    "nauticalSunrise": "2017-02-08T22:42:38+00:00",
+    "nauticalSunset": "2017-02-09T12:51:00+00:00",
+    "astronomicalSunrise": "2017-02-08T22:16:41+00:00",
+    "astronomicalSunset": "2017-02-09T13:16:54+00:00"
  }, {
     "city": "Willemstad",
     "latitude": 12.1084,
     "longitude": -68.93354,
     "sunrise": "2017-02-09T10:58:51+00:00",
-    "sunset": "2017-02-09T22:41:00+00:00"
+    "sunset": "2017-02-09T22:41:00+00:00",
+    "civilSunrise": "2017-02-09T10:37:09+00:00",
+    "civilSunset": "2017-02-09T23:02:54+00:00",
+    "nauticalSunrise": "2017-02-09T10:12:05+00:00",
+    "nauticalSunset": "2017-02-09T23:27:58+00:00",
+    "astronomicalSunrise": "2017-02-09T09:47:01+00:00",
+    "astronomicalSunset": "2017-02-09T23:53:01+00:00"
  }, {
     "city": "Windhoek",
     "latitude": -22.55941,
     "longitude": 17.08323,
     "sunrise": "2017-02-09T04:37:35+00:00",
-    "sunset": "2017-02-09T17:34:09+00:00"
+    "sunset": "2017-02-09T17:34:09+00:00",
+    "civilSunrise": "2017-02-09T04:13:32+00:00",
+    "civilSunset": "2017-02-09T17:57:53+00:00",
+    "nauticalSunrise": "2017-02-09T03:45:59+00:00",
+    "nauticalSunset": "2017-02-09T18:25:23+00:00",
+    "astronomicalSunrise": "2017-02-09T03:17:43+00:00",
+    "astronomicalSunset": "2017-02-09T18:53:34+00:00"
  }, {
     "city": "Yamoussoukro",
     "latitude": 6.81667,
     "longitude": -5.28333,
     "sunrise": "2017-02-09T06:38:47+00:00",
-    "sunset": "2017-02-09T18:31:52+00:00"
+    "sunset": "2017-02-09T18:31:52+00:00",
+    "civilSunrise": "2017-02-09T06:17:18+00:00",
+    "civilSunset": "2017-02-09T18:53:28+00:00",
+    "nauticalSunrise": "2017-02-09T05:52:32+00:00",
+    "nauticalSunset": "2017-02-09T19:18:14+00:00",
+    "astronomicalSunrise": "2017-02-09T05:27:44+00:00",
+    "astronomicalSunset": "2017-02-09T19:43:01+00:00"
  }, {
     "city": "Yaoundé",
     "latitude": 3.86667,
     "longitude": 11.51667,
     "sunrise": "2017-02-09T05:28:34+00:00",
-    "sunset": "2017-02-09T17:27:42+00:00"
+    "sunset": "2017-02-09T17:27:42+00:00",
+    "civilSunrise": "2017-02-09T05:07:07+00:00",
+    "civilSunset": "2017-02-09T17:49:13+00:00",
+    "nauticalSunrise": "2017-02-09T04:42:25+00:00",
+    "nauticalSunset": "2017-02-09T18:13:54+00:00",
+    "astronomicalSunrise": "2017-02-09T04:17:39+00:00",
+    "astronomicalSunset": "2017-02-09T18:38:39+00:00"
  }, {
     "city": "Yerevan",
     "latitude": 40.18111,
     "longitude": 44.51361,
     "sunrise": "2017-02-09T04:01:30+00:00",
-    "sunset": "2017-02-09T14:30:47+00:00"
+    "sunset": "2017-02-09T14:30:47+00:00",
+    "civilSunrise": "2017-02-09T03:34:00+00:00",
+    "civilSunset": "2017-02-09T14:58:52+00:00",
+    "nauticalSunrise": "2017-02-09T03:02:06+00:00",
+    "nauticalSunset": "2017-02-09T15:30:47+00:00",
+    "astronomicalSunrise": "2017-02-09T02:30:32+00:00",
+    "astronomicalSunset": "2017-02-09T16:02:23+00:00"
  }, {
     "city": "Zagreb",
     "latitude": 45.81444,
     "longitude": 15.97798,
     "sunrise": "2017-02-09T06:06:11+00:00",
-    "sunset": "2017-02-09T16:14:23+00:00"
+    "sunset": "2017-02-09T16:14:23+00:00",
+    "civilSunrise": "2017-02-09T05:35:57+00:00",
+    "civilSunset": "2017-02-09T16:45:18+00:00",
+    "nauticalSunrise": "2017-02-09T05:00:58+00:00",
+    "nauticalSunset": "2017-02-09T17:20:20+00:00",
+    "astronomicalSunrise": "2017-02-09T04:26:26+00:00",
+    "astronomicalSunset": "2017-02-09T17:54:55+00:00"
  }]
