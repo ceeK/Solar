@@ -67,6 +67,65 @@ struct SolarTests {
         #expect(solar?.sunset == nil)
     }
 
+    // MARK: - Twilight
+    //
+    // Expected values come from the `astral` package rather than from Solar itself, so
+    // these assert the zeniths are astronomically right and not merely self-consistent.
+
+    @Test("Civil sunrise is close to expected time", arguments: cities)
+    func civilSunrise(for city: City) throws {
+        let solar = Solar(for: Self.testDate, coordinate: city.coordinate)
+
+        let civilSunrise = try #require(solar?.civilSunrise, "Civil sunrise cannot be generated for city \(city.name)")
+
+        #expect(abs(civilSunrise.timeIntervalSince1970 - city.civilSunrise.timeIntervalSince1970) <= Self.testAccuracy, "\(city.name): \(civilSunrise) not close to \(city.civilSunrise)")
+    }
+
+    @Test("Civil sunset is close to expected time", arguments: cities)
+    func civilSunset(for city: City) throws {
+        let solar = Solar(for: Self.testDate, coordinate: city.coordinate)
+
+        let civilSunset = try #require(solar?.civilSunset, "Civil sunset cannot be generated for city \(city.name)")
+
+        #expect(abs(civilSunset.timeIntervalSince1970 - city.civilSunset.timeIntervalSince1970) <= Self.testAccuracy, "\(city.name): \(civilSunset) not close to \(city.civilSunset)")
+    }
+
+    @Test("Nautical sunrise is close to expected time", arguments: cities)
+    func nauticalSunrise(for city: City) throws {
+        let solar = Solar(for: Self.testDate, coordinate: city.coordinate)
+
+        let nauticalSunrise = try #require(solar?.nauticalSunrise, "Nautical sunrise cannot be generated for city \(city.name)")
+
+        #expect(abs(nauticalSunrise.timeIntervalSince1970 - city.nauticalSunrise.timeIntervalSince1970) <= Self.testAccuracy, "\(city.name): \(nauticalSunrise) not close to \(city.nauticalSunrise)")
+    }
+
+    @Test("Nautical sunset is close to expected time", arguments: cities)
+    func nauticalSunset(for city: City) throws {
+        let solar = Solar(for: Self.testDate, coordinate: city.coordinate)
+
+        let nauticalSunset = try #require(solar?.nauticalSunset, "Nautical sunset cannot be generated for city \(city.name)")
+
+        #expect(abs(nauticalSunset.timeIntervalSince1970 - city.nauticalSunset.timeIntervalSince1970) <= Self.testAccuracy, "\(city.name): \(nauticalSunset) not close to \(city.nauticalSunset)")
+    }
+
+    @Test("Astronomical sunrise is close to expected time", arguments: cities)
+    func astronomicalSunrise(for city: City) throws {
+        let solar = Solar(for: Self.testDate, coordinate: city.coordinate)
+
+        let astronomicalSunrise = try #require(solar?.astronomicalSunrise, "Astronomical sunrise cannot be generated for city \(city.name)")
+
+        #expect(abs(astronomicalSunrise.timeIntervalSince1970 - city.astronomicalSunrise.timeIntervalSince1970) <= Self.testAccuracy, "\(city.name): \(astronomicalSunrise) not close to \(city.astronomicalSunrise)")
+    }
+
+    @Test("Astronomical sunset is close to expected time", arguments: cities)
+    func astronomicalSunset(for city: City) throws {
+        let solar = Solar(for: Self.testDate, coordinate: city.coordinate)
+
+        let astronomicalSunset = try #require(solar?.astronomicalSunset, "Astronomical sunset cannot be generated for city \(city.name)")
+
+        #expect(abs(astronomicalSunset.timeIntervalSince1970 - city.astronomicalSunset.timeIntervalSince1970) <= Self.testAccuracy, "\(city.name): \(astronomicalSunset) not close to \(city.astronomicalSunset)")
+    }
+
     @Test("isDaytime is true between sunrise and sunset")
     func isDaytimeIsTrueBetweenSunriseAndSunset() throws {
         let daytime = Date(timeIntervalSince1970: 1486641600) // noon
