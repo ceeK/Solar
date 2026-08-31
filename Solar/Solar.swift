@@ -44,17 +44,43 @@ public struct Solar {
     public fileprivate(set) var astronomicalSunrise: Date?
     public fileprivate(set) var astronomicalSunset: Date?
     
+    /// Whether the location is in daytime at `date`: the sun's elevation at that
+    /// instant is above the official zenith. Because this asks about the instant
+    /// directly, polar day, polar night, their transition days, and daylight
+    /// spanning UTC midnight need no special cases. The published events are
+    /// bisected from this same predicate, so isDaytime becomes true exactly at
+    /// `sunrise` and false exactly at `sunset`.
+    public var isDaytime: Bool {
+        return sunIsUp(atEpoch: date.timeIntervalSince1970, above: .official)
+    }
+
+    /// Whether the location specified by the `latitude` and `longitude` is in nighttime on `date`
+    public var isNighttime: Bool {
+        return !isDaytime
+    }
+
+    /// Trigonometry of the immutable latitude, shared by every predicate evaluation.
+    fileprivate let sinLatitude: Double
+    fileprivate let cosLatitude: Double
+
+    /// The day-of-year mapping for `date`'s year and its neighbours.
+    fileprivate let yearMap: YearMap
+
     // MARK: Init
-    
+
     public init?(for date: Date = Date(), coordinate: CLLocationCoordinate2D) {
         self.date = date
-        
-        guard CLLocationCoordinate2DIsValid(coordinate) else {
+
+        guard CLLocationCoordinate2DIsValid(coordinate), let yearMap = YearMap(containing: date) else {
             return nil
         }
-        
+
         self.coordinate = coordinate
-        
+        self.yearMap = yearMap
+        let latitude = coordinate.latitude.degreesToRadians
+        self.sinLatitude = sin(latitude)
+        self.cosLatitude = cos(latitude)
+
         // Fill this Solar object with relevant data
         calculate()
     }
@@ -64,23 +90,33 @@ public struct Solar {
     /// Sets all of the Solar object's sunrise / sunset variables, if possible.
     /// - Note: Can return `nil` objects if sunrise / sunset does not occur on that day.
     public mutating func calculate() {
-        sunrise = calculate(.sunrise, for: date, and: .official)
-        sunset = calculate(.sunset, for: date, and: .official)
-        civilSunrise = calculate(.sunrise, for: date, and: .civil)
-        civilSunset = calculate(.sunset, for: date, and: .civil)
-        nauticalSunrise = calculate(.sunrise, for: date, and: .nautical)
-        nauticalSunset = calculate(.sunset, for: date, and: .nautical)
-        astronomicalSunrise = calculate(.sunrise, for: date, and: .astronimical)
-        astronomicalSunset = calculate(.sunset, for: date, and: .astronimical)
+        // Anchor on the solar noon nearest the middle of `date`'s UTC day. Each event
+        // is then the exact whole second the elevation predicate flips, found by
+        // bisecting between solar midnight and solar noon; the transit itself is
+        // zenith-independent, so one anchor serves all eight events.
+        let dayOrdinal = floor(yearMap.t(forEpoch: date.timeIntervalSince1970))
+        let transitT = solarTransitT(near: dayOrdinal + (12 - lngHour) / 24)
+        let transitEpoch = floor(yearMap.epoch(forT: transitT))
+
+        (sunrise, sunset) = events(at: .official, transitEpoch: transitEpoch)
+        (civilSunrise, civilSunset) = events(at: .civil, transitEpoch: transitEpoch)
+        (nauticalSunrise, nauticalSunset) = events(at: .nautical, transitEpoch: transitEpoch)
+        (astronomicalSunrise, astronomicalSunset) = events(at: .astronimical, transitEpoch: transitEpoch)
     }
     
     // MARK: - Private functions
+    
+    fileprivate static let utcCalendar: Calendar = {
+        var calendar = Calendar(identifier: .gregorian)
+        calendar.timeZone = TimeZone(identifier: "UTC")!
+        return calendar
+    }()
     
     fileprivate enum SunriseSunset {
         case sunrise
         case sunset
     }
-    
+
     /// Used for generating several of the possible sunrise / sunset times
     fileprivate enum Zenith: Double {
         case official = 90.83
@@ -89,21 +125,16 @@ public struct Solar {
         case astronimical = 108
     }
     
-    fileprivate func calculate(_ sunriseSunset: SunriseSunset, for date: Date, and zenith: Zenith) -> Date? {
-        guard let utcTimezone = TimeZone(identifier: "UTC") else { return nil }
-        
-        // Get the day of the year
-        var calendar = Calendar(identifier: .gregorian)
-        calendar.timeZone = utcTimezone
-        guard let dayInt = calendar.ordinality(of: .day, in: .year, for: date) else { return nil }
-        let day = Double(dayInt)
-        
-        // Convert longitude to hour value and calculate an approx. time
-        let lngHour = coordinate.longitude / 15
-        
-        let hourTime: Double = sunriseSunset == .sunrise ? 6 : 18
-        let t = day + ((hourTime - lngHour) / 24)
-        
+    /// The sun's position for an approximate time `t` (days since the start of the
+    /// year, including the fraction of the day), per the USNO Almanac for Computers
+    /// sunrise/sunset algorithm.
+    fileprivate struct SunPosition {
+        let rightAscension: Double   // hours
+        let sinDeclination: Double
+        let cosDeclination: Double
+    }
+    
+    fileprivate static func sunPosition(forT t: Double) -> SunPosition {
         // Calculate the suns mean anomaly
         let M = (0.9856 * t) - 3.289
         
@@ -131,62 +162,133 @@ public struct Solar {
         
         // Calculate Sun's declination
         let sinDec = 0.39782 * sin(L.degreesToRadians)
-        let cosDec = cos(asin(sinDec))
-        
-        // Calculate the Sun's local hour angle
-        let cosH = (cos(zenith.rawValue.degreesToRadians) - (sinDec * sin(coordinate.latitude.degreesToRadians))) / (cosDec * cos(coordinate.latitude.degreesToRadians))
-        
-        // No sunrise
-        guard cosH < 1 else {
+        return SunPosition(rightAscension: RA,
+                           sinDeclination: sinDec,
+                           cosDeclination: cos(asin(sinDec)))
+    }
+    
+    /// Longitude expressed in hours of Earth rotation (15° per hour).
+    fileprivate var lngHour: Double {
+        return coordinate.longitude / 15
+    }
+
+    /// The almanac's clock relation, T = H + RA - siderealDrift * t - clockOffset,
+    /// links a time of day to the sun's hour angle. `sunIsUp` and `solarTransitT`
+    /// both invert it, so the constants are shared to keep them exact inverses.
+    fileprivate static let siderealDrift = 0.06571
+    fileprivate static let clockOffset = 6.622
+
+    fileprivate static let secondsPerDay: TimeInterval = 86400
+
+    /// Maps instants to the fractional day-of-year `t` the position model is
+    /// parameterized on (1.0 = midnight starting 1 January), against the year that
+    /// contains each instant — so an event published in an adjacent year agrees
+    /// exactly with a fresh Solar built at it.
+    fileprivate struct YearMap {
+        let previous: TimeInterval
+        let current: TimeInterval
+        let next: TimeInterval
+
+        init?(containing date: Date) {
+            let year = Solar.utcCalendar.dateComponents([.year], from: date)
+            guard
+                let currentStart = Solar.utcCalendar.date(from: year),
+                let previousStart = Solar.utcCalendar.date(byAdding: .year, value: -1, to: currentStart),
+                let nextStart = Solar.utcCalendar.date(byAdding: .year, value: 1, to: currentStart)
+                else {
+                    return nil
+            }
+            previous = previousStart.timeIntervalSince1970
+            current = currentStart.timeIntervalSince1970
+            next = nextStart.timeIntervalSince1970
+        }
+
+        /// Whole seconds only, matching Date equality on the published events.
+        func t(forEpoch epoch: TimeInterval) -> Double {
+            let second = floor(epoch)
+            let yearStart = second >= next ? next : (second >= current ? current : previous)
+            return (second - yearStart) / Solar.secondsPerDay + 1
+        }
+
+        /// The inverse of `t(forEpoch:)`, on the year the map was built around.
+        func epoch(forT t: Double) -> TimeInterval {
+            return current + (t - 1) * Solar.secondsPerDay
+        }
+    }
+
+    /// Whether the sun's elevation at the instant is above `zenith`.
+    fileprivate func sunIsUp(atEpoch epoch: TimeInterval, above zenith: Zenith) -> Bool {
+        return sunIsUp(atT: yearMap.t(forEpoch: epoch), above: zenith)
+    }
+
+    /// Whether the sun's elevation at `t` (a fractional day-of-year) is above `zenith`.
+    fileprivate func sunIsUp(atT t: Double, above zenith: Zenith) -> Bool {
+        let sun = Solar.sunPosition(forT: t)
+        let ut = (t - floor(t)) * 24
+
+        // The clock relation inverted: the sun's hour angle at this instant, where 0°
+        // is solar noon. The drift term spans many multiples of 24, so take the
+        // remainder before normalising.
+        let drifted = (ut + lngHour) - sun.rightAscension + (Solar.siderealDrift * t) + Solar.clockOffset
+        let H = Solar.normalise(drifted.truncatingRemainder(dividingBy: 24), withMaximum: 24)
+        let hourAngle = (H * 15).degreesToRadians
+
+        let sinElevation = sun.sinDeclination * sinLatitude + sun.cosDeclination * cosLatitude * cos(hourAngle)
+        return sinElevation >= cos(zenith.rawValue.degreesToRadians)
+    }
+
+    /// The solar transit (solar noon) nearest `guess`, as a fractional day-of-year:
+    /// the t at which the hour angle in `sunIsUp` vanishes. Right ascension drifts
+    /// slowly, so two passes of the fixed point converge far below a second.
+    fileprivate func solarTransitT(near guess: Double) -> Double {
+        var t = guess
+        for _ in 0..<2 {
+            let target = Solar.sunPosition(forT: t).rightAscension - lngHour - Solar.clockOffset
+            let cycles = (((24 + Solar.siderealDrift) * t - target) / 24).rounded()
+            t = (target + 24 * cycles) / (24 + Solar.siderealDrift)
+        }
+        return t
+    }
+
+    /// The sunrise/sunset pair for one zenith, both bisected from the same anchor.
+    fileprivate func events(at zenith: Zenith, transitEpoch: TimeInterval) -> (sunrise: Date?, sunset: Date?) {
+        return (crossing(.sunrise, at: zenith, transitEpoch: transitEpoch),
+                crossing(.sunset, at: zenith, transitEpoch: transitEpoch))
+    }
+
+    /// The published event around the solar noon at `transitEpoch`: the first whole
+    /// second at which the sun is up (sunrise) or no longer up (sunset), found by
+    /// bisecting the elevation predicate against solar midnight. Elevation rises from
+    /// one solar midnight to noon and falls to the next, so a single crossing exists
+    /// exactly when the endpoints disagree; when they agree the sun stays on one side
+    /// of the zenith all day (polar day or night) and there is no event to publish.
+    fileprivate func crossing(_ sunriseSunset: SunriseSunset, at zenith: Zenith, transitEpoch: TimeInterval) -> Date? {
+        func afterEvent(_ epoch: TimeInterval) -> Bool {
+            let isUp = sunIsUp(atEpoch: epoch, above: zenith)
+            return sunriseSunset == .sunrise ? isUp : !isUp
+        }
+
+        let halfDay = Solar.secondsPerDay / 2
+        var before = sunriseSunset == .sunrise ? transitEpoch - halfDay : transitEpoch
+        var after = sunriseSunset == .sunrise ? transitEpoch : transitEpoch + halfDay
+
+        guard !afterEvent(before), afterEvent(after) else {
             return nil
         }
-        
-        // No sunset
-        guard cosH > -1 else {
-            return nil
+
+        while after - before > 1 {
+            let midpoint = ((before + after) / 2).rounded(.down)
+            if afterEvent(midpoint) {
+                after = midpoint
+            } else {
+                before = midpoint
+            }
         }
-        
-        // Finish calculating H and convert into hours
-        let tempH = sunriseSunset == .sunrise ? 360 - acos(cosH).radiansToDegrees : acos(cosH).radiansToDegrees
-        let H = tempH / 15.0
-        
-        // Calculate local mean time of rising
-        let T = H + RA - (0.06571 * t) - 6.622
-        
-        // Adjust time back to UTC
-        var UT = T - lngHour
-        
-        // Normalise UT into [0, 24] range
-        UT = normalise(UT, withMaximum: 24)
-        
-        // Calculate all of the sunrise's / sunset's date components
-        let hour = floor(UT)
-        let minute = floor((UT - hour) * 60.0)
-        let second = (((UT - hour) * 60) - minute) * 60.0
-        
-        let shouldBeYesterday = lngHour > 0 && UT > 12 && sunriseSunset == .sunrise
-        let shouldBeTomorrow = lngHour < 0 && UT < 12 && sunriseSunset == .sunset
-        
-        let setDate: Date
-        if shouldBeYesterday {
-            setDate = Date(timeInterval: -(60 * 60 * 24), since: date)
-        } else if shouldBeTomorrow {
-            setDate = Date(timeInterval: (60 * 60 * 24), since: date)
-        } else {
-            setDate = date
-        }
-        
-        var components = calendar.dateComponents([.day, .month, .year], from: setDate)
-        components.hour = Int(hour)
-        components.minute = Int(minute)
-        components.second = Int(second)
-        
-        calendar.timeZone = utcTimezone
-        return calendar.date(from: components)
+        return Date(timeIntervalSince1970: after)
     }
     
     /// Normalises a value between 0 and `maximum`, by adding or subtracting `maximum`
-    fileprivate func normalise(_ value: Double, withMaximum maximum: Double) -> Double {
+    fileprivate static func normalise(_ value: Double, withMaximum maximum: Double) -> Double {
         var value = value
         
         if value < 0 {
@@ -198,41 +300,6 @@ public struct Solar {
         }
         
         return value
-    }
-    
-}
-
-extension Solar {
-    
-    fileprivate static let secondsPerDay: TimeInterval = 60 * 60 * 24
-
-    /// Whether the location specified by the `latitude` and `longitude` is in daytime on `date`.
-    /// The `sunrise` / `sunset` window is anchored to the UTC calendar day of `date`, so when
-    /// the local solar day straddles UTC midnight the window containing `date` can belong to
-    /// the previous or next UTC day; those windows are checked too.
-    /// - Complexity: O(1)
-    public var isDaytime: Bool {
-        if let sunrise = sunrise, let sunset = sunset, date >= sunrise, date < sunset {
-            return true
-        }
-
-        return [-Solar.secondsPerDay, Solar.secondsPerDay].contains { dayOffset in
-            let candidateDate = date.addingTimeInterval(dayOffset)
-            guard
-                let sunrise = calculate(.sunrise, for: candidateDate, and: .official),
-                let sunset = calculate(.sunset, for: candidateDate, and: .official)
-                else {
-                    return false
-            }
-
-            return date >= sunrise && date < sunset
-        }
-    }
-    
-    /// Whether the location specified by the `latitude` and `longitude` is in nighttime on `date`
-    /// - Complexity: O(1)
-    public var isNighttime: Bool {
-        return !isDaytime
     }
     
 }
